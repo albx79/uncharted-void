@@ -20,7 +20,7 @@ Uncharted Void is a competitive and interactive collectible card game of explora
   - Events: One-time or persistent effects
 
 - **Decks:**  
-  - Each player brings a constructed deck for their faction, typically 60+ cards.
+  - Each player brings a constructed deck for their faction, typically 50+ cards.
   - Each player creates a location deck for use during exploration.
 
 - **Tokens/Markers:**  
@@ -33,9 +33,9 @@ Uncharted Void is a competitive and interactive collectible card game of explora
 
 ### 3.1. Deck Preparation
 - Each player selects a faction and constructs:
-  - their main deck (50 cards, which may include up to two factions and non-aligned cards),
-  - their location deck (20 cards),
-  - and their seeded manufacts (10 cards).
+  - their main deck (50+ cards, which may include up to two factions and non-aligned cards),
+  - their location deck (20+ cards),
+  - and their seeded manufacts (exactly 10 cards).
 
 ### 3.2. Manufacts & Space Line
 - Place your seeded manufacts face down, horizontally, so as to create a line. This is the space line, and each manufact is at an uncharted location
