@@ -27,6 +27,53 @@ Uncharted Void is a competitive and interactive collectible card game of explora
   - Glass beads (or similar) to track progress and damage.
   - Paper and pencil, or a 20-sided die, to keep the score.
 
+## 2.1 Factions of the Uncharted Void
+
+The universe of Uncharted Void teems with diverse factions, each channeling a different ethos and approach to the unknown. The base set features four distinct factions—each designed to offer unique mechanics and playstyles—and several more are hinted as possibilities for future expansions.
+
+### The Accord (Diplomacy-Focused)
+**Theme:** Peacekeepers, negotiators, and envoys of the Void. Their fleets prioritize alliances, treaties, and de-escalation.  
+**Strengths:** Excel with Influence (diplomatic) resources; can form alliances, prevent or redirect combat, share resources, and complete missions cooperatively.  
+**Weaknesses:** Struggle in direct combat and rely on tricks or alliances to survive militaristic threats.
+
+---
+
+### The Vanguard (Exploration-Focused)
+**Theme:** Trailblazers, scientists, and scouts obsessed with discovery. They venture deeper into the Void than any others.  
+**Strengths:** Exceptional Tech (engineering) generation; bonus rewards for revealing or traversing new Locations; can scry or re-order the Space Line; field specialized scout ships.  
+**Weaknesses:** Poor at combat and sabotage; vulnerable if opponents exploit their spread-out forces.
+
+---
+
+### The Dominion (Combat/Expansion-Focused)
+**Theme:** Conquerors and warlords, valuing strength and obedience. They expand aggressively, subjugating planets and rivals in their path.  
+**Strengths:** Generate Tactical (military) resources efficiently; field powerful Ships and elite soldiers; can destroy or seize Installations and suppress resistance.  
+**Weaknesses:** High-cost units; less flexible in diplomacy or subterfuge; must pay to maintain conquest.
+
+---
+
+### The Syndicate (Hybrid/Opportunist/Asymmetrical)
+**Theme:** Smugglers, info-brokers, pirates, and mercenaries. They play all sides and thrive in chaos.  
+**Strengths:** Steal or blackmail resources, artifacts, or even victory points; can sabotage or “buy” Installations; excellent at ambushes and adaptation.  
+**Weaknesses:** Unpredictable; lack brute strength or dedicated research.
+
+---
+
+### The Continuum (Psionic/Mystic)
+**Theme:** Psionic, mystic, or post-biological entities—ancient, enigmatic, perhaps remnants of AI or uplifted minds.  
+**Strengths:** Excel in Mystical resource use; manipulate the Space Line or player hands; disrupt enemy plans via “weird” powers.  
+**Weaknesses:** Often inflexible; may have “backlash” risks or dependence on certain conditions.
+
+---
+
+### The Guild of Lifters (Trade/Logistics/Space Truckers)
+**Theme:** Space hauliers, trade caravans, and deal-makers—descendants of independent prospectors.  
+**Strengths:** Efficient Cargo handling, bonus resource generation via trade; skilled at moving Cargo/Artifacts; economic sabotage and fast transport.  
+**Weaknesses:** Few combat options; rely on negotiation over might.
+
+
+---
+
 ---
 
 ## 3. Setup
