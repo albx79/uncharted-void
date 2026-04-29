@@ -31,6 +31,8 @@ Uncharted Void is a competitive and interactive collectible card game of explora
 
 The universe of Uncharted Void teems with diverse factions, each channeling a different ethos and approach to the unknown. The base set features four distinct factions—each designed to offer unique mechanics and playstyles—and several more are hinted as possibilities for future expansions.
 
+Each faction’s Home Location includes a unique mission designed to reinforce that faction's ethics and encourage a playstyle that adheres to it.
+
 ### The Accord (Diplomacy-Focused)
 **Theme:** Peacekeepers, negotiators, and envoys of the Void. Their fleets prioritize alliances, treaties, and de-escalation.  
 **Strengths:** Excel with Influence (diplomatic) resources; can form alliances, prevent or redirect combat, share resources, and complete missions cooperatively.  
@@ -207,7 +209,7 @@ Below we see details of each card type.
 - **Cost**
 
 ### 6.5. Installations
-Installations are the only cards in your main deck that don't have a cost. That is because by rules you may play only one Installation per turn.
+Installations are the only cards in your main deck that don't have a cost. That is because by default, you may play only one Installation per turn. 
 
 ### 6.6. Locations
 Locations are not in your main deck, therefore don't have a cost. They can only be played by moving to an uncharted Location with a Ship.
@@ -233,7 +235,13 @@ Locations are not in your main deck, therefore don't have a cost. They can only 
 - Cards go to play area or, for “Event” cards, to the Junkyard after resolving (unless they say otherwise).
 
 ### 7.2. Movement
-- Ships may move to any space line Location up to their Range.
+
+Ships move between Slots on the Space Line. When a Ship enters a Slot without a Location card,
+- Each player generates a D6 value
+- The player with the highest value (or the Ship's controller in case of a tie) draws a Location card and places it there.
+
+Ships may move to any space line Location up to their Range. When they move to an unexplored Slot, the total distance is unknown until the Location is placed at that Slot.
+That is fine; you just don't know if the Ship will get there this turn or the next.
 - Ships can carry Personnel (must meet Crew requirement for Ship to operate).
 - Some Ships can land on Planets; others allow Personnel to disembark onto the Planet without landing. Others can do neither.
 - Before attacking or attempting a mission, Personnel may take one move action, which allows them to move **at the same Location**:
@@ -327,12 +335,13 @@ Rules for regaining control should be specified in the Installation or Location 
 - **Junkyard**: Location for cards after use. What most card games would call the discard pile.
 - **Lander**: This Ship can Land on Planets (or Habitats, or any Location with a Landing distance), provided it has sufficient Range
 - **Landers**: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the Planet. They are assumed to have the required Range and Hold.
-- **Location**: A game area on the Space Line. May be uncharted (undiscovered) or revealed.
+- **Location**: A card type representing a planet, nebula, or other point of interest. Placed at a Slot when explored.
 - **Manufact**: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
 - **Place**: A distinct area within a Location. On a planet, each Installation is considered a separate Place. On a Ship, the Ship itself is a Place. Personnel and Combat take place within a single Place, not the entire Location.
 - **Prisoner**: A Team taken Prisoner is no longer controlled by you, but by your Opponent, and their abilities are disabled. However, the Opponent is only able to move the Team as a whole as if it were Cargo of Size 0. Once returned to their owner, a Team is no longer Prisoner and can be played normally.
 - **Size**: A Ship's Size determines how much Hold it occupies when it is carried as Cargo by another Ship (when carried, it has to be empty and uncrewed).
 - **Skill Check**: A test for progressing Missions. Resolve by adding a Personnel’s skill value, modifiers, and a D6 value.
+- **Slot**: A position on the Space Line. May be uncharted (empty) or contain a Location card.
 - **Space Line**: The horizontal line of Locations (with Manufacts) forming the game board.
 - **Team**: A group of Personnel and their Equipment acting together for Missions or Combat.
 
