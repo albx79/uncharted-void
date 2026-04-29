@@ -255,20 +255,24 @@ Rules for regaining control should be specified in the Installation or Location 
 
 ---
 ## 10. Glossary of Terms
+- **Control**: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
+- **Draw Phase**: The part of your turn in which you may draw cards to reach your hand limit. The Draw Phase always occurs, even if you do not draw any cards due to already having a full hand or other effects.
 - **Place**: A distinct area within a Location. On a planet, each Installation is considered a separate Place. On a Ship, the Ship itself is a Place. Personnel and Combat take place within a single Place, not the entire Location.
 - **Team**: A group of Personnel and their Equipment acting together for Missions or Combat.
 - **Space Line**: The horizontal line of Locations (with Manufacts) forming the game board.
+- **Lander**: This Ship can Land on Planets (or Habitats, or any Location with a Landing distance), provided it has sufficient Range
+- **Landers**: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the Planet. They are assumed to have the required Range and Hold.
 - **Location**: A game area on the Space Line. May be uncharted (undiscovered) or revealed.
 - **Manufact**: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
 - **Installation**: A structure that produces resources if controlled. On planets, each is a distinct Place.
 - **Skill Check**: A test for progressing Missions. Resolve by adding a Personnel’s skill value, modifiers, and a D6 value.
 - **D6 Value**: Every card has a printed number from 1 to 6, used instead of dice for randomization in skill checks and combat.
-- **Flash**: Keyword indicating a card can be played at any time its requirements are met (including during an opponent’s turn).
-- **Junkyard**: Location for cards after use. Use one term consistently.
+- **Flash**: Keyword indicating a card can be played at any time its requirements are met (including during an Opponent’s turn).
+- **Junkyard**: Location for cards after use. What most card games would call the discard pile.
 - **Crew Requirement**: Minimum number of Personnel needed to operate a Ship.
 - **Hold**: Attribute of Ships determining Cargo capacity.
-- **Control**: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
 - **Home Location**: The Location that is the starting base for your faction.
+
 
 
 ---
