@@ -1,4 +1,6 @@
-#set document(title: "Converted Document")
+#set page(paper: "a5")
+#set heading(numbering: "1.")
+#set document(title: "Uncharted Void")
 
 = Uncharted Void
 
@@ -7,20 +9,14 @@ _A Sci-Fi Space Exploration and Diplomacy Card Game_
 
 
 
-== 1. Overview
+== Overview
 
 
 Uncharted Void is a competitive and interactive collectible card game of exploration, diplomacy, and conflict set in the far future. Players command factions of star faring civilizations vying for power and knowledge in uncharted regions of space. Through a mixture of clever resource management, personnel deployment, daring exploration, tactical combat, and negotiation, players race to complete missions, recover ancient manufacts, and earn enough victory points to triumph.
 
-
-
-== 2. Components
-
-
+== Components
 
   - *Card Types:*
-
-
 
   - Personnel: Unique or generic crew with skill ratings and special abilities.
 
@@ -34,42 +30,27 @@ Uncharted Void is a competitive and interactive collectible card game of explora
 
   - Events: One-time effects; some can be played instantly (“Flash”).
 
-
-
-
   - *Decks:*  
-
-
 
   - Each player brings a constructed deck for their faction, typically 60+ cards.
 
   - Optional: Each player creates a location deck for use during exploration.
 
-
-
-
   - *Tokens/Markers:*  
-
-
 
   - Used for tracking mission progress, resources (optional for digital), and victory points.
 
+== Setup
 
 
-
-
-
-== 3. Setup
-
-
-=== 3.1. Deck Preparation
+=== Deck Preparation
 
 
 
   - Each player selects a faction and constructs their deck, which may include up to two factions if allowed. Decks may include non-aligned cards.
 
 
-=== 3.2. Manufacts & Space Line
+=== Manufacts & Space Line
 
 
 
@@ -78,76 +59,54 @@ Uncharted Void is a competitive and interactive collectible card game of explora
   - Shuffle and place these face-down in two stacks at each of 6 locations laid out in a line ("the space line").
 
 
-=== 3.3. Location Decks
-
-
+=== Location Decks
 
   - Each player has a personal location deck, shuffled and ready for use.
 
 
-=== 3.4. Home Locations
-
-
+=== Home Locations
 
   - Each player chooses and places their Home Location onto any slot of the space line, face-up.
 
 
-=== 3.5. Starting Draw
-
-
+=== Starting Draw
 
   - Each player draws an opening hand of 7 cards from their deck.
 
 
-=== 3.6. Starting Installations
-
-
+=== Starting Installations
 
   - Option 1: All players begin the game with one basic Installation in play for each resource type.
 
   - Option 2: Players must draw and play Installations as normal during the game.
 
 
-=== 3.7. Randomizer (Optional)
-
-
+=== Randomizer (Optional)
 
   - Use a coin, die, or digital aid to determine which player’s location deck supplies a new location when one is revealed during the game.
 
-
-
-== 4. Turn Structure
-
+== Turn Structure
 
 Each turn consists of the phases below. Active player completes all phases, then play passes to opponent.
 
 
-=== A. Draw Phase
-
-
+=== Draw Phase
 
   - Draw cards from your deck until you have 7 cards in hand.
 
   - If you already have 7 or more cards, skip this step.
 
 
-=== B. Untap Phase
-
-
+=== Untap Phase
 
   - Untap (ready) all your tapped cards (Ships, Installations, Personnel, etc.), making them available for use again.
 
 
-=== C. Main Phase
-
+=== Main Phase
 
 During this phase, do any number of the following actions, in any order:
 
-
-
   - *Play Cards:*  
-
-
 
   - Pay the resource cost for cards by tapping Installations of the appropriate type(s).
 
@@ -155,87 +114,46 @@ During this phase, do any number of the following actions, in any order:
 
   - Some Event/Personnel cards may carry the "Flash" keyword, allowing play at any time.
 
-
-
-
   - *Move Ships:*  
-
-
 
   - Move each untapped Ship once, up to its range value (measured along adjacent spaces in the space line).
 
   - Ships may bring Personnel with them (“crewed ships”).
 
-
-
-
   - *Attempt/Progress Missions:*  
-
-
 
   - If a Ship with eligible crew is at a Location, attempt to progress the mission there using a skill check (see "Skill Checks & Missions").
 
-
-
-
   - *Engage in Combat:*  
-
-
 
   - If opposing Ships or Personnel are present at a Location, you may initiate combat.
 
-
-
-
   - *Interfere/Assist Missions:*  
-
-
 
   - If an opponent is attempting a mission where you have a presence, you may hinder, assist, or negotiate per rules or shared agreement.
 
-
-
-
   - *Activate Card Abilities:*  
-
-
 
   - Cards may have abilities that require tapping or other costs; resolve as needed.
 
-
-
-
   - *Negotiate/Diplomacy:*  
-
-
 
   - Strike deals, bargain, or promise as permitted by the table and social contract.
 
 
-
-
-
-=== D. Discard Phase
-
-
+=== Discard Phase
 
   - If you have more than 7 cards in hand, discard down to 7.
 
 
-=== E. End of Turn
-
-
+=== End of Turn
 
   - Pass play to your opponent.
 
-
-
-== 5. Resources
+== Resources
 
 
 There are four resource types, corresponding to Installations:
-
-
 
   1. *Influence*: diplomatic, political, or social resources
 
@@ -248,25 +166,16 @@ There are four resource types, corresponding to Installations:
 
 *Acquiring Resources:*  
 
-
-
   - Installations tap to provide 1 resource of their type; resources do not carry over between turns.
-
 
 *Resource Use:*  
 
-
-
   - To play a card, tap Installations for the required combination of resource types equal to that card’s cost.
 
+== Card Types & Anatomy
 
 
-== 6. Card Types & Anatomy
-
-
-=== 6.1. Personnel
-
-
+=== Personnel
 
   - *Name*
 
@@ -285,7 +194,6 @@ There are four resource types, corresponding to Installations:
 
 *Example:*
 
-
 ```
 `Name: Captain Arten Tallis
 Faction: Federation
@@ -296,10 +204,7 @@ D6 Value: 2
 `
 ```
 
-
-=== 6.2. Ships
-
-
+=== Ships
 
   - *Name*
 
@@ -318,9 +223,7 @@ D6 Value: 2
   - *D6 Value*
 
 
-=== 6.3. Manufacts (Artifacts/Equipment)
-
-
+=== Manufacts (Artifacts/Equipment)
 
   - *Name*
 
@@ -333,9 +236,7 @@ D6 Value: 2
   - *Text Box:* Special rules, triggers
 
 
-=== 6.4. Installations
-
-
+=== Installations
 
   - *Name*
 
@@ -348,9 +249,7 @@ D6 Value: 2
   - *Text Box:* Optional abilities
 
 
-=== 6.5. Locations
-
-
+=== Locations
 
   - *Name*
 
@@ -373,9 +272,7 @@ Special: Ships at Mira's Rift have range -1
 ```
 
 
-=== 6.6. Events
-
-
+=== Events
 
   - *Name*
 
@@ -385,32 +282,22 @@ Special: Ships at Mira's Rift have range -1
 
   - *Effect*
 
+== Action Details
 
 
-== 7. Action Details
-
-
-=== 7.1. Playing Cards
-
-
+=== Playing Cards
 
   - Tap Installations to pay for cards by matching resource cost.
 
   - Cards go to play area or, for “Flash” cards, to the discard pile after resolving.
 
-
-=== 7.2. Movement
-
-
+=== Movement
 
   - Ships may move a number of space line locations up to their Range.
 
   - Ships can carry personnel (must meet Crew requirement for ship to operate).
 
-
-=== 7.3. Skill Checks & Missions
-
-
+=== Skill Checks & Missions
 
   - Only personnel with the required Skill can attempt the mission, and must be present at the location.
 
@@ -423,17 +310,11 @@ Special: Ships at Mira's Rift have range -1
 
   - If ≥ mission difficulty, place a progress marker (most missions require 2-5 successes across turns).
 
-
-
-
   - Opponents may interfere or assist, depending on circumstances and abilities.
 
   - Upon mission completion, you gain victory points and all manufacts at the location.
 
-
-=== 7.4. Combat
-
-
+=== Combat
 
   - Ships or personnel may attack enemy units at the same location.
 
@@ -444,9 +325,7 @@ Special: Ships at Mira's Rift have range -1
   - If ships are uncrewed, attacks may not be possible or suffer penalties.
 
 
-=== 7.5. Diplomacy & Negotiation
-
-
+=== Diplomacy & Negotiation
 
   - Negotiation is encouraged and part of the fun.
 
@@ -456,11 +335,7 @@ Special: Ships at Mira's Rift have range -1
 
   - Enforcement is largely social in non-competitive play.
 
-
-
-== 8. Victory Conditions
-
-
+== Victory Conditions
 
   - *Win:* The first player to acquire 20 victory points (mainly via missions, but possibly via major combats or other cards) wins the game.
 
@@ -468,7 +343,7 @@ Special: Ships at Mira's Rift have range -1
 
 
 
-== 9. Advanced and Optional Rules
+== Advanced and Optional Rules
 
 
 
@@ -486,12 +361,5 @@ Special: Ships at Mira's Rift have range -1
 
   - *Expansions:*  
   - Additional factions, card types, and advanced win conditions may be included in future releases.
-
-
-
-
-
-
-_Rules last updated: 2026-04-29_
 
 
