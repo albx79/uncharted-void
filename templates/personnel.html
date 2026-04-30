@@ -1,0 +1,158 @@
+<!-- Orbitron for the name, Open Sans for the text -->
+<link href="https://fonts.googleapis.com/css?family=Orbitron:700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,400&display=swap" rel="stylesheet">
+
+<style>
+.card-vertical {
+  width: 340px;
+  height: 480px;
+  background: linear-gradient(140deg, #161e34 80%, #23263e 100%);
+  border: 6px solid #42aaff; /* Faction/resource color */
+  border-radius: 28px;
+  box-shadow: 0 6px 32px #111b;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #efeff3;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.card-vertical .card-art {
+  width: 100%;
+  height: 200px;
+  background: #23263e;
+  position: relative;
+  overflow: hidden;
+}
+.card-vertical .card-art img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 22px 22px 0 0;
+}
+.card-vertical .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px 5px 16px;
+}
+.card-vertical .card-name {
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 0.02em;
+  color: #ffd950;
+  text-shadow: 0 2px 4px #000b;
+}
+.card-vertical .card-cost {
+  background: #282f44;
+  color: #c1e4fe;
+  border-radius: 11px;
+  padding: 3px 12px;
+  font-size: 0.95em;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  min-width: 52px;
+  text-align: center;
+}
+.card-vertical .card-subheader {
+  font-size: 0.95em;
+  letter-spacing: 0.04em;
+  color: #b5beee;
+  padding: 0 16px 3px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-vertical .card-rarity-type {
+  text-transform: uppercase;
+}
+.card-vertical .card-faction {
+  color: #77f4d9;
+  font-weight: 600;
+}
+.card-vertical .card-arities {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  display: flex;
+  gap: 3px;
+}
+.card-vertical .notch {
+  width: 13px; height: 8px; background: #ffd95066; border-radius: 8px 8px 2px 2px; box-shadow: 0 0 4px #ffd95044;
+  border: 1.5px solid #ffd950cc;
+}
+.card-vertical .card-textbox {
+  font-size: 1em;
+  color: #e2e7f7;
+  margin: 14px 16px;
+  min-height: 4em;
+}
+.card-vertical .card-skills-bottom {
+  position: absolute;
+  bottom: 21px;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 18px;
+}
+.card-vertical .d6-value {
+  font-family: Orbitron, sans-serif;
+  background: #2a375c;
+  color: #ffe066;
+  border: 2px solid #ffe066;
+  border-radius: 38px;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0 7px;
+}
+.card-vertical .skill-value {
+  background: #2b323e;
+  color: #95bee8;
+  border-radius: 9px;
+  font-size: 1.0em;
+  width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column;
+  border: 1.5px solid #4498f8bb;
+  font-weight: 700;
+}
+.card-vertical .skill-label {
+  font-size: 0.68em;
+  color: #6ec1ff;
+}
+</style>
+
+<div class="card-vertical">
+  <div class="card-art">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=340&q=80" alt="Personnel">
+    <div class="card-arities">
+      <!-- Show a notch for each arity, e.g. two notches for arity 2 -->
+      <div class="notch"></div>
+      <div class="notch"></div>
+    </div>
+  </div>
+  <div class="card-header">
+    <div class="card-name">Shal Ix</div>
+    <div class="card-cost">2 Inf, 1 Mys</div>
+  </div>
+  <div class="card-subheader">
+    <span class="card-rarity-type">Common • Personnel • Diplomat</span>
+    <span class="card-faction">The Accord</span>
+  </div>
+  <div class="card-textbox">
+    <strong>Ability:</strong> [Flash] When Shal Ix is played, you may trade one resource to an opponent and draw a card.<br>
+    <em>A silver tongue edges every blade of peace.</em>
+  </div>
+  <div class="card-skills-bottom">
+    <div class="skill-value"><div>4</div><div class="skill-label">CHA</div></div>
+    <div class="skill-value"><div>2</div><div class="skill-label">INT</div></div>
+    <div class="d6-value">5</div>
+    <div class="skill-value"><div>1</div><div class="skill-label">STR</div></div>
+    <div class="skill-value"><div>3</div><div class="skill-label">WRD</div></div>
+  </div>
+</div>
