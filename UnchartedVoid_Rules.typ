@@ -6,25 +6,37 @@
 
 _A Sci-Fi Space Exploration and Diplomacy Card Game_
 
-
-
 = Overview
 
-Uncharted Void is a competitive and interactive collectible card game of exploration, diplomacy, and conflict set in the far future. Players command factions of starfaring civilizations vying for power and knowledge in uncharted regions of space. Through resource management, personnel deployment, daring exploration, tactical combat, and negotiation, players race to complete missions, recover ancient Manufacts, and earn enough victory points to triumph.
+Uncharted Void is a competitive and interactive collectible card game of exploration, diplomacy,
+and conflict set in the far future.
+Players command factions of starfaring civilizations vying for power and knowledge in uncharted
+regions of space.
+Through resource management, personnel deployment, daring exploration, tactical combat, and
+negotiation, players race to complete missions, recover ancient Manufacts, and earn enough
+victory points to triumph.
 
 = Components
 
-- *Card Types:*
-  - Personnel: Unique or generic crew with skill ratings and special abilities.
-  - Ships: Vessels with range, combat values, and crew requirements.
-  - Manufacts: Artifacts and equipment, discovered in the void or added to decks.
-  - Installations: Produce resources for playing other cards.
-  - Locations: Planets, outposts, phenomena, and more—each with a potential mission.
-  - Events: One-time or persistent effects
-- *Decks:*
-  - Each player brings a constructed deck for their faction, typically 50+ cards.
-  - Each player creates a Location deck for use during exploration.
-- *Tokens/Markers:*
+== Card Types
+  - *Personnel*: Unique or generic crew with skill ratings and special abilities.
+  - *Ships*: Vessels of varying sizes with range, cargo hold, and crew requirements.
+  - *Manufacts*: Artifacts, equipment, vehicles, discovered in the void or added to decks.
+  - *Locations*: Planets, outposts, phenomena, and more — each with a mission to accomplish.
+  - *Events*: One-time or persistent effects representing the dangers of space.
+
+== Decks
+
+Each player brings:
+
+  - a constructed deck for their faction, typically 50+ cards.
+  - a Location deck for use during exploration.
+  - a Manufacts mini-deck of 10 cards, seeded at the start of the game.
+
+== Tokens/Markers
+
+This additional material will make it easier to track the game state:
+
   - Glass beads (or similar) to track progress and damage.
   - Paper and pencil, or a 20-sided die, to keep the score.
 
@@ -35,43 +47,43 @@ The universe of Uncharted Void teems with diverse factions, each channeling a di
 Each faction’s Home Location includes a unique mission designed to reinforce that faction's ethics and encourage a playstyle that adheres to it.
 
 === The Accord (Diplomacy-Focused)
-*Theme:* Peacekeepers, negotiators, and envoys of the Void. Their fleets prioritize alliances, treaties, and de-escalation.  
-*Strengths:* Excel with Influence (diplomatic) resources; can form alliances, prevent or redirect combat, share resources, and complete missions cooperatively.  
+*Theme:* Peacekeepers, negotiators, and envoys of the Void. Their fleets prioritize alliances, treaties, and de-escalation.
+*Strengths:* Excel with Influence (diplomatic) resources; can form alliances, prevent or redirect combat, share resources, and complete missions cooperatively.
 *Weaknesses:* Struggle in direct combat and rely on tricks or alliances to survive militaristic threats.
 
 === The Vanguard (Exploration-Focused)
-*Theme:* Trailblazers, scientists, and scouts obsessed with discovery. They venture deeper into the Void than any others.  
-*Strengths:* Exceptional Tech (engineering) generation; bonus rewards for revealing or traversing new Locations; can scry or re-order the Space Line; field specialized scout ships.  
+*Theme:* Trailblazers, scientists, and scouts obsessed with discovery. They venture deeper into the Void than any others.
+*Strengths:* Exceptional Tech (engineering) generation; bonus rewards for revealing or traversing new Locations; can scry or re-order the Space Line; field specialized scout ships.
 *Weaknesses:* Poor at combat and sabotage; vulnerable if opponents exploit their spread-out forces.
 
-=== The Dominion (Combat/Expansion-Focused)
-*Theme:* Conquerors and warlords, valuing strength and obedience. They expand aggressively, subjugating planets and rivals in their path.  
-*Strengths:* Generate Tactical (military) resources efficiently; field powerful Ships and elite soldiers; can destroy or seize Installations and suppress resistance.  
+=== The 7th Integration (Combat/Expansion-Focused)
+*Theme:* Conquerors and warlords, valuing strength and obedience. They expand aggressively, subjugating planets and rivals in their path.
+*Strengths:* Generate Tactical (military) resources efficiently; field powerful Ships and elite soldiers; can destroy or seize Installations and suppress resistance.
 *Weaknesses:* High-cost units; less flexible in diplomacy or subterfuge; must pay to maintain conquest.
 
 === The Syndicate (Hybrid/Opportunist/Asymmetrical)
-*Theme:* Smugglers, info-brokers, pirates, and mercenaries. They play all sides and thrive in chaos.  
-*Strengths:* Steal or blackmail resources, artifacts, or even victory points; can sabotage or “buy” Installations; excellent at ambushes and adaptation.  
+*Theme:* Smugglers, info-brokers, pirates, and mercenaries. They play all sides and thrive in chaos.
+*Strengths:* Steal or blackmail resources, artifacts, or even victory points; can sabotage or “buy” Installations; excellent at ambushes and adaptation.
 *Weaknesses:* Unpredictable; lack brute strength or dedicated research.
 
 === The Continuum (Psionic/Mystic)
-*Theme:* Psionic, mystic, or post-biological entities—ancient, enigmatic, perhaps remnants of AI or uplifted minds.  
-*Strengths:* Excel in Mystical resource use; manipulate the Space Line or player hands; disrupt enemy plans via “weird” powers.  
+*Theme:* Psionic, mystic, or post-biological entities—ancient, enigmatic, perhaps remnants of AI or uplifted minds.
+*Strengths:* Excel in Mystical resource use; manipulate the Space Line or player hands; disrupt enemy plans via “weird” powers.
 *Weaknesses:* Often inflexible; may have “backlash” risks or dependence on certain conditions.
 
 === The Guild of Lifters (Trade/Logistics/Space Truckers)
-*Theme:* Space hauliers, trade caravans, and deal-makers—descendants of independent prospectors.  
-*Strengths:* Efficient Cargo handling, bonus resource generation via trade; skilled at moving Cargo/Artifacts; economic sabotage and fast transport.  
+*Theme:* Space hauliers, trade caravans, and deal-makers—descendants of independent prospectors.
+*Strengths:* Efficient Cargo handling, bonus resource generation via trade; skilled at moving Cargo/Artifacts; economic sabotage and fast transport.
 *Weaknesses:* Few combat options; rely on negotiation over might.
 
 = Setup
 
 == Deck Preparation
 
-- Each player selects a faction and constructs:
-  - their main deck (50+ cards, which may include up to two factions and non-aligned cards),
-  - their Location deck (20+ cards),
-  - and their seeded Manufacts (exactly 10 cards).
+Each player selects one or two factions and constructs:
+- their main deck (50+ cards, which may include non-aligned cards),
+- their Location deck (20+ cards), which should include their Home Location, and
+- and their seeded Manufacts (exactly 10 cards).
 
 == Manufacts & Space Line
 
@@ -109,25 +121,25 @@ Each turn consists of the phases below. Active player completes all phases, then
 
 During this phase, do any number of the following actions, in any order:
 
-- *Play Cards:*  
+- *Play Cards:*
   - Play one Installation at a Location you control (initially you control only your Home Location)
   - Pay the resource cost for cards by tapping Installations of the appropriate type(s).
   - Play Ships, Personnel, Manufacts (artifacts/equipment), or Event cards as allowed.
   - (Some Event/Personnel cards may carry the "Flash" keyword, allowing play at any time, even your Opponent's turn.)
-- *Move Ships:*  
+- *Move Ships:*
   - Move each untapped Ship once, up to its range value (measured by adding the distance on the side it's exiting the current Location, to the distance it's entering the destination Location).
   - If the range is insufficient, the Ship remains in hyperspace and will arrive at the beginning of your next turn. Ships in hyperspace cannot be attacked or interact with other cards until they arrive.
   - Ships may bring Personnel and Cargo with them. There’s no limit to how many Personnel a Ship can carry. However, a Ship can only carry Cargo with total Size less than or equal to its Hold rating.
   - Land a Ship on a Planet, if the Ship has the *Lander* ability, and the landing distance indicated on the planet is within the available range
-- *Attempt/Progress Missions:*  
+- *Attempt/Progress Missions:*
   - If a Team (composed of one or more Personnel and their Equipment) is at a Location, attempt to progress the mission there using a skill check (see "Skill Checks & Missions").
-- *Engage in Combat:*  
+- *Engage in Combat:*
   - If opposing Ships or Personnel are present at a Location, you may initiate combat (see Personnel Combat and Ship Combat below).
-- *Interfere/Assist Missions:*  
+- *Interfere/Assist Missions:*
   - If an Opponent is attempting a mission where you have a presence, you may hinder (e.g. by attacking), assist (e.g. by providing Equipment), or negotiate per rules or shared agreement.
-- *Activate Card Abilities:*  
+- *Activate Card Abilities:*
   - Cards may have abilities that require tapping or other costs; resolve as needed.
-- *Negotiate/Diplomacy:*  
+- *Negotiate/Diplomacy:*
   - Strike deals, bargain, or promise as permitted by the table and social contract.
 
 == Discard Phase
@@ -147,18 +159,18 @@ There are four resource types, corresponding to Installations:
 + *Tactical*: military and strategic capability
 + *Mystical*: psionics, mysticism, or unexplained forces
 
-*Acquiring Resources:*  
+*Acquiring Resources:*
 - Installations tap to provide 1 resource of their type; resources do not carry over between turns.
 
-*Resource Use:*  
+*Resource Use:*
 - To play a card, tap Installations for the required combination of resource types equal to that card’s cost.
 
 
 
 = Card Types & Anatomy
 
-All cards have a *Name*, a *Rarity* level, an *Arity* level (which indicates how many copies of that card you can have in your deck), 
-a *Type*, one or more *Subtypes*, and a *Text Box* with special abilities (triggered, activated, or passive) and other special rules 
+All cards have a *Name*, a *Rarity* level, an *Arity* level (which indicates how many copies of that card you can have in your deck),
+a *Type*, one or more *Subtypes*, and a *Text Box* with special abilities (triggered, activated, or passive) and other special rules
 for that card.
 
 Additionally, all cards that go in the main deck have:
@@ -174,12 +186,12 @@ Below we see details of each card type.
 
 *Example:*
 
-  Name: Captain Arten Tallis  
-  Faction: Federation  
-  Rarity (Arity) Type - Subtypes: Legendary (1) Personnel - Human VIP  
-  Cost: 2 influence, 1 tactical, 1 mystical  
-  Skills: CHA 5, INT 4, STR 3, WRD 1  
-  Text: When Captain Tallis is revealed during a skill check, draw a card.  
+  Name: Captain Arten Tallis
+  Faction: Federation
+  Rarity (Arity) Type - Subtypes: Legendary (1) Personnel - Human VIP
+  Cost: 2 influence, 1 tactical, 1 mystical
+  Skills: CHA 5, INT 4, STR 3, WRD 1
+  Text: When Captain Tallis is revealed during a skill check, draw a card.
   D6 Value: 2
 
 == Ships
@@ -200,7 +212,7 @@ Below we see details of each card type.
 
 == Installations
 
-Installations are the only cards in your main deck that don't have a cost. That is because by default, you may play only one Installation per turn. 
+Installations are the only cards in your main deck that don't have a cost. That is because by default, you may play only one Installation per turn.
 
 == Locations
 
@@ -212,11 +224,11 @@ Locations are not in your main deck, therefore don't have a cost. They can only 
 
 *Example:*
 
-  Name: Mira's Rift  
-  Rarity (Arity) Type - Subtypes: Uncommon (1) Location - Nebula  
-  Text box: Win three 8-INT checks. Claim both Manufacts from this Location. //The physics that makes this region so unreachable is worth investigating -- Captain Arten Tallis//  
-  Victory Points: 3  
-  Distance: 6/6  
+  Name: Mira's Rift
+  Rarity (Arity) Type - Subtypes: Uncommon (1) Location - Nebula
+  Text box: Win three 8-INT checks. Claim both Manufacts from this Location. //The physics that makes this region so unreachable is worth investigating -- Captain Arten Tallis//
+  Victory Points: 3
+  Distance: 6/6
   Landing Distance: N/A
 
 
@@ -246,7 +258,7 @@ That is fine; you just don't know if the Ship will get there this turn or the ne
 
 == Crewing Ships
 
-Ships have a Crew Requirement specifying how many Personnel need to be on board for the ship to be able to move, attack, and defend. Some Ships have a Crew Requirement of 0, 
+Ships have a Crew Requirement specifying how many Personnel need to be on board for the ship to be able to move, attack, and defend. Some Ships have a Crew Requirement of 0,
 meaning that they can move, attack, and defend, even without any Personnel on board (this represents either highly automated Ships, or capital Ships with an implicit crew complement
 of hundreds of people). An empty Ship with a Crew Requirement of 0 is considered crewed for all intent and purposes (including attempting to complete a Space mission!); however,
 whenever a rule calls for a Skill check, that Skill is automatically 0.
@@ -331,5 +343,3 @@ Control of an Installation may grant resource access or victory points. Rules fo
 - *Slot*: A position on the Space Line. May be uncharted (empty) or contain a Location card.
 - *Space Line*: The horizontal line of Locations (with Manufacts) forming the game board.
 - *Team*: A group of Personnel and their Equipment acting together for Missions or Combat.
-
-
