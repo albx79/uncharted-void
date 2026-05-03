@@ -232,10 +232,10 @@ TODO
 
 TODO
 
-*Example:*
+=== Example Personnel
 
 / Name: Captain Arten Tallis
-/ Faction: Federation
+/ Faction: The Accord
 / Rarity (Arity) Type -- Subtypes: Legendary (1) Personnel -- Human VIP
 / Cost: 2 influence, 1 tactical, 1 mystical
 / Skills: CHA 5, INT 4, STR 3, WRD 1
@@ -261,11 +261,21 @@ TODO
 
 TODO
 
-=== Cargo Hold (HLD)
+=== Size (SIZ)
 
 TODO
 
+=== Example Ship
 
+/ Name: The Starfire
+/ Faction: The 7th Integration
+/ Rarity (Arity) Type -- Subtypes: Rare (2) Ship -- Destroyer
+/ Cost: 3 tactical, 1 influence
+/ Crew 2
+/ Ratings: HLD 2, WPN 4, RNG 3, SIZ 3
+/ Text: When The Starfire attacks, it may deal 1 additional damage to the target if it wins by 3 or more.
+/ Damage bar: 3 boxes
+/ D6 Value: 4
 
 == Manufacts (Artifacts/Equipment/Cargo/...)
 
@@ -276,136 +286,78 @@ TODO
 
 - *Cost*
 
-== Installations
-
-Installations are the only cards in your main deck that don't have a cost. That is because by default, you may play only one Installation per turn.
-
 == Locations
 
 Locations are not in your main deck, therefore don't have a cost. They can only be played by moving to an uncharted Location with a Ship.
 
 - *Victory Points* awarded by completing this mission
 - *Distance Left/Right*
-- *Landing/Takeoff Distance* (only for Planets and Habitats)
+- *Landing/Takeoff Distance* (only for Planets, Habitats, and other landable Locations)
 
-*Example:*
+=== Example Location
 
-  Name: Mira's Rift
-  Rarity (Arity) Type - Subtypes: Uncommon (1) Location - Nebula
-  Text box: Win three 8-INT checks. Claim both Manufacts from this Location. //The physics that makes this region so unreachable is worth investigating -- Captain Arten Tallis//
-  Victory Points: 3
-  Distance: 6/6
-  Landing Distance: N/A
-
-
+/  Name: Mira's Rift
+/  Rarity (Arity) Type - Subtypes: Uncommon (1) Location - Nebula
+/  Text box: Win three 8-INT checks. Claim both Manufacts from this Location. _The physics that makes this region so unreachable is worth investigating -- Captain Arten Tallis_
+/  Victory Points: 3
+/  Distance: 6/6
+/  Landing Distance: N/A
 
 = Action Details
 
-== Playing Cards
+== Rolling a D6
 
-- Tap Installations to pay for cards by matching resource cost.
-- Cards go to play area or, for “Event” cards, to the Junkyard after resolving (unless they say otherwise).
+A D6 is a six-sided die.
+The game rules will often can for rolling a D6, but you're not expected to bring dice at the
+table and actually roll them.
+Instead, you will reveal the top card of your main deck, and check it's D6 value.
+That value is the outcome of the roll.
 
-== Movement
+== Making a Skill Check
 
-Ships move between Slots on the Space Line. When a Ship enters a Slot without a Location card:
-- Each player generates a D6 value
-- The player with the highest value (or the Ship's controller in case of a tie) draws a Location card and places it there.
-
-Ships may move to any space line Location up to their Range. When they move to an unexplored Slot, the total distance is unknown until the Location is placed at that Slot.
-That is fine; you just don't know if the Ship will get there this turn or the next.
-- Ships can carry Personnel (must meet Crew requirement for Ship to operate).
-- Some Ships can land on Planets; others allow Personnel to disembark onto the Planet without landing. Others can do neither.
-- Before attacking or attempting a mission, Personnel may take one move action, which allows them to move *at the same Location*:
-  - between two Ships
-  - between the Planet and an Installation
-  - between two Installations
-- Embarquing or disembarquing a landed Ship does not count as moving, but landing or taking off counts as Ship movement.
+When the rules call for a skill check,
++ choose a team member whose skill will be used
++ roll a D6
++ add any relevant modifier (for example, for a STR check from a Ship, add the Ship's WPN value)
++ check the outcome
+  + vs. a fixed value: you win by matching or surpassing that value
+  + _opposed_: the opponent does the same, and the player with the highest total wins\
+  (in a tie, it usually counts as a loss for both)
 
 == Crewing Ships
 
-Ships have a Crew Requirement specifying how many Personnel need to be on board for the ship to be able to move, attack, and defend. Some Ships have a Crew Requirement of 0,
-meaning that they can move, attack, and defend, even without any Personnel on board (this represents either highly automated Ships, or capital Ships with an implicit crew complement
-of hundreds of people). An empty Ship with a Crew Requirement of 0 is considered crewed for all intent and purposes (including attempting to complete a Space mission!); however,
+Ships have a Crew Requirement specifying how many Personnel need to be on board for the ship to be able to move, attack, and defend.
+Some Ships have a Crew Requirement of 0,
+meaning that they can move, attack, and defend, even without any Personnel on board
+(this represents either highly automated Ships, or capital Ships with an implicit crew complement
+of hundreds of people).
+An empty Ship with a Crew Requirement of 0 is considered crewed for all intent and purposes
+(including attempting to complete a Space mission!); however,
 whenever a rule calls for a Skill check, that Skill is automatically 0.
-
-== Skill Checks & Missions
-
-In order to attempt a mission, your Personnel must be untapped and present at that Location. For a Planet it means having Landed on it, while for a space Location it needs to be on a Ship at that Location.
-
-- *Skill Check:*
-  - Choose one Personnel as the lead.
-  - Reveal the top card of your deck to determine its D6 value (printed on every card).
-  - Total: Skill value + D6 value + any modifiers.
-  - If ≥ mission difficulty, place a progress marker (most missions require 2-5 successes across turns, with a difficulty set by the mission itself).
-- Opponents may interfere or assist, depending on circumstances and abilities.
-- Upon mission completion, you gain victory points and as an extra goodie, you take control of all Manufacts at the Location (unless stated otherwise by the card), which provide valuable in-game effects.
-
-== Combat
-
-- Ships may attack other Ships at the same Location
-- Personnel may attack other Personnel in the same Place
-- Note that Personnel on one Ship is *not* in the same Place as Personnel in another Ship, or Landed, even at the same Location!
-
-Personnel Combat: Do an opposed STR check between the attacking team and the defending team (take the highest STR value in the team, add any relevant modifiers + D6 value). In the losing team, kill one random Personnel. On a tie, both teams lose.
-
-Ship Combat: Do an opposed STR check using the highest STR in each Ship's crew + the Ship's WPN rating + D6 value. The losing Ship takes 1 damage. On a tie, both Ships take 1 damage. If a Ship cannot take any more damage, it is *disabled*, and it will explode at the end of your next turn killing anyone inside and destroying all its Cargo. The controller of the losing crew may offer the Opponent to take them prisoners to spare their life (they are no longer under your control -- see the Glossary entry below). You can always arrange an exchange later.
-
-Ships that aren't meeting their crew requirements may not defend and take automatic damage. Ships with no crew requirements may defend, but if no one is on board, the base STR is 0.
-
-=== Combat on Planets with Multiple Installations
-
-On planets, each Installation represents a separate Place. Personnel are considered to be at the specific Place (Installation) they occupy on the planet.
-
-*Movement between Installations:*
-
-To attack Personnel at a different Installation, move your Team from one Installation to another as a single action. This counts as both a movement and an attack, and the defending player may respond with abilities if available.
-
-*Resolving Combat:*
-
-Declare which Installation (Place) your Team is moving to and which Team you are attacking. Resolve Personnel Combat as normal (STR check + modifiers + D6 value). Only Personnel at the same Installation (“Place”) can participate in the combat. After combat, if the attacking Team remains, they may attempt to seize control of the Installation according to special rules or card effects.
-
-*Controlling Installations:*
-
-Control of an Installation may grant resource access or victory points. Rules for regaining control should be specified in the Installation or Location cards, or in section 5 (Resources) or 8 (Victory).
-
-== Diplomacy & Negotiation
-
-- Negotiation is encouraged and part of the fun.
-- Players may make deals, alliances, and promises (written or unwritten); they cannot exchange victory points but may barter cards, Manufacts, or assistance.
-- Certain cards may track or trigger based on broken promises (e.g., infamy counters on VIPs).
-- Enforcement is largely social in non-competitive play.
-- For competitive play, it is recommended that players write down their deals on a shared sheet, so that a Judge may better be able to adjudicate. (This matter only if there are cards in play that trigger off deals/promises.)
-
-
 
 = Victory Conditions
 
-- *Win:* The first player to acquire 20 victory points (mainly via missions, but possibly via major combats or other cards) wins the game.
-- Optionally, sudden death or alternate victory may occur based on expansion or special rules.
+The first player to acquire 20 victory points (mainly via missions, but possibly via major combats or other cards) wins the game.
 
-
+If there is a time limit and the time is up, the player with the highest score wins.
 
 = Glossary of Terms
 
-- *Control*: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
-- *Crew Requirement*: Minimum number of Personnel needed to operate a Ship.
-- *D6 Value*: Every card has a printed number from 1 to 6, used instead of dice for randomization in skill checks and combat.
-- *Draw Phase*: The part of your turn in which you may draw cards to reach your hand limit. The Draw Phase always occurs, even if you do not draw any cards due to already having a full hand or other effects.
-- *Flash*: Keyword indicating a card can be played at any time its requirements are met (including during an Opponent’s turn).
-- *Hold*: Attribute of Ships determining Cargo capacity.
-- *Home Location*: The Location that is the starting base for your faction.
-- *Hyperspace*: The network of hyperdimensional nodes and tunnels was built aeons ago by a lost civilization with unimaginable technology. Nowadays this network is used by all starfaring races and most Ships can enter it. Ships in Hyperspace cannot interact with Ships or Locations in realspace, nor be attacked or attack.
-- *Installation*: A structure that produces resources if controlled. On planets, each is a distinct Place.
-- *Junkyard*: Location for cards after use. What most card games would call the discard pile.
-- *Lander*: This Ship can Land on Planets (or Habitats, or any Location with a Landing distance), provided it has sufficient Range.
-- *Landers*: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the Planet. They are assumed to have the required Range and Hold.
-- *Location*: A card type representing a planet, nebula, or other point of interest. Placed at a Slot when explored.
-- *Manufact*: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
-- *Place*: A distinct area within a Location. On a planet, each Installation is considered a separate Place. On a Ship, the Ship itself is a Place. Personnel and Combat take place within a single Place unless otherwise stated.
-- *Prisoner*: A Team taken Prisoner is no longer controlled by you, but by your Opponent, and their abilities are disabled. However, the Opponent is only able to move the Team as a whole as if it were a Cargo item, and cannot split it except as part of a deal or special effect.
-- *Size*: A Ship's Size determines how much Hold it occupies when it is carried as Cargo by another Ship (when carried, it has to be empty and uncrewed).
-- *Skill Check*: A test for progressing Missions. Resolve by adding a Personnel’s skill value, modifiers, and a D6 value.
-- *Slot*: A position on the Space Line. May be uncharted (empty) or contain a Location card.
-- *Space Line*: The horizontal line of Locations (with Manufacts) forming the game board.
-- *Team*: A group of Personnel and their Equipment acting together for Missions or Combat.
+/ Control: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
+/ Crew Requirement: Minimum number of Personnel needed to operate a Ship.
+/ D6 Value: Every card has a printed number from 1 to 6, used instead of dice for randomization in skill checks and combat.
+/ Draw Phase: The part of your turn in which you may draw cards to reach your hand limit. The Draw Phase always occurs, even if you do not draw any cards due to already having a full hand or other effects.
+/ Flash: Keyword indicating a card can be played at any time its requirements are met (including during an Opponent’s turn).
+/ Hold: Attribute of Ships determining Cargo capacity.
+/ Home Location: The Location that is the starting base for your faction.
+/ Hyperspace: The network of hyperdimensional nodes and tunnels was built aeons ago by a lost civilization with unimaginable technology. Nowadays this network is used by all starfaring races and most Ships can enter it. Ships in Hyperspace cannot interact with Ships or Locations in realspace, nor be attacked or attack.
+/ Junkyard: Location for cards after use. What most card games would call the discard pile.
+/ Lander: This Ship can Land on Planets (or Habitats, or any Location with a Landing distance), provided it has sufficient Range.
+/ Landers: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the Planet. They are assumed to have the required Range and Hold.
+/ Location: A card type representing a planet, nebula, or other point of interest. Placed at a Slot when explored.
+/ Manufact: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
+/ Prisoner: A Team taken Prisoner is no longer controlled by you, but by your Opponent, and their abilities are disabled. However, the Opponent is only able to move the Team as a whole as if it were a Cargo item, and cannot split it except as part of a deal or special effect.
+/ Size: A Ship's Size determines how much Hold it occupies when it is carried as Cargo by another Ship (when carried, it has to be empty and uncrewed).
+/ Slot: A position on the Space Line. May be uncharted (empty) or contain a Location card.
+/ Space Line: The horizontal line of Locations (with Manufacts) forming the game board.
+/ Team: A group of Personnel and their Equipment acting together for Missions or Combat.
