@@ -134,30 +134,53 @@ Put a number of Personnel cards less than or equal to the current Escalation Lev
 
 - To *requisition* a card, you have to pay its resource cost:
   - for *crewed* cards, by transferring Personnel from your resource zone to the card as crew.
-    (at the moment only Ships can be *crewed*).
+    (at the moment only Ships can be *crewed*, as indicated by the "*Crew _N_*" keyword in the card's text).
   - for non-crewed cards, by recycling Personnel from your resource zone (to the bottom of your main deck -- see Dictionary below).
   The cost must be paid *excacly* as written on the cards; you cannot overpay for requisition!
 
-- To *move* a Ship, tap it, then:
-  - choose a Location within its range, and move it there (if the destination Location has a *landing distance* and the Ship can *land*, you can choose to land provided the move is still within range).
-  - choose a Location outside its range, and put the Ship in hyperspace (place it near the destination Location but slightly offset towards the starting Location). It will arrive at the beginning of your next turn, and you can choose to land it if possible.
+- To *move* a Ship, it must have enough Range to leave its starting Location.
+  If it does, tap it, then:
+  - choose a Location within its range, and move it there (if the destination Location
+    has a *landing distance* and the Ship can *land*, you can choose to land provided the move is still within range).
+  - choose a Location outside its range, and put the Ship in hyperspace (place it near the destination Location
+    but slightly offset towards the starting Location).
+    It will arrive at the beginning of your next turn, and you can choose to land it if possible.
+  - choose an uncharted slot, then draw a Location from your deck and place it there.
+    Then, apply one of the two rules above for moving to a Location.
+  Ships may bring Personnel and Cargo with them. There’s no limit to how many Personnel a Ship can carry.
+  However, a Ship can only carry Cargo with total Size less than or equal to its Hold rating.
 
-TODO from here.
+- Personnel can *move* between two Ships at the same Location, or between Ship and the ground if the Ship has the
+  *landers _N_ * ability and the Location has landing distance $<=$ N.
+  If all conditions are met, tap them and effect the move. All Personnel at the same place (on one Ship,
+  or landed at a Location) forms a *team*. A team on a Ship is called the Ship's *crew*, while a team landed at a
+  Location is called an *away team*.
 
-  - Move each untapped Ship once, up to its range value (measured by adding the distance on the side it's exiting the current Location, to the distance it's entering the destination Location).
-  - If the range is insufficient, the Ship remains in hyperspace and will arrive at the beginning of your next turn. Ships in hyperspace cannot be attacked or interact with other cards until they arrive.
-  - Ships may bring Personnel and Cargo with them. There’s no limit to how many Personnel a Ship can carry. However, a Ship can only carry Cargo with total Size less than or equal to its Hold rating.
-  - Land a Ship on a Planet, if the Ship has the *Lander* ability, and the landing distance indicated on the planet is within the available range
-- *Attempt/Progress Missions:*
-  - If a Team (composed of one or more Personnel and their Equipment) is at a Location, attempt to progress the mission there using a skill check (see "Skill Checks & Missions").
-- *Engage in Combat:*
-  - If opposing Ships or Personnel are present at a Location, you may initiate combat (see Personnel Combat and Ship Combat below).
-- *Interfere/Assist Missions:*
-  - If an Opponent is attempting a mission where you have a presence, you may hinder (e.g. by attacking), assist (e.g. by providing Equipment), or negotiate per rules or shared agreement.
-- *Activate Card Abilities:*
-  - Cards may have abilities that require tapping or other costs; resolve as needed.
-- *Negotiate/Diplomacy:*
-  - Strike deals, bargain, or promise as permitted by the table and social contract.
+- To *attempt* a mission at a Location, you need to have an away team there, or, if the Location doesn't have
+  a landing distance, you need a crewed Ship there (if you have more than one crewed Ship at the same Location,
+  declare which one is attempting the mission).
+  - Perform the checks or the tasks as instructed by the mission, and place progress counters as needed.
+  - It may take several turns, usually 3, to complete a mission.
+  - The opponent may also attempt to complete the same mission at the same time.
+    Unless otherwise indicated, they get their own progress tracker, and whoever completes the mission first wins.
+  - When you have performed all tasks assigned by the mission, add the mission's Victory Points to your score, and
+    reveal the hidden Manufacts, that you can immediately take control of.
+
+- A crewed Ship you control may *attack* an opponent's Ship at the same Location.
+  Tap your ship, then
+  - Perform a Strength+Weapons check against the other Ship's.
+  - The Ship that loses the check takes one *damage* (add one damage counter to the Ship's damage bar).
+    If the check ends in a tie, both Ships take one damage.
+  - If the damage bar is full, the Ship is disabled (it cannot perform any action listed in this section,
+    and all its abilities are unavailable).
+  - If a disabled Ship takes damage, it is destroyed (scrap it, and scrap all cards that were aboard it).
+
+- An away team you control may *attack* another away team at the same Location.
+  Tap your away team, then
+  - Perform a Strength check against the other away team.
+  - The controller of the losing team choses one Personnel to scrap. On a tie, both teams lose one Personnel.
+
+TODO
 
 == Discard Phase
 
