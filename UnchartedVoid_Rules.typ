@@ -1,6 +1,7 @@
 #set page(paper: "a5")
 #set heading(numbering: "1.")
 #set document(title: "Uncharted Void")
+#outline()
 
 = Uncharted Void
 
@@ -158,7 +159,7 @@ Put a number of Personnel cards less than or equal to the current Escalation Lev
   However, a Ship can only carry Cargo with total Size less than or equal to its Hold rating.
 
 - Personnel can *move* between two Ships at the same Location, or between Ship and the ground if the Ship has the
-  *landers _N_ * ability and the Location has landing distance $<=$ N.
+  *landers _N_ * ability and the Location has landing distance $<= N$.
   If all conditions are met, tap them and effect the move. All Personnel at the same place (on one Ship,
   or landed at a Location) forms a *team*. A team on a Ship is called the Ship's *crew*, while a team landed at a
   Location is called an *away team*.
@@ -204,9 +205,13 @@ All cards have a *Name*, a *Rarity* level, an *Arity* level (which indicates how
 a *Type*, one or more *Subtypes*, and a *Text Box* with special abilities (triggered, activated, or passive) and other special rules
 for that card.
 
-Additionally, all cards that go in the main deck have:
+All cards that go in the main deck also have:
 - *Faction/Generic*, that affects deckbuilding
 - *D6 Value* for randomized checks
+
+If an effect causes a card to change its type, then all values required by the new type but not printed on the card,
+and not specified by the effect, are assumed to be zero.
+Similarly, a card may have printed values that belong to a different type, if that card is expected to change its type during the game.
 
 Below we see details of each card type.
 
@@ -246,6 +251,7 @@ TODO
 
 - *Cost* (resource requirement)
 - *Crew _N_* (minimum number of Personnel on board for the Ship to function)
+- *Level _N_* (minimum Escalation Level required for this Ship to be requisitioned)
 - *Ratings*: numeric values for cargo hold (HLD), weapons (WPN), range (RNG), and size (SIZ)
 - *Damage bar* (one box per SIZ rating, put tokens to mark damage)
 
@@ -271,7 +277,8 @@ TODO
 / Faction: The 7th Integration
 / Rarity (Arity) Type -- Subtypes: Rare (2) Ship -- Destroyer
 / Cost: 3 tactical, 1 influence
-/ Crew 2
+/ Level: 4
+/ Crew: 2
 / Ratings: HLD 2, WPN 4, RNG 3, SIZ 3
 / Text: When The Starfire attacks, it may deal 1 additional damage to the target if it wins by 3 or more.
 / Damage bar: 3 boxes
@@ -331,6 +338,7 @@ Some Ships have a Crew Requirement of 0,
 meaning that they can move, attack, and defend, even without any Personnel on board
 (this represents either highly automated Ships, or capital Ships with an implicit crew complement
 of hundreds of people).
+
 An empty Ship with a Crew Requirement of 0 is considered crewed for all intent and purposes
 (including attempting to complete a Space mission!); however,
 whenever a rule calls for a Skill check, that Skill is automatically 0.
@@ -341,12 +349,19 @@ The first player to acquire 20 victory points (mainly via missions, but possibly
 
 If there is a time limit and the time is up, the player with the highest score wins.
 
+= Example
+
+An example of how the first 2 turns may play in a game.
+
+TODO write it.
+
 = Glossary of Terms
 
 / Control: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
 / Crew Requirement: Minimum number of Personnel needed to operate a Ship.
 / D6 Value: Every card has a printed number from 1 to 6, used instead of dice for randomization in skill checks and combat.
 / Draw Phase: The part of your turn in which you may draw cards to reach your hand limit. The Draw Phase always occurs, even if you do not draw any cards due to already having a full hand or other effects.
+/ Escalation Level: The number of explored Locations in the space line.
 / Flash: Keyword indicating a card can be played at any time its requirements are met (including during an Opponent’s turn).
 / Hold: Attribute of Ships determining Cargo capacity.
 / Home Location: The Location that is the starting base for your faction.
@@ -357,6 +372,7 @@ If there is a time limit and the time is up, the player with the highest score w
 / Location: A card type representing a planet, nebula, or other point of interest. Placed at a Slot when explored.
 / Manufact: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
 / Prisoner: A Team taken Prisoner is no longer controlled by you, but by your Opponent, and their abilities are disabled. However, the Opponent is only able to move the Team as a whole as if it were a Cargo item, and cannot split it except as part of a deal or special effect.
+/ Recycle: Move a card (from anywhere) to the bottom of your main deck.
 / Size: A Ship's Size determines how much Hold it occupies when it is carried as Cargo by another Ship (when carried, it has to be empty and uncrewed).
 / Slot: A position on the Space Line. May be uncharted (empty) or contain a Location card.
 / Space Line: The horizontal line of Locations (with Manufacts) forming the game board.
