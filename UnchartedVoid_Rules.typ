@@ -128,6 +128,13 @@ During this phase, do any number of the following actions, in this order:
 
 === Play resources
 
+There are four resource types, provided by Personnel, and displayed as coloured triangular icons:
+
++ *⚜︎ Influence*: diplomatic, political, or social resources
++ *⚙︎ Tech*: scientific and engineering prowess
++ *⚔︎ Tactical*: military and strategic capability
++ *✶ Mystical*: psionics, mysticism, or unexplained forces
+
 Put a number of Personnel cards less than or equal to the current Escalation Level from your hand into your resource zone.
 
 === Requisition, Move, Attempt Missions, Attack
@@ -180,32 +187,16 @@ Put a number of Personnel cards less than or equal to the current Escalation Lev
   - Perform a Strength check against the other away team.
   - The controller of the losing team choses one Personnel to scrap. On a tie, both teams lose one Personnel.
 
-TODO
-
 == Discard Phase
 
 - If you have more than 7 cards in hand, discard down to 7.
+- Recycle as many (or as few) as you want of the remaining cards in your hand.
+
+At the end of this phase, you will be left with between 0 and 7 cards.
 
 == End of Turn
 
-- Pass play to your Opponent.
-
-= Resources
-
-There are four resource types, corresponding to Installations:
-
-+ *Influence*: diplomatic, political, or social resources
-+ *Tech*: scientific and engineering prowess
-+ *Tactical*: military and strategic capability
-+ *Mystical*: psionics, mysticism, or unexplained forces
-
-*Acquiring Resources:*
-- Installations tap to provide 1 resource of their type; resources do not carry over between turns.
-
-*Resource Use:*
-- To play a card, tap Installations for the required combination of resource types equal to that card’s cost.
-
-
+The turn ends, which may trigger some card effects. Then, pass play to your opponent.
 
 = Card Types & Anatomy
 
@@ -214,32 +205,67 @@ a *Type*, one or more *Subtypes*, and a *Text Box* with special abilities (trigg
 for that card.
 
 Additionally, all cards that go in the main deck have:
-- *Faction/Generic* (may affect deckbuilding or card abilities)
-- *D6 Value:* (1-6, for randomized checks)
+- *Faction/Generic*, that affects deckbuilding
+- *D6 Value* for randomized checks
 
 Below we see details of each card type.
 
 == Personnel
 
 - *Cost* (resource requirement)
-- *Skills:* (Numeric ratings for CHA, INT, STR, WRD)
+- #strong[Resource]s provided when this Personnel is in the resource zone
+- *Skills*: Numeric ratings for charisma (CHA), intelligence (INT), strength (STR), and weird (WRD)
+
+=== Charisma (CHA)
+
+TODO
+
+=== Intelligence (INT)
+
+TODO
+
+=== Strength (STR)
+
+TODO
+
+=== Weird (WRD)
+
+TODO
 
 *Example:*
 
-  Name: Captain Arten Tallis
-  Faction: Federation
-  Rarity (Arity) Type - Subtypes: Legendary (1) Personnel - Human VIP
-  Cost: 2 influence, 1 tactical, 1 mystical
-  Skills: CHA 5, INT 4, STR 3, WRD 1
-  Text: When Captain Tallis is revealed during a skill check, draw a card.
-  D6 Value: 2
+/ Name: Captain Arten Tallis
+/ Faction: Federation
+/ Rarity (Arity) Type -- Subtypes: Legendary (1) Personnel -- Human VIP
+/ Cost: 2 influence, 1 tactical, 1 mystical
+/ Skills: CHA 5, INT 4, STR 3, WRD 1
+/ Text: When Captain Tallis is revealed during a skill check, draw a card.
+/ D6 Value: 2
 
 == Ships
 
 - *Cost* (resource requirement)
-- *Crew* (min \# of Personnel)
-- *Ratings* (numeric values for HLD, WPN, RNG, SIZ)
+- *Crew _N_* (minimum number of Personnel on board for the Ship to function)
+- *Ratings*: numeric values for cargo hold (HLD), weapons (WPN), range (RNG), and size (SIZ)
 - *Damage bar* (one box per SIZ rating, put tokens to mark damage)
+
+=== Cargo Hold (HLD)
+
+TODO
+
+=== Weapons (WPN)
+
+TODO
+
+=== Range (RNG)
+
+TODO
+
+=== Cargo Hold (HLD)
+
+TODO
+
+
 
 == Manufacts (Artifacts/Equipment/Cargo/...)
 
