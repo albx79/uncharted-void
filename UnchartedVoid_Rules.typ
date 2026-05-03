@@ -85,48 +85,65 @@ Each player selects one or two factions and constructs:
 - their Location deck (20+ cards), which should include their Home Location, and
 - and their seeded Manufacts (exactly 10 cards).
 
-== Manufacts & Space Line
+Each player shuffles their main deck, and rolls a D6 (see below for D6 rules) to determine who goes first.
+Then, each player removes their Home Location from their Location deck, and shuffles it separately.
 
-- Place your seeded Manufacts face down to create a horizontal line. This is the Space Line, and each Manufact is placed at an uncharted Location.
-- Your Opponent does the same, at the same time. (The order in which Manufacts are seeded at a Location doesn't matter)
-- At the end of this phase, there will be a Space Line of 10 Locations, each with two Manufacts.
+== Space Line Setup
 
-== Location Decks
+Place your seeded Manufacts face down to create a horizontal line.
+This is the Space Line, and each Manufact is placed at an uncharted Location.
+Your Opponent does the same, at the same time (the order in which Manufacts are seeded at a Location
+doesn't matter).
 
-- Each player has a personal Location deck, shuffled and ready for use.
+At the end of this phase, there will be a Space Line of 10 Locations, each with two Manufacts.
 
-== Home Locations
+The player who goes first places their Home Location at any slot of the Space Line, face-up.
+Then the other player does the same.
 
-- Remove your Home Location from your Location deck, then shuffle it.
-- Each player places their Home Location onto any slot of the space line, face-up (use any system to determine who goes first).
+== Game Start
 
-== Starting Draw
+The player who goes *second* takes the first turn, starting with the Draw Phase.
 
-- Each player draws an opening hand of 7 cards from their deck.
+The game starts at an Escalation Level of 2, which is the number of explored Locations on the Space Line.
+The Escalation Level determines how many cards you can play as resources, and which Ship can be requisitioned.
 
 = Turn Structure
 
-Each turn consists of the phases below. Active player completes all phases, then play passes to Opponent.
+Each turn consists of the phases below.
+The active player completes all phases, then play passes to opponent.
 
 == Draw Phase
 
-- Draw cards from your deck until you have 7 cards in hand.
-- (If you already have 7 or more cards, you don't draw any).
+Draw cards from your deck until you have 7 cards in hand
+(if you already have 7 or more cards, you don't draw any).
 
 == Untap Phase
 
-- Untap (ready) all your tapped cards (Ships, Installations, Personnel, etc.), making them available for use again.
+Untap (ready) all your tapped cards (Ships, Personnel, Manufacts, etc.),
+making them available for use again.
 
 == Main Phase
 
-During this phase, do any number of the following actions, in any order:
+During this phase, do any number of the following actions, in this order:
 
-- *Play Cards:*
-  - Play one Installation at a Location you control (initially you control only your Home Location)
-  - Pay the resource cost for cards by tapping Installations of the appropriate type(s).
-  - Play Ships, Personnel, Manufacts (artifacts/equipment), or Event cards as allowed.
-  - (Some Event/Personnel cards may carry the "Flash" keyword, allowing play at any time, even your Opponent's turn.)
-- *Move Ships:*
+=== Play resources
+
+Put a number of Personnel cards less than or equal to the current Escalation Level from your hand into your resource zone.
+
+=== Requisition, Move, Attempt Missions, Attack
+
+- To *requisition* a card, you have to pay its resource cost:
+  - for *crewed* cards, by transferring Personnel from your resource zone to the card as crew.
+    (at the moment only Ships can be *crewed*).
+  - for non-crewed cards, by recycling Personnel from your resource zone (to the bottom of your main deck -- see Dictionary below).
+  The cost must be paid *excacly* as written on the cards; you cannot overpay for requisition!
+
+- To *move* a Ship, tap it, then:
+  - choose a Location within its range, and move it there (if the destination Location has a *landing distance* and the Ship can *land*, you can choose to land provided the move is still within range).
+  - choose a Location outside its range, and put the Ship in hyperspace (place it near the destination Location but slightly offset towards the starting Location). It will arrive at the beginning of your next turn, and you can choose to land it if possible.
+
+TODO from here.
+
   - Move each untapped Ship once, up to its range value (measured by adding the distance on the side it's exiting the current Location, to the distance it's entering the destination Location).
   - If the range is insufficient, the Ship remains in hyperspace and will arrive at the beginning of your next turn. Ships in hyperspace cannot be attacked or interact with other cards until they arrive.
   - Ships may bring Personnel and Cargo with them. There’s no limit to how many Personnel a Ship can carry. However, a Ship can only carry Cargo with total Size less than or equal to its Hold rating.
