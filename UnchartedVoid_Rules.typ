@@ -1,8 +1,8 @@
 #set page(paper: "a5", numbering: "1", margin: (1.5cm))
 #set heading(numbering: "I-1-A〉")
-#show heading: set text(font: "Orbitron")
-#set par(justify: true)
+#show heading: set text(font: "Exo 2")
 #set text(10pt, font: "Exo 2")
+#set par(justify: true)
 #set document(title: "Uncharted Void")
 
 #title()
@@ -166,7 +166,7 @@ TODO
 / Damage bar: 3 boxes (WPN -2, RNG -2, disabled)
 / D6 Value: 4
 
-== Manufacts 
+== Manufacts
 
 Manufacts represent artifacts, equipment, cargo, and other manufactured items that can be carried around and help a team achieve its objectives.
 
@@ -181,7 +181,7 @@ Manufacts represent artifacts, equipment, cargo, and other manufactured items th
 
 Locations represent planets, space habitats, orbitals, nebulae, and other places worth exploring and investigating in the Uncharted Void.
 
-Location cards are not in your main deck, therefore don't have a cost. 
+Location cards are not in your main deck, therefore don't have a cost.
 They can only be played by moving to an uncharted Location with a Ship.
 
 - *Victory Points* awarded by completing this mission
@@ -240,8 +240,8 @@ To *requisition* a card, you have to pay its resource cost:
 
 The cost must be paid *excacly* as written on the cards; you cannot overpay for requisition!
 
-Personnel and Manufacts enter the space line landed at your home Location. 
-Ships enter it in space at your home Location. 
+Personnel and Manufacts enter the space line landed at your home Location.
+Ships enter it in space at your home Location.
 Events don't enter the space line: read the Event's text box and perform its effects.
 
 === Move
@@ -262,7 +262,7 @@ However, a Ship can only carry Cargo with total Size less than or equal to its H
 
 Personnel can *move* between two Ships at the same Location, or between Ship and the ground if the Ship has the
 *landers _N_ * ability and the Location has landing distance $<= N$.
-If all conditions are met, tap them and effect the move. 
+If all conditions are met, tap them and effect the move.
 
 All Personnel at the same place (on one Ship,
 or landed at a Location) forms a *team*. A team on a Ship is called the Ship's *crew*, while a team landed at a
@@ -333,20 +333,20 @@ the opponent rolling a D6 and adding the appropriate skill value.
 
 === Examples
 
-Bob's away team is on a planet. 
-The mission text there says "A war gang attacks you with STR 8; you must defend successfully". 
+Bob's away team is on a planet.
+The mission text there says "A war gang attacks you with STR 8; you must defend successfully".
 Bob looks at his away team and notices that the highest STR value is Captain Tallis, but it's only 3!
-Trying to beat an 8 with a 3 is quite risky. 
+Trying to beat an 8 with a 3 is quite risky.
 However, the away team has a Demolition Charge (Equipment),
-which says "Scrap _this_ $arrow$ add +3 to a STR check". 
+which says "Scrap _this_ $arrow$ add +3 to a STR check".
 
-With this, Bob decides that the attempt would be safe enough, so he "rolls a D6": 
+With this, Bob decides that the attempt would be safe enough, so he "rolls a D6":
 Bob draws a card, and it's a 6!
-The total (6+3) is 9, so Captain Tallis' team successfully defends against the war gang and next turn will be able to attempt 
-the next task of the mission. 
+The total (6+3) is 9, so Captain Tallis' team successfully defends against the war gang and next turn will be able to attempt
+the next task of the mission.
 
 If Bob had rolled a lower value, he could have scrapped the Demolition Charge for a +3 bonus.
-If he had rolled a very low value (2 or less), even the Demolition Charge couldn't have won the fight, 
+If he had rolled a very low value (2 or less), even the Demolition Charge couldn't have won the fight,
 and Bob would have had to scrap a Personnel from the away team.
 
 == Crewing Ships
@@ -379,7 +379,7 @@ TODO Describe the setting here.
 
 == Factions
 
-The universe of Uncharted Void teems with diverse factions, each channeling a different ethos and approach to the unknown. 
+The universe of Uncharted Void teems with diverse factions, each channeling a different ethos and approach to the unknown.
 The base set features six distinct factions — each designed to offer unique mechanics and playstyles — and several more are hinted as possibilities for future expansions.
 
 Each faction’s Home Location includes a unique mission designed to reinforce that faction's ethics and encourage a playstyle that adheres to it.
@@ -392,7 +392,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Strengths: Excel with Influence (diplomatic) resources; can form alliances, prevent or redirect combat, share resources, and complete missions cooperatively.
 / Weaknesses: Struggle in direct combat and rely on tricks or alliances to survive militaristic threats.
 
-=== The Vanguard 
+=== The Vanguard
 
 (Exploration-Focused)
 
@@ -400,7 +400,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Strengths: Exceptional Tech (engineering) generation; bonus rewards for revealing or traversing new Locations; can scry or re-order the Space Line; field specialized scout ships.
 / Weaknesses: Poor at combat and sabotage; vulnerable if opponents exploit their spread-out forces.
 
-=== The 6th Integration 
+=== The 6th Integration
 
 (Combat/Expansion-Focused)
 
@@ -408,7 +408,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Strengths: Generate Tactical (military) resources efficiently; field powerful Ships and elite soldiers; can destroy or seize Installations and suppress resistance.
 / Weaknesses: High-cost units; less flexible in diplomacy or subterfuge; must pay to maintain conquest.
 
-=== The Syndicate 
+=== The Syndicate
 
 (Hybrid/Opportunist/Asymmetrical)
 
@@ -416,7 +416,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Strengths: Steal or blackmail resources, artifacts, or even victory points; can sabotage or “buy” Installations; excellent at ambushes and adaptation.
 / Weaknesses: Unpredictable; lack brute strength or dedicated research.
 
-=== The Continuum 
+=== The Continuum
 
 (Psionic/Mystic)
 
@@ -424,7 +424,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Strengths: Excel in Mystical resource use; manipulate the Space Line or player hands; disrupt enemy plans via “weird” powers.
 / Weaknesses: Often inflexible; may have “backlash” risks or dependence on certain conditions.
 
-=== The Guild of Lifters 
+=== The Guild of Lifters
 
 (Trade/Logistics/Space Truckers)
 
@@ -436,7 +436,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 
 / Control: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
 / Crew Requirement: Minimum number of Personnel needed to operate a Ship.
-/ Disabled: A disabled card is tapped, doesn't untap, and cannot move, attack, or perform any other action; 
+/ Disabled: A disabled card is tapped, doesn't untap, and cannot move, attack, or perform any other action;
   moreover, its triggered abilities don't trigger, its activated abilities cannot be activated, and its passive abilities don't function.
 / D6 Value: Every card has a printed number from 1 to 6, used instead of dice for randomization in skill checks and combat.
 / Draw Phase: The part of your turn in which you may draw cards to reach your hand limit. The Draw Phase always occurs, even if you do not draw any cards due to already having a full hand or other effects.
