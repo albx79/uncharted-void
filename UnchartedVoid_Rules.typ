@@ -1,5 +1,5 @@
 #set page(paper: "a5", numbering: "1", margin: (1.5cm))
-#set heading(numbering: "I-1-A.")
+#set heading(numbering: "I-1-A〉")
 #show heading: set text(font: "Orbitron")
 #set par(justify: true)
 #set text(10pt, font: "Exo 2")
