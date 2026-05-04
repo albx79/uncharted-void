@@ -163,7 +163,7 @@ TODO
 / Crew: 2
 / Ratings: HLD 2, WPN 4, RNG 3, SIZ 3
 / Text: When The Starfire attacks, it may deal 1 additional damage to the target if it wins by 3 or more.
-/ Damage bar: 3 boxes
+/ Damage bar: 3 boxes (WPN -2, RNG -2, disabled)
 / D6 Value: 4
 
 == Manufacts 
@@ -287,10 +287,11 @@ A crewed Ship you control may *attack* an opponent's Ship at the same Location.
 Tap your ship, then
 - Perform an opposed STR+WPN check against the other Ship's.
 - If you win, the other Ship takes one damage; if you lose, your Ship takes one damage.
-- If the damage bar is full, the Ship is disabled (it cannot perform any action listed in this section,
-    and all its abilities are unavailable).
-- If a disabled Ship takes damage, it is destroyed (scrap it, and scrap all cards that were aboard it).
-    If you attack a disabled Ship, you don't need to roll: you just declare the attack and you win automatically.
+- If the damage bar was already full and the Ship cannot take any more damage, it is destroyed (scrap it, and scrap all cards that were aboard it).
+
+Each slot in the damage bar may show a malus the Ship takes for being damaged (for example, WPN -1).
+Usually, the last slot says "*disabled*", which means the Ship cannot move or attack and its abilities stop functioning.
+If you attack a disabled Ship, you don't need to roll: you just declare the attack and you win automatically.
 
 An away team you control may *attack* another away team at the same Location.
 Tap your away team, then
@@ -435,6 +436,8 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 
 / Control: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
 / Crew Requirement: Minimum number of Personnel needed to operate a Ship.
+/ Disabled: A disabled card is tapped, doesn't untap, and cannot move, attack, or perform any other action; 
+  moreover, its triggered abilities don't trigger, its activated abilities cannot be activated, and its passive abilities don't function.
 / D6 Value: Every card has a printed number from 1 to 6, used instead of dice for randomization in skill checks and combat.
 / Draw Phase: The part of your turn in which you may draw cards to reach your hand limit. The Draw Phase always occurs, even if you do not draw any cards due to already having a full hand or other effects.
 / Escalation Level: The number of explored Locations in the space line.
