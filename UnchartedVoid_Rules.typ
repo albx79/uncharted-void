@@ -1,8 +1,8 @@
 #set page(paper: "a5")
-#set heading(numbering: "I-1-a")
+#set heading(numbering: "I-1-A.")
 #show heading: set text(font: "Orbitron")
 #set par(justify: true)
-#set text(font: "Exo 2")
+#set text(10pt, font: "Exo 2")
 #set document(title: "Uncharted Void")
 
 #title()
@@ -298,7 +298,7 @@ Tap your away team, then
 
 == Discard Phase
 
-- If you have more than 6 cards in hand, discard down to 6.
+- If you have more than 6 cards in hand, scrap down to 6 (put the extra into your *scrapyard*).
 - Recycle as many (or as few) as you want of the remaining cards in your hand.
 
 At the end of this phase, you will be left with between 0 and 6 cards.
@@ -441,13 +441,14 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Hold: Attribute of Ships determining Cargo capacity.
 / Home Location: The Location that is the starting base for your faction.
 / Hyperspace: The network of hyperdimensional nodes and tunnels was built aeons ago by a lost civilization with unimaginable technology. Nowadays this network is used by all starfaring races and most Ships can enter it. Ships in Hyperspace cannot interact with Ships or Locations in realspace, nor be attacked or attack.
-/ Junkyard: Location for cards after use. What most card games would call the discard pile.
 / Lander: This Ship can Land on Planets (or Habitats, or any Location with a Landing distance), provided it has sufficient Range.
 / Landers: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the Planet. They are assumed to have the required Range and Hold.
 / Location: A card type representing a planet, nebula, or other point of interest. Placed at a Slot when explored.
 / Manufact: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
 / Prisoner: A Team taken Prisoner is no longer controlled by you, but by your Opponent, and their abilities are disabled. However, the Opponent is only able to move the Team as a whole as if it were a Cargo item, and cannot split it except as part of a deal or special effect.
 / Recycle: Move a card (from anywhere) to the bottom of your main deck.
+/ Scrap: To move a card (from anywhere) to the scrapyard, i.e. to discard it. Killed Personnel and destroyed Ships are scrapped.
+/ Scrapyard: Where discarded cards go. What most card games would simply call the discard pile.
 / Size: A Ship's Size determines how much Hold it occupies when it is carried as Cargo by another Ship (when carried, it has to be empty and uncrewed).
 / Slot: A position on the Space Line. May be uncharted (empty) or contain a Location card.
 / Space Line: The horizontal line of Locations (with Manufacts) forming the game board.
