@@ -1,4 +1,4 @@
-#set page(paper: "a5")
+#set page(paper: "a5", numbering: "1", margin: (1.5cm))
 #set heading(numbering: "I-1-A.")
 #show heading: set text(font: "Orbitron")
 #set par(justify: true)
@@ -54,7 +54,7 @@ Each player selects one or two factions and constructs:
 - their Location deck (20+ cards), which should include their Home Location, and
 - and their seeded Manufacts (exactly 10 cards).
 
-Each player shuffles their main deck, and rolls a D6 (see below for D6 rules) to determine who goes first.
+Each player shuffles their main deck, and rolls a D6 (see @rolling) to determine who goes first.
 Then, each player removes their Home Location from their Location deck, and shuffles it separately.
 
 === Space Line Setup
@@ -97,7 +97,7 @@ Below we see details of each card type.
 Personnel are the main staple of your deck, as it represents the people of your faction(s) that does the exploring, negotiating, and dangerous fighting on your behalf.
 
 - *Cost* (resource requirement)
-- #strong[Resource]s provided when this Personnel is in the resource zone
+- *Resources* provided when this Personnel is in the resource zone
 - *Skills*: Numeric ratings for charisma (CHA), intelligence (INT), strength (STR), and weird (WRD)
 
 === Charisma (CHA)
@@ -122,6 +122,7 @@ TODO
 / Faction: The Accord
 / Rarity (deck cap) Type -- Subtypes: Legendary (1) Personnel -- Human VIP
 / Cost: 2 influence, 1 tactical, 1 mystical
+/ Resources: 1 influence, 1 tactical or 1 mystical
 / Skills: CHA 5, INT 4, STR 3, WRD 1
 / Text: When Captain Tallis is revealed during a skill check, draw a card.
 / D6 Value: 2
@@ -235,7 +236,7 @@ To *requisition* a card, you have to pay its resource cost:
 
 - for *crewed* cards, by transferring Personnel from your resource zone to the card as crew.
     (at the moment only Ships can be *crewed*, as indicated by the "*Crew _N_*" keyword in the card's text).
-- for non-crewed cards, by recycling Personnel from your resource zone (to the bottom of your main deck -- see Dictionary below).
+- for non-crewed cards, by recycling Personnel from your resource zone (to the bottom of your main deck -- see the Glossary on #ref(<glossary>, form: "page")).
 
 The cost must be paid *excacly* as written on the cards; you cannot overpay for requisition!
 
@@ -309,7 +310,7 @@ The turn ends, which may trigger some card effects. Then, pass play to your oppo
 
 = Action Details
 
-== Rolling a D6
+== Rolling a D6 <rolling>
 
 A D6 is a six-sided die.
 The game rules will often can for rolling a D6, but you're not expected to bring dice at the
@@ -334,7 +335,7 @@ the opponent rolling a D6 and adding the appropriate skill value.
 Bob's away team is on a planet. 
 The mission text there says "A war gang attacks you with STR 8; you must defend successfully". 
 Bob looks at his away team and notices that the highest STR value is Captain Tallis, but it's only 3!
-Trying to bean an 8 with a 3 is quite risky. 
+Trying to beat an 8 with a 3 is quite risky. 
 However, the away team has a Demolition Charge (Equipment),
 which says "Scrap _this_ $arrow$ add +3 to a STR check". 
 
@@ -430,7 +431,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Strengths: Efficient Cargo handling, bonus resource generation via trade; skilled at moving Cargo/Artifacts; economic sabotage and fast transport.
 / Weaknesses: Few combat options; rely on negotiation over might.
 
-= Glossary of Terms
+= Glossary of Terms <glossary>
 
 / Control: A Location or Place is controlled if you placed your Home Location there, if you completed a mission there, or as per card effects.
 / Crew Requirement: Minimum number of Personnel needed to operate a Ship.
