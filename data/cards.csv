@@ -1,0 +1,30 @@
+name;faction;cost;resources;level;rarity;cap;type;subtypes;attributes;d6;tracker
+Ambassador Lira Andell;accord;*;*;0;R;1;Personnel;Humanoid, Diplomat;ATTR;D6;
+Healer Joren Voss;accord;*;*;0;R;1;Personnel;Humanoid, Medic;ATTR;D6;
+Envoy Xyle Akari;accord;*;*;0;R;1;Personnel;Xenoid, VIP;ATTR;D6;
+Speaker Tal Ren;accord;*;*;0;R;1;Personnel;Humanoid, Leader;ATTR;D6;
+
+Dr. Elara Quinn;vanguard;*;*;0;R;1;Personnel;Humanoid, Scientist;ATTR;D6;
+Navigator Zin Rhaal;vanguard;*;*;0;R;1;Personnel;Humanoid, Engineer;ATTR;D6;
+Scout Vex Iseo;vanguard;*;*;0;R;1;Personnel;Humanoid, Explorer;ATTR;D6;
+Astro-Cartographer Vis Drenn;vanguard;*;*;0;R;1;Personnel;Xenoid, Scientist;ATTR;D6;
+
+Centurion Vrax Tuur;"6thint";*;*;0;R;1;Personnel;Humanoid, Warrior;ATTR;D6;
+Legate Mira Kaun;"6thint";*;*;0;R;1;Personnel;Humanoid, Commander;ATTR;D6;
+Enforcer Kask Dril;"6thint";*;*;0;R;1;Personnel;Humanoid, Soldier;ATTR;D6;
+Shock Trooper Jai Rikt;"6thint";*;*;0;R;1;Personnel;Humanoid, Soldier;ATTR;D6;
+
+Fixer Null;syndicate;*;*;0;R;1;Personnel;Xenoid, VIP;ATTR;D6;
+Broker Cass Vyx;syndicate;*;*;0;R;1;Personnel;Humanoid, Leader;ATTR;D6;
+Smuggler Tiko Sar;syndicate;*;*;0;R;1;Personnel;Humanoid, Engineer;ATTR;D6;
+Shadow Op Viri;syndicate;*;*;0;R;1;Personnel;Xenoid, Soldier;ATTR;D6;
+
+Seer Oth Vallis;continuum;*;*;0;R;1;Personnel;Humanoid, Monk;ATTR;D6;
+The Oracle Sigma;continuum;*;*;0;R;1;Personnel;Xenoid, Cyber, Priest;ATTR;D6;
+Psi-Mage Kaeli;continuum;*;*;0;R;1;Personnel;Humanoid, Knight;ATTR;D6;
+Mindweaver Uliss;continuum;*;*;0;R;1;Personnel;Xenoid, Scientist;ATTR;D6;
+
+Quartermaster Dela Finn;lifters;*;*;0;R;1;Personnel;Humanoid, Leader;ATTR;D6;
+Cargo Chief Grok;lifters;*;*;0;R;1;Personnel;Xenoid, Engineer;ATTR;D6;
+Pilot Sann Loric;lifters;*;*;0;R;1;Personnel;Humanoid, Explorer;ATTR;D6;
+Route Master Rekth;lifters;*;*;0;R;1;Personnel;Humanoid, Scientist;ATTR;D6;
