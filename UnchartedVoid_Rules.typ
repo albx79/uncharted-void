@@ -142,18 +142,18 @@ Monks, knights, and priests usually have high weird.
 / Name: Captain Arten Tallis
 / Faction: The Accord
 / Rarity (deck cap) Type -- Subtypes: Legendary (1) Personnel -- Humanoid VIP
-/ Cost: 2 influence, 1 tactical, 1 mystical
-/ Resources: 1 influence, 1 tactical or 1 mystical
+/ Cost: ⚜︎⚜︎, ⚔︎, ✶
+/ Resources: ⚜︎, ⚔︎/✶
 / Attributes: CHA 5, INT 4, STR 3, WRD 1
-/ Text: When Captain Tallis is revealed during a check, draw a card.
+/ Text:\ After Captain Tallis has been revealed for a check, draw him instead of recycling him.
 / D6 Value: 2
 
 == Ships
 
 Ships are what allow people to move around the vastness of insterstellar space, land onto Locations, and transport precious cargo.
+The text box will always indicate *Crew _N_*, which is the minimum number of Personnel on board required for the Ship to function.
 
 - *Cost* (resource requirement)
-- *Crew _N_* (minimum number of Personnel on board for the Ship to function)
 - *Level _N_* (minimum Escalation Level required for this Ship to be requisitioned)
 - *Attributes*: numeric values for cargo hold, weapons, range, and size
 - *Damage bar*: put tokens here to mark damage; at each damage level, a malus may be indicated.
@@ -192,12 +192,11 @@ By default, SIZ also determines the length of the damage bar.
 / Name: The Starfire
 / Faction: The 6th Integration
 / Rarity (deck cap) Type -- Subtypes: Rare (2) Ship -- Destroyer
-/ Cost: 3 tactical, 1 influence
+/ Cost: ⚔︎⚔︎⚔︎, ⚜︎
 / Level: 4
-/ Crew: 2
 / Attributes: HLD 2, WPN 4, RNG 3, SIZ 3
-/ Text: When The Starfire attacks, it may deal 1 additional damage to the target if it wins by 3 or more.
-/ Damage bar: 3 boxes (WPN -2, RNG -2, disabled)
+/ Text:\ *Crew 2*\ When The Starfire attacks, it may deal 1 additional damage to the target if it wins by 3 or more.
+/ Damage bar: [WPN -2, RNG -2, disabled]
 / D6 Value: 4
 
 == Manufacts
@@ -229,26 +228,27 @@ They can only be played by moving to an uncharted Location with a Ship.
 
 === Example Location
 
-/  Name: Mira's Rift
-/  Rarity (deck cap) Type - Subtypes: Uncommon (1) Location - Nebula
-/  Text box: Win three 8-INT checks. Claim both Manufacts from this Location. _The physics that makes this region so unreachable is worth investigating -- Captain Arten Tallis_
-/  Victory Points: 3
-/  Attributes: LFT 6, RGT 6
+/ Name: Mira's Rift
+/ Rarity (deck cap) Type - Subtypes: Uncommon (1) Location - Nebula
+/ Text box: #quote(attribution: [Captain Arten Tallis])[The physics that makes this region so unreachable is also what makes it so interesting.]
+/ Victory Points: 3
+/ Progress bar: [INT vs 8, INT vs 8, INT vs 8]
+/ Attributes: LFT 6, RGT 6
 
 = Turn Structure
 
 Each turn consists of the phases below.
 The active player completes all phases, then play passes to opponent.
 
-== Draw Phase
-
-Draw cards from your deck until you have 6 cards in hand
-(if you already have 6 or more cards, you don't draw any).
-
 == Untap Phase
 
 Untap (ready) all your tapped cards (Ships, Personnel, Manufacts, etc.),
 making them available for use again.
+
+== Draw Phase
+
+Draw cards from your deck until you have 6 cards in hand
+(if you already have 6 or more cards, you don't draw any).
 
 == Resource Phase
 
@@ -259,10 +259,8 @@ There are four resource types, provided by Personnel, and displayed as coloured 
 + *⚔︎ Tactical*: military and strategic capability
 + *✶ Mystical*: psionics, mysticism, or unexplained forces
 
-During this phase, you may put from your hand into your resource zone:
-
-+ a number of Personnel cards less than or equal to the current Escalation Level, and
-+ any number of Ship cards provided the sum of the levels of Ships in your resource zone is less than or equal to the Escalation Level.
+During this phase, you may play from your hand into your resource zone a number of Personnel cards 
+less than or equal to the current Escalation Level.
 
 == Main Phase
 
@@ -270,11 +268,14 @@ During this phase, do any number of the following actions, in this order:
 
 === Requisition
 
-To *requisition* a card, you have to pay its resource cost:
+To *requisition* a card, you have to ensure that its level is equal or smaller than the current Escalation Level
+(cards that don't indicate a level can always be requisitioned), 
+then pay its resource cost:
 
 - for *crewed* cards, by transferring Personnel from your resource zone to the card as crew.
-    (at the moment only Ships can be *crewed*, as indicated by the "*Crew _N_*" keyword in the card's text).
-- for non-crewed cards, by recycling Personnel from your resource zone (to the bottom of your main deck -- see the Glossary on #ref(<glossary>, form: "page")).
+  (at the moment only Ships can be *crewed*, as indicated by the "*Crew _N_*" keyword in the card's text).
+- for non-crewed cards, by recycling Personnel from your resource zone 
+  (to the bottom of your main deck -- see the Glossary on #ref(<glossary>, form: "page")).
 
 The cost must be paid *excacly* as written on the cards; you cannot overpay for requisition!
 
