@@ -104,7 +104,7 @@ Personnel are the main staple of your deck, as it represents the people of your 
 
 === Charisma (CHA)
 
-The social clout of this Personnel. 
+The social clout of this Personnel.
 How much influece they have, how good they are at speaking and parleying, and at making
 other people change their mind.
 
@@ -112,7 +112,7 @@ Political leaders, diplomats, and negotiators typically excel at charisma.
 
 === Intelligence (INT)
 
-The scientific and technical experties of this Personnel. 
+The scientific and technical experties of this Personnel.
 People who like to solve problems by applying method and expertise.
 
 Scientists, doctors, and engineers typically have high intelligence.
@@ -128,9 +128,9 @@ Soldiers, warriors, and military commanders excel at strength.
 
 === Weird (WRD)
 
-There are things science cannot explain. 
+There are things science cannot explain.
 Perhaps it used to be able to, back in the day when the hyperspace network was built and men yielded the power of gods,
-but that is no longer the case. 
+but that is no longer the case.
 
 Weird represents the effect of mind over matter, and of hyperspace over mind:
 seeing the unseeable, sensing the unsensable, and affecting the unaffectable.
@@ -160,7 +160,7 @@ The text box will always indicate *Crew _N_*, which is the minimum number of Per
 
 === Cargo Hold (HLD)
 
-Ships can carry Manufacts and other Ships, up to their HLD attribute. 
+Ships can carry Manufacts and other Ships, up to their HLD attribute.
 Add the SIZ attributes of all Ships and Manufacts to determine whether they fit; if they don't, some will have to be left
 floating in space, or be picked up by another Ship.
 
@@ -171,7 +171,7 @@ enough cargo to make them fit again.
 
 === Weapons (WPN)
 
-A combination defensive power (armour and evasion) and offensive power (beams, projectiles, missiles) 
+A combination defensive power (armour and evasion) and offensive power (beams, projectiles, missiles)
 that determines how good this Ship is in combat (see @combat).
 
 This attribute is added to the crew STR when doing an attack or defense check.
@@ -183,7 +183,7 @@ See @moving for details about moving between Locations and landing on land-based
 
 === Size (SIZ)
 
-How large this Ship is. 
+How large this Ship is.
 Used to determine whether it can fit another Ship's cargo hold.
 By default, SIZ also determines the length of the damage bar.
 
@@ -214,8 +214,8 @@ Manufacts represent artifacts, equipment, cargo, and other manufactured items th
 
 Locations represent planets, space habitats, orbitals, nebulae, and other places worth exploring and investigating in the Uncharted Void.
 
-There are two main types of Locations: land-based and space-based. 
-Land-based Locations have a landing distnace and a take-off distance, and in order to attempt a mission there 
+There are two main types of Locations: land-based and space-based.
+Land-based Locations have a landing distnace and a take-off distance, and in order to attempt a mission there
 you have to land an away team.
 
 The missions at space-based Locations can be attempted from a Ship.
@@ -259,7 +259,7 @@ There are four resource types, provided by Personnel, and displayed as coloured 
 + *⚔︎ Tactical*: military and strategic capability
 + *✶ Mystical*: psionics, mysticism, or unexplained forces
 
-During this phase, you may play from your hand into your resource zone a number of Personnel cards 
+During this phase, you may play from your hand into your resource zone a number of Personnel cards
 less than or equal to the current Escalation Level.
 
 == Main Phase
@@ -269,12 +269,12 @@ During this phase, do any number of the following actions, in this order:
 === Requisition
 
 To *requisition* a card, you have to ensure that its level is equal or smaller than the current Escalation Level
-(cards that don't indicate a level can always be requisitioned), 
+(cards that don't indicate a level can always be requisitioned),
 then pay its resource cost:
 
 - for *crewed* cards, by transferring Personnel from your resource zone to the card as crew.
   (at the moment only Ships can be *crewed*, as indicated by the "*Crew _N_*" keyword in the card's text).
-- for non-crewed cards, by recycling Personnel from your resource zone 
+- for non-crewed cards, by recycling Personnel from your resource zone
   (to the bottom of your main deck -- see the Glossary on #ref(<glossary>, form: "page")).
 
 The cost must be paid *excacly* as written on the cards; you cannot overpay for requisition!
@@ -302,7 +302,7 @@ Ships may bring Personnel and Cargo with them. There’s no limit to how many Pe
 However, a Ship can only carry Cargo with total Size less than or equal to its Hold rating.
 
 Personnel can *move* between two Ships at the same Location, or between Ship and the ground if the Ship has the
-*landers _N_ * ability and the landing distance or take-off distance are ≤ _N_ 
+*landers _N_ * ability and the landing distance or take-off distance are ≤ _N_
 (use the appropriate distance depending on wheter you're moving the team _to_ or _from_ land).
 If all conditions are met, tap them and effect the move.
 
@@ -312,8 +312,8 @@ Location is called an *away team*.
 
 === Attempt Missions
 
-To *attempt* a mission at a land-based Location, you need to have an away team there. 
-For space-based Locations, you need a crewed Ship there 
+To *attempt* a mission at a land-based Location, you need to have an away team there.
+For space-based Locations, you need a crewed Ship there
 (if you have more than one crewed Ship at the same Location,
 declare which one is attempting the mission).
 
@@ -417,11 +417,17 @@ The player with the highest score wins when:
  - there is a time limit and the time is up, or
  - the game has stalled (e.g. it's captured in an infinite loop).
 
-= Example
+= Examples
+
+An example of Ship-to-Ship combat.
+
+An example of away teams combat.
+
+An example of mission resolution.
 
 An example of how the first 2 turns may play in a game.
 
-TODO write it.
+TODO write them.
 
 = The Uncharted Void
 
@@ -498,7 +504,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Home Location: The Location that is the starting base for your faction.
 / Hyperspace: The network of hyperdimensional nodes and tunnels was built aeons ago by a lost civilization with unimaginable technology. Nowadays this network is used by all starfaring races and most Ships can enter it. Ships in Hyperspace cannot interact with Ships or Locations in realspace, nor be attacked or attack.
 / Lander: This Ship can Land on land-based Locations, provided it has sufficient Range.
-/ Landers _X_ HLD _Y_: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the land. 
+/ Landers _X_ HLD _Y_: This Ship has at its disposal a fleet of small landers, that can transfer Personnel and Cargo between the Ship and the land.
   They have range _X_ and hold _Y_ (if indicated; otherwise they cannot carry cargo).
 / Location: A card type representing a planet, nebula, or other point of interest. Placed at a Slot when explored.
 / Manufact: An artifact, piece of Equipment, or other item, placed at a Location or in a Player’s Deck; plural is Manufacts.
@@ -509,5 +515,5 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Size: A Ship's Size determines how much Hold it occupies when it is carried as Cargo by another Ship (when carried, it has to be empty and uncrewed).
 / Slot: A position on the space line. May be uncharted (empty) or contain a Location card.
 / Space Line: The horizontal line of Locations (with Manufacts) forming the game board.
-/ Team: A group of Personnel and their Manufacts acting together for Missions or Combat. 
+/ Team: A group of Personnel and their Manufacts acting together for Missions or Combat.
   A team on a Ship is a *crew*, and a team landed at a Location is an *away team*.
