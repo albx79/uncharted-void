@@ -1,31 +1,25 @@
-name;faction;cost;resources;level;rarity;deck cap;type;subtypes;attributes;d6;tracker
-
-Ambassador Lira Andell;accord;⚜︎⚜︎⚜︎⚙︎;⚜︎;0;R;1;Personnel;Humanoid, Diplomat;CHA 5, INT 2, STR 0, WRD 1;1;
-Healer Joren Voss;accord;⚜︎⚜︎⚙︎⚙︎;⚜︎⚙︎;0;R;1;Personnel;Humanoid, Medic;CHA 2, INT 5, STR 1, WRD 0;1;
-Envoy Xyle Akari;accord;⚜︎⚜︎⚜︎⚜︎;⚜︎;0;R;1;Personnel;Xenoid, VIP;CHA 4, INT 2, STR 2, WRD 4;2;
-Speaker Tal Ren;accord;⚜︎⚜︎⚙︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 3, STR 1, WRD 1;2;
-
-Dr. Elara Quinn;vanguard;⚜︎⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Scientist;CHA 2, INT 5, STR 2, WRD 0;2;
-Navigator Zin Rhaal;vanguard;⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Engineer;CHA 1, INT 4, STR 1, WRD 3;2;
-Scout Vex Iseo;vanguard;⚜︎⚙︎⚔︎;⚜︎⚙︎⚔︎;0;R;1;Personnel;Humanoid, Explorer;CHA 3, INT 3, STR 3, WRD 0;2;
-Astro-Cartographer Vis Drenn;vanguard;⚙︎⚙︎⚙︎⚙︎⚙︎;⚙︎⚙︎;0;R;1;Personnel;Xenoid, Scientist;CHA 1, INT 6, STR 0, WRD 2;1;
-
-Centurion Vrax Tuur;"6thint";⚔︎⚔︎⚔︎⚔︎⚔︎;⚔︎⚔︎;0;R;1;Personnel;Humanoid, Warrior;CHA 1, INT 0, STR 6, WRD 1;1;
-Legate Mira Kaun;"6thint";⚜︎⚜︎⚔︎⚔︎;⚜︎/⚔︎;0;R;1;Personnel;Humanoid, Commander;CHA 3, INT 1, STR 3, WRD 1;3;
-Enforcer Kask Dril;"6thint";⚔︎⚔︎;⚔︎;0;C;4;Personnel;Humanoid, Soldier;CHA 1, INT 1, STR 3, WRD 0;6;
-Shock Trooper Jai Rikt;"6thint";⚔︎⚔︎;⚔︎;0;R;1;Personnel;Humanoid, Soldier;CHA 1, INT 1, STR 3, WRD 0;5;
-
-Fixer Null;syndicate;⚜︎⚜︎⚙︎✶;⚜︎;0;R;1;Personnel;Xenoid, VIP;CHA 5, INT 3, STR 1, WRD 2;1;
-Broker Cass Vyx;syndicate;⚜︎⚜︎⚔︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 2, STR 3, WRD 1;2;
-Smuggler Tiko Sar;syndicate;⚜︎⚙︎⚔︎;⚜︎⚙︎⚔︎;0;R;1;Personnel;Humanoid, Engineer;CHA 2, INT 4, STR 2, WRD 0;3;
-Shadow Op Viri;syndicate;⚔︎;⚔︎;0;C;4;Personnel;Xenoid, Soldier;CHA 0, INT 1, STR 2, WRD 0;6;
-
-Seer Oth Vallis;continuum;⚔︎✶✶✶;✶;0;R;1;Personnel;Humanoid, Monk;CHA 2, INT 1, STR 3, WRD 4;2;
-The Oracle Sigma;continuum;⚙︎✶✶;⚙︎/✶;0;U;4;Personnel;Xenoid, Cyber, Priest;CHA 2, INT 2, STR 1, WRD 3;3;
-Psi-Mage Kaeli;continuum;⚜︎✶;⚜︎/✶;0;C;4;Personnel;Humanoid, Knight;CHA 2, INT 1, STR 2, WRD 2;4;
-Mindweaver Uliss;continuum;⚔︎;⚔︎;0;C;4;Personnel;Xenoid, Scientist;CHA 1, INT 2, STR 1, WRD 1;5;
-
-Quartermaster Dela Finn;lifters;⚜︎⚜︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 1, STR 2, WRD 0;2;
-Cargo Chief Grok;lifters;⚙︎⚙︎;⚙︎;0;R;1;Personnel;Xenoid, Engineer;CHA 1, INT 4, STR 2, WRD 0;2;
-Pilot Sann Loric;lifters;⚙︎⚔︎;⚙︎⚔︎;0;R;1;Personnel;Humanoid, Explorer;CHA 1, INT 3, STR 3, WRD 0;2;
-Route Master Rekth;lifters;⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Scientist;CHA 1, INT 3, STR 1, WRD 1;4;
+name;faction;cost;resources;level;rarity;deck cap;type;subtypes;attributes;d6;tracker;text
+Ambassador Lira Andell;accord;⚜︎⚜︎⚜︎⚙︎;⚜︎;0;R;1;Personnel;Humanoid, Diplomat;CHA 5, INT 2, STR 0, WRD 1;1;;
+Healer Joren Voss;accord;⚜︎⚜︎⚙︎⚙︎;⚜︎⚙︎;0;R;1;Personnel;Humanoid, Medic;CHA 2, INT 5, STR 1, WRD 0;1;;
+Envoy Xyle Akari;accord;⚜︎⚜︎⚜︎⚜︎;⚜︎;0;R;1;Personnel;Xenoid, VIP;CHA 4, INT 2, STR 2, WRD 4;2;;
+Speaker Tal Ren;accord;⚜︎⚜︎⚙︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 3, STR 1, WRD 1;2;;
+Dr. Elara Quinn;vanguard;⚜︎⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Scientist;CHA 2, INT 5, STR 2, WRD 0;2;;
+Navigator Zin Rhaal;vanguard;⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Engineer;CHA 1, INT 4, STR 1, WRD 3;2;;
+Scout Vex Iseo;vanguard;⚜︎⚙︎⚔︎;⚜︎⚙︎⚔︎;0;R;1;Personnel;Humanoid, Explorer;CHA 3, INT 3, STR 3, WRD 0;2;;
+Astro-Cartographer Vis Drenn;vanguard;⚙︎⚙︎⚙︎⚙︎⚙︎;⚙︎⚙︎;0;R;1;Personnel;Xenoid, Scientist;CHA 1, INT 6, STR 0, WRD 2;1;;
+Centurion Vrax Tuur;"6thint";⚔︎⚔︎⚔︎⚔︎⚔︎;⚔︎⚔︎;0;R;1;Personnel;Humanoid, Warrior;CHA 1, INT 0, STR 6, WRD 1;1;;
+Legate Mira Kaun;"6thint";⚜︎⚜︎⚔︎⚔︎;⚜︎/⚔︎;0;R;1;Personnel;Humanoid, Commander;CHA 3, INT 1, STR 3, WRD 1;3;;
+Enforcer Kask Dril;"6thint";⚔︎⚔︎;⚔︎;0;C;4;Personnel;Humanoid, Soldier;CHA 1, INT 1, STR 3, WRD 0;6;;
+Shock Trooper Jai Rikt;"6thint";⚔︎⚔︎;⚔︎;0;R;1;Personnel;Humanoid, Soldier;CHA 1, INT 1, STR 3, WRD 0;5;;
+Fixer Null;syndicate;⚜︎⚜︎⚙︎✶;⚜︎;0;R;1;Personnel;Xenoid, VIP;CHA 5, INT 3, STR 1, WRD 2;1;;
+Broker Cass Vyx;syndicate;⚜︎⚜︎⚔︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 2, STR 3, WRD 1;2;;
+Smuggler Tiko Sar;syndicate;⚜︎⚙︎⚔︎;⚜︎⚙︎⚔︎;0;R;1;Personnel;Humanoid, Engineer;CHA 2, INT 4, STR 2, WRD 0;3;;
+Shadow Op Viri;syndicate;⚔︎;⚔︎;0;C;4;Personnel;Xenoid, Soldier;CHA 0, INT 1, STR 2, WRD 0;6;;
+Seer Oth Vallis;continuum;⚔︎✶✶✶;✶;0;R;1;Personnel;Humanoid, Monk;CHA 2, INT 1, STR 3, WRD 4;2;;
+The Oracle Sigma;continuum;⚙︎✶✶;⚙︎/✶;0;U;4;Personnel;Xenoid, Cyber, Priest;CHA 2, INT 2, STR 1, WRD 3;3;;
+Psi-Mage Kaeli;continuum;⚜︎✶;⚜︎/✶;0;C;4;Personnel;Humanoid, Knight;CHA 2, INT 1, STR 2, WRD 2;4;;
+Mindweaver Uliss;continuum;⚔︎;⚔︎;0;C;4;Personnel;Xenoid, Scientist;CHA 1, INT 2, STR 1, WRD 1;5;;
+Quartermaster Dela Finn;lifters;⚜︎⚜︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 1, STR 2, WRD 0;2;;
+Cargo Chief Grok;lifters;⚙︎⚙︎;⚙︎;0;R;1;Personnel;Xenoid, Engineer;CHA 1, INT 4, STR 2, WRD 0;2;;
+Pilot Sann Loric;lifters;⚙︎⚔︎;⚙︎⚔︎;0;R;1;Personnel;Humanoid, Explorer;CHA 1, INT 3, STR 3, WRD 0;2;;
+Route Master Rekth;lifters;⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Scientist;CHA 1, INT 3, STR 1, WRD 1;4;;
