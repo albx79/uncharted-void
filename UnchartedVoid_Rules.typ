@@ -321,7 +321,7 @@ declare which one is attempting the mission).
 - It may take several turns, usually 3, to complete a mission.
 - The opponent may also attempt to complete the same mission at the same time.
     Unless otherwise indicated, they get their own progress tracker, and whoever completes the mission first wins.
-- When you have performed all tasks assigned by the mission, add the mission's Victory Points to your score, and
+- When you have performed all tasks assigned by the mission, add the mission's victory points to your score, and
     reveal the hidden Manufacts, that you can immediately take control of.
 
 === Attack <combat>
@@ -411,11 +411,11 @@ whenever a rule calls for a check, its attribute value is automatically 0.
 
 = Victory Conditions
 
-The first player to acquire 20 victory points (mainly via missions, but possibly via major combats or other cards) wins the game.
+The player with the highest score wins when:
 
-If there is a time limit and the time is up, the player with the highest score wins. 
-If, for whatever reasons, no player has reached 20 victory points but there are no completable missions left, 
-then the player with the highest score wins.
+ - all Locations have been explored and all missions have been completed, or
+ - there is a time limit and the time is up, or
+ - the game has stalled (e.g. it's captured in an infinite loop).
 
 = Example
 
