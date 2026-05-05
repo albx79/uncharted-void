@@ -41,3 +41,33 @@ Entropic Leviathan;continuum;✶✶⚔︎;;4;R;1;Ship;Leviathan,Emanation;HLD 2,
 Tiny Pacer;lifters;⚙︎;;1;C;4;Ship;Shuttle,Freighter;HLD 2, WPN 1, RNG 3, SIZ 1;1;disabled;*Crew 1*
 Bulk Hauler;lifters;⚙︎⚙︎;;3;U;2;Ship;Freighter;HLD 4, WPN 2, RNG 3, SIZ 3;5;WPN -1, RNG -1, disabled;*Crew 3*
 Routebreaker Titan;lifters;⚙︎⚙︎⚙︎;;4;R;1;Ship;Transport,Superheavy;HLD 5, WPN 3, RNG 2, SIZ 4;6;RNG -1, WPN -1, RNG -1, disabled;*Crew 0*
+
+Portable Comms Array;generic;⚜︎;; ;U;2;Manufact;Device;;3;;This away team has CHA +1
+Field Medikit;generic;⚙︎;; ;C;4;Manufact;Aid;;1;;A Medic in this team has INT +1
+Peacekeeper’s Seal;accord;;;;U;2;Manufact;Token;;6;;This team has CHA +1
+Diplomatic Credential;generic;⚜︎;;;C;4;Manufact;Badge;;2;;A Diplomat in this team has CHA +1
+
+Scanner Drone;generic;⚙︎;;4;C;4;Manufact;Bot;;2;;When this team lands, look at the seeded Manufacts, then scrap _this_
+Spectral Analyzer;vanguard;⚙︎⚙︎;; ;U;2;Manufact;Instrument;;5;;A Scientist in this away team has WRD +1
+Survey Globe;vanguard;;;;U;2;Manufact;Artifact;;3;;This away team has CHA +1
+Stellar Cartogram;vanguard;⚙︎⚜︎;; ;R;1;Manufact;Map;;1;;This away team has INT +2
+
+Assault Breaching Gear;"6thint";⚔︎;; ;C;4;Manufact;Equipment;;2;;This away team has STR +1
+Shock Field Generator;"6thint";⚔︎⚙︎;; ;U;2;Manufact;Device;;5;;This away team has WPN +1
+Combat Drugs;"6thint";⚔︎⚔︎;; ;U;2;Manufact;Chem;;6;;This away team has STR +1
+Warlord’s Banner;"6thint";⚔︎;; ;R;1;Manufact;Symbol;SIZ 2;3;;This away team has STR +2
+
+Blackmail File;syndicate;⚜︎;; ;C;4;Manufact;File;;1;;This away team has CHA +1
+Disruptor Toolset;syndicate;⚙︎;; ;U;2;Manufact;Tool;;6;;This Ship has WPN +1
+Cloaking Mesh;syndicate;;;;U;2;Manufact;Camouflage;;2;;This Ship has RNG +1
+Ghost Drive;syndicate;⚜︎⚙︎;; ;R;1;Manufact;Engine;SIZ 2;4;;This Ship has RNG +2
+
+Neural Focusing Crystal;continuum;✶;; ;C;4;Manufact;Psionic;;3;;This away team has WRD +1
+Psi-Transducer;continuum;✶⚙︎;; ;U;2;Manufact;Device;;2;;This Ship has WRD +1
+Psychic Resonator;continuum;;;;U;2;Manufact;Instrument;;1;;This away team has INT +1
+Reality Anchor;continuum;✶✶;; ;R;1;Manufact;Artifact;SIZ 2, level 2;5;;This away team has WRD +2
+
+Cargo Loader;lifters;⚙︎;; ;C;4;Manufact;Vehicle;;2;;This Ship has HLD +1
+Compact Astrogator;lifters;⚙︎⚙︎;; ;U;2;Manufact;Device;;4;;This Ship has RNG +1
+Supply Cache;lifters;;;;C;4;Manufact;Crate;;5;;This Ship has HLD +1
+Quantum Winch;lifters;⚙︎⚙︎;;3;R;1;Manufact;Hoist;SIZ 2, level 3;6;;This Ship has HLD +2 and RNG +1
