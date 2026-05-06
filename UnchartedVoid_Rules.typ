@@ -479,7 +479,7 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 
 (Psionic/Mystic)
 
-/ Theme: Psionic, mystic, or post-biological entities—ancient, enigmatic, perhaps remnants of AI or uplifted minds.
+/ Theme: Psionic, mystic, or post-biological entities -- ancient, enigmatic, perhaps remnants of AI or uplifted minds.
 / Strengths: Excel in Mystical resource use; manipulate the space line or player hands; disrupt enemy plans via “weird” powers.
 / Weaknesses: Often inflexible; may have “backlash” risks or dependence on certain conditions.
 
