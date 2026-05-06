@@ -54,7 +54,7 @@ Combat Drugs;"6thint";⚔︎⚔︎;; ;U;2;Manufact;Equipment;;6;;Scrap _this_ �
 Warlord’s Banner;"6thint";⚜︎;; ;R;1;Manufact;Equipment;;3;;A Commander in this team has CHA +1.
 Blackmail File;syndicate;⚜︎⚜︎;; ;C;4;Manufact;Document;;1;;When this team is rolling CHA, scrap _this_ 🞂 replace the roll outcome with 6.
 Disruptor Toolset;syndicate;⚙︎⚔︎;; ;U;2;Manufact;Equipment;;6;;This Ship has WPN +1 if an Engineer is present.
-Cloaking Mesh;syndicate;;;;U;2;Manufact;Device;SIZ 1;2;;When this Ship enters hyperspace, put a *cloaked* marker on it (_it cannot be attacked_). Remove it when it lands or when a card is moved in or out of it.
+Cloaking Mesh;syndicate;;;;U;2;Manufact;Device;SIZ 1;2;;When this Ship enters hyperspace, put a *cloaked* marker on it (_it cannot be attacked or targeted_). Remove it when it lands, attacks, or when a card is moved in or out of it.
 Ghost Hyperdrive;syndicate;⚜︎⚙︎;; ;R;1;Manufact;Device;SIZ 2;4;;This Ship has RNG +2.
 Neural Focusing Crystal;generic;✶;; ;C;4;Manufact;Psionic,Equipment;;3;;A member of this team has WRD +1.
 Psi-Transducer;continuum;✶⚙︎;; ;U;2;Manufact;Psionic,Device;SIZ 1;2;;A member of this crew has WRD +1.
