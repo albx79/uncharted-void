@@ -3,14 +3,26 @@ Ambassador Lira Andell;accord;⚜︎⚜︎⚜︎⚙︎;⚜︎;0;R;1;Personnel;Hu
 Healer Joren Voss;accord;⚜︎⚜︎⚙︎⚙︎;⚜︎⚙︎;0;R;1;Personnel;Humanoid, Medic;CHA 2, INT 5, STR 1, WRD 0;1;;
 Envoy Xyle Akari;accord;⚜︎⚜︎⚜︎⚜︎;⚜︎;0;R;1;Personnel;Xenoid, VIP;CHA 4, INT 2, STR 2, WRD 4;2;;
 Speaker Tal Ren;accord;⚜︎⚜︎⚙︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 3, STR 1, WRD 1;2;;
+Peerless Arbiter Ceyla Dorr;accord;⚜︎⚜︎⚜︎⚜︎;⚜︎;0;R;1;Personnel;Humanoid, Arbiter;CHA 6, INT 2, STR 0, WRD 1;1;;When this Personnel enters play, you may search your deck for a Diplomat and put it into your hand.
+Peacekeeper Lys Andrell;accord;⚜︎⚜︎⚙︎;⚜︎;0;U;2;Personnel;Humanoid, Peacekeeper;CHA 4, INT 2, STR 2, WRD 0;3;;When this team prevents a battle, draw a card.
+Orator Kil Vessar;accord;⚜︎⚜︎;⚜︎;0;C;4;Personnel;Xenoid, Speaker;CHA 5, INT 1, STR 1, WRD 0;5;;If this team passes a CHA check, you gain 1 victory point.
+Envoy Reeka Sol;accord;⚜︎⚜︎⚜︎;⚜︎;0;U;2;Personnel;Humanoid, Diplomat;CHA 4, INT 3, STR 1, WRD 1;2;;When this away team completes a mission, gain 1 Influence resource.
 Dr. Elara Quinn;vanguard;⚜︎⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Scientist;CHA 2, INT 5, STR 2, WRD 0;2;;
 Navigator Zin Rhaal;vanguard;⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Engineer;CHA 1, INT 4, STR 1, WRD 3;2;;
 Scout Vex Iseo;vanguard;⚜︎⚙︎⚔︎;⚜︎⚙︎⚔︎;0;R;1;Personnel;Humanoid, Explorer;CHA 3, INT 3, STR 3, WRD 0;2;;
+Engineer Lira Norrin;vanguard;⚙︎⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Engineer;CHA 1, INT 5, STR 0, WRD 1;2;;When played, you may recycle a Tech resource to search your deck for a Manufact and put it in hand.
+Navigator Tel Vesk;vanguard;⚙︎⚙︎;⚙︎;0;C;4;Personnel;Xenoid, Navigator;CHA 1, INT 4, STR 2, WRD 0;5;;When this team explores a new Location, draw a card.
+Astro-Linguist Javo;vanguard;⚜︎⚙︎;;0;U;2;Personnel;Humanoid, Scientist;CHA 2, INT 3, STR 1, WRD 2;4;;Once per turn, if you pass an INT check, you may look at the top card of your deck.
+Expeditionary AI PEL-X9;vanguard;⚜︎⚙︎⚙︎;⚙︎;0;U;2;Personnel;Cybernetic, Explorer;CHA 0, INT 6, STR 0, WRD 1;1;;If you win an INT check by 2 or more, untap this Personnel.
 Astro-Cartographer Vis Drenn;vanguard;⚙︎⚙︎⚙︎⚙︎⚙︎;⚙︎⚙︎;0;R;1;Personnel;Xenoid, Scientist;CHA 1, INT 6, STR 0, WRD 2;1;;
 Centurion Vrax Tuur;"6thint";⚔︎⚔︎⚔︎⚔︎⚔︎;⚔︎⚔︎;0;R;1;Personnel;Humanoid, Warrior;CHA 1, INT 0, STR 6, WRD 1;1;;
 Legate Mira Kaun;"6thint";⚜︎⚜︎⚔︎⚔︎;⚜︎/⚔︎;0;R;1;Personnel;Humanoid, Commander;CHA 3, INT 1, STR 3, WRD 1;3;;
 Enforcer Kask Dril;"6thint";⚔︎⚔︎;⚔︎;0;C;4;Personnel;Humanoid, Soldier;CHA 1, INT 1, STR 3, WRD 0;6;;
 Shock Trooper Jai Rikt;"6thint";⚔︎⚔︎;⚔︎;0;R;1;Personnel;Humanoid, Soldier;CHA 1, INT 1, STR 3, WRD 0;5;;
+Blade Marshal Trok Varn;"6thint";⚔︎⚔︎⚔︎⚔︎;⚔︎;0;R;1;Personnel;Humanoid, Commander;CHA 1, INT 2, STR 6, WRD 0;1;;When this Personnel leads an attack, your team gains STR +1.
+Warband Slayer Kaath;"6thint";⚔︎⚔︎⚔︎;⚔︎;0;U;2;Personnel;Xenoid, Warrior;CHA 0, INT 1, STR 5, WRD 1;2;;When this Personnel scraps a target, untap them at end of combat.
+Siegebreaker Rad Druk;"6thint";⚔︎⚔︎⚙︎;⚔︎;0;U;2;Personnel;Humanoid, Soldier;CHA 0, INT 2, STR 4, WRD 0;3;;Whenever this team attacks a disabled Ship, deal 1 extra damage.
+Taskmaster Kreel;"6thint";⚔︎⚔︎;⚔︎;0;C;4;Personnel;Humanoid, Officer;CHA 1, INT 2, STR 3, WRD 0;5;;Whenever you win a STR check, this team may draw a card.
 Fixer Null;syndicate;⚜︎⚜︎⚙︎✶;⚜︎;0;R;1;Personnel;Xenoid, VIP;CHA 5, INT 3, STR 1, WRD 2;1;;
 Broker Cass Vyx;syndicate;⚜︎⚜︎⚔︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 2, STR 3, WRD 1;2;;
 Smuggler Tiko Sar;syndicate;⚜︎⚙︎⚔︎;⚜︎⚙︎⚔︎;0;R;1;Personnel;Humanoid, Engineer;CHA 2, INT 4, STR 2, WRD 0;3;;
@@ -19,6 +31,10 @@ Seer Oth Vallis;continuum;⚔︎✶✶✶;✶;0;R;1;Personnel;Humanoid, Monk;CHA
 The Oracle Sigma;continuum;⚙︎✶✶;⚙︎/✶;0;U;4;Personnel;Xenoid, Cyber, Priest;CHA 2, INT 2, STR 1, WRD 3;3;;
 Psi-Mage Kaeli;continuum;⚜︎✶;⚜︎/✶;0;C;4;Personnel;Humanoid, Knight;CHA 2, INT 1, STR 2, WRD 2;4;;
 Mindweaver Uliss;continuum;⚔︎;⚔︎;0;C;4;Personnel;Xenoid, Scientist;CHA 1, INT 2, STR 1, WRD 1;5;;
+Acolyte Zelia Vos;continuum;✶✶⚜︎;✶;0;R;1;Personnel;Humanoid, Acolyte;CHA 1, INT 2, STR 1, WRD 6;1;;Once per game, you may recycle this Personnel to draw 2 cards.
+Seer Lin Makar;continuum;✶⚙︎;;0;U;2;Personnel;Xenoid, Seer;CHA 2, INT 1, STR 1, WRD 5;2;;When you pass a WRD skill check, look at the top 2 cards of your deck and reorder.
+Augur Ixis;continuum;⚙︎✶;✶;0;U;2;Personnel;Humanoid, Mystic;CHA 1, INT 3, STR 1, WRD 4;3;;This team may use WRD in place of INT for skill checks on missions.
+Visionweaver Mylos;continuum;✶;✶;0;C;4;Personnel;Xenoid, Oracle;CHA 1, INT 1, STR 1, WRD 3;6;;When this Personnel is recycled, gain 1 Mystical resource.
 Quartermaster Dela Finn;lifters;⚜︎⚜︎;⚜︎;0;R;1;Personnel;Humanoid, Leader;CHA 4, INT 1, STR 2, WRD 0;2;;
 Cargo Chief Grok;lifters;⚙︎⚙︎;⚙︎;0;R;1;Personnel;Xenoid, Engineer;CHA 1, INT 4, STR 2, WRD 0;2;;
 Pilot Sann Loric;lifters;⚙︎⚔︎;⚙︎⚔︎;0;R;1;Personnel;Humanoid, Explorer;CHA 1, INT 3, STR 3, WRD 0;2;;
@@ -26,18 +42,26 @@ Route Master Rekth;lifters;⚙︎⚙︎;⚙︎;0;R;1;Personnel;Humanoid, Scienti
 Pax-Class Diplomatic Shuttle;accord;⚜︎⚙︎;;1;U;2;Ship;Shuttle,Harmony;HLD 0, WPN 1, RNG 3, SIZ 1;3;disabled;*Crew 1*
 Parlay-Class Envoy Frigate;accord;⚜︎⚜︎⚙︎;;2;R;1;Ship;Frigate,Envoy;HLD 1, WPN 2, RNG 4, SIZ 2;4;RNG -1, disabled;*Crew 2*
 Concordia Negotiator;accord;⚜︎⚜︎⚜︎⚙︎;;4;R;1;Ship;Cruiser,Embassy;HLD 2, WPN 3, RNG 3, SIZ 4;5;RNG -1, WPN -1, RNG -1, disabled;*Crew 0*
+Concord-Class Envoy Sloop;accord;⚜︎⚜︎⚙︎;;2;U;2;Ship;Sloop, Envoy;HLD 1, WPN 2, RNG 4, SIZ 2;4;RNG -1, disabled;*Crew 2*. When this Ship arrives at a Location, you may untap a Diplomat there.
+Harmony Pinnace;accord;⚜︎⚜︎;;1;C;4;Ship;Pinnace, Support;HLD 0, WPN 1, RNG 3, SIZ 1;5;disabled;*Crew 1*. Ships at same Location as Harmony Pinnace cannot be attacked this turn.
 Discovery Micro-Shuttle;vanguard;⚙︎;;1;C;4;Ship;Shuttle,Explorer;HLD 0, WPN 1, RNG 4, SIZ 1;2;disabled;*Crew 1*
 Nova Survey Sloop;vanguard;⚙︎⚙︎⚜︎;;2;U;2;Ship;Sloop,Surveyor;HLD 1, WPN 2, RNG 4, SIZ 2;5;RNG -1, disabled;*Crew 2*
 Eventide Leapcruiser;vanguard;⚙︎⚙︎⚜︎⚜︎;;3;R;1;Ship;Cruiser,Scout;HLD 2, WPN 3, RNG 5, SIZ 3;4;WPN -1, RNG -1, disabled;*Crew 3*
+Quasar Surveyor;vanguard;⚙︎⚙︎;;2;U;2;Ship;Frigate, Explorer;HLD 1, WPN 2, RNG 5, SIZ 2;4;RNG -1, disabled;*Crew 2*. When this Ship explores a new Location, gain 1 Tech resource.
+Nova Light Probe;vanguard;⚙︎;;1;C;4;Ship;Drone, Probe;HLD 0, WPN 0, RNG 4, SIZ 1;6;disabled;*Crew 1*. If this Ship is scrapped, you may recycle it instead.
 Legionnaire Dropship;"6thint";⚔︎;;1;C;4;Ship;Dropship,Assault;HLD 0, WPN 2, RNG 3, SIZ 1;1;disabled;*Crew 1*
 Mauler Gunboat;"6thint";⚔︎⚔︎;;2;U;2;Ship;Gunboat,Escort;HLD 1, WPN 4, RNG 2, SIZ 2;6;RNG -1, disabled;*Crew 2*
 Supremacy Carrier;"6thint";⚔︎⚔︎⚔︎⚜︎;;4;R;1;Ship;Carrier,Capital;HLD 2, WPN 5, RNG 3, SIZ 4;5;RNG -1, WPN -1, RNG -1, disabled;*Crew 0*
+Iron Pike Assault Boat;"6thint";⚔︎⚙︎;;1;C;4;Ship;Gunship, Assault;HLD 0, WPN 2, RNG 3, SIZ 1;6;disabled;*Crew 1*. If this Ship attacks and wins, untap it.
+Conquest-Class Dreadnought;"6thint";⚔︎⚔︎⚔︎;;3;R;1;Ship;Dreadnought, Capital;HLD 2, WPN 4, RNG 4, SIZ 3;2;WPN -1, RNG -1, disabled;*Crew 3*. Ships attacked by this Ship are disabled after combat until the end of your next turn.
 Wraith-Runner Craft;syndicate;⚙︎⚔︎;;1;C;4;Ship;Fighter,Stealth;HLD 0, WPN 2, RNG 4, SIZ 1;3;disabled;*Crew 1*
 Ghostline Corvette;syndicate;⚜︎⚔︎⚙︎;;2;U;2;Ship;Corvette,Smuggler;HLD 1, WPN 2, RNG 5, SIZ 2;4;RNG -1, disabled;*Crew 2*
 Black Lotus Freighter;syndicate;⚜︎⚜︎⚙︎⚔︎;;3;R;1;Ship;Freighter,Illicit;HLD 2, WPN 3, RNG 3, SIZ 3;6;WPN -1, RNG -1, disabled;*Crew 3*
 Echo Skiff;continuum;✶;;1;C;4;Ship;Skiff,Psi;HLD 0, WPN 1, RNG 3, SIZ 1;2;disabled;*Crew 1*
 Paradox Wavecutter;continuum;⚙︎✶;;2;U;2;Ship;Frigate,Psi;HLD 1, WPN 3, RNG 5, SIZ 2;5;RNG -1, disabled;*Crew 2*
 Entropic Leviathan;continuum;✶✶⚔︎;;4;R;1;Ship;Leviathan,Emanation;HLD 2, WPN 5, RNG 4, SIZ 4;3;RNG -1, WPN -1, RNG -1, disabled;*Crew 0*
+Spectral Hum Vessel;continuum;✶✶;;2;U;2;Ship;Vessel, Mystic;HLD 1, WPN 1, RNG 3, SIZ 2;4;RNG -1, disabled;*Crew 2*. When this Ship is deployed, you may untap a Mystic at its Location.
+Serenity’s Edge;continuum;✶✶⚙︎;;3;R;1;Ship;Frigate, Vision;HLD 2, WPN 2, RNG 4, SIZ 3;2;WPN -1, RNG -1, disabled;*Crew 3*. When this Ship attempts a mission, its crew adds +1 WRD for all checks.
 Tiny Pacer;lifters;⚙︎;;1;C;4;Ship;Shuttle,Freighter;HLD 2, WPN 1, RNG 3, SIZ 1;1;disabled;*Crew 1*
 Bulk Hauler;lifters;⚙︎⚙︎;;3;U;2;Ship;Freighter;HLD 4, WPN 2, RNG 3, SIZ 3;5;WPN -1, RNG -1, disabled;*Crew 3*
 Routebreaker Titan;lifters;⚙︎⚙︎⚙︎;;4;R;1;Ship;Transport,Superheavy;HLD 5, WPN 3, RNG 2, SIZ 4;6;RNG -1, WPN -1, RNG -1, disabled;*Crew 0*
@@ -66,3 +90,4 @@ Quantum Winch;lifters;⚙︎⚙︎;;3;R;1;Manufact;Device;SIZ 1, level 3;6;;This
 Retroviral Plague;⚙︎⬡;;;U;2;Event;;;3;Put a *plague* marker on target away team. The plague infects any team who gets in contact with a member of an infected team. A Medic may attempt to cure it with an INT check vs 8. At the end of your turn, roll a D6: scrap all infected Personnel with that D6 value.
 Hypergate Bandwidth Saturation;✶⬡;;;U;2;Event;Superluminal;;4;Play on a Ship in hyperspace: it cannot re-enter normal space. From the next turn, the crew may attempt an INT check vs 7 to nullify _this_.
 Xenomorph Birth;⚙︎⚔︎⬡;;;R;1;Event;;;4;A random Humanoid of target crew dies as a xenomorph bursts from their belly and hides in the Ship. At the end of each of your turn, the xenomorph attacks and the crew must defend vs 9.
+Internal Turmoil;⚜︎⚜︎⚜︎⚜︎;;4;R;1;Event;;;1;Scrap target player's Personnel in the resource zone. #quote(attribution: [Marl Kraxx, Galactic Economist])[When undergoing internal turmoil, empires divest resources from exploration and research, ultimatly decreasing their astropolitical clout and worsening the crisis that caused the turmoil in the first place.]
