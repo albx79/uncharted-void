@@ -85,7 +85,7 @@ a *Type*, one or more *Subtypes*, and a *Text Box* with special abilities (trigg
 for that card.
 
 All cards that go in the main deck also have:
-- *Faction/Generic*, that affects deckbuilding
+- *Faction/Unaffiliated*, that affects deckbuilding
 - *D6 Value* for randomized checks
 
 If an effect causes a card to change its type, then all values required by the new type but not printed on the card,
@@ -258,6 +258,9 @@ There are four resource types, provided by Personnel, and displayed as coloured 
 + *⚙︎ Tech*: scientific and engineering prowess
 + *⚔︎ Tactical*: military and strategic capability
 + *✶ Mystical*: psionics, mysticism, or unexplained forces
+
+There's also the special *⬡ generic* resource, which can be paid with any resource type.
+If a card provides *⬡*, it can be used only to pay for *⬡*.
 
 During this phase, you may play from your hand into your resource zone a number of Personnel cards
 less than or equal to the current Escalation Level.

@@ -56,10 +56,13 @@ Blackmail File;syndicate;⚜︎⚜︎;; ;C;4;Manufact;Document;;1;;When this tea
 Disruptor Toolset;syndicate;⚙︎⚔︎;; ;U;2;Manufact;Equipment;;6;;This Ship has WPN +1 if an Engineer is present.
 Cloaking Mesh;syndicate;;;;U;2;Manufact;Device;SIZ 1;2;;When this Ship enters hyperspace, put a *cloaked* marker on it (_it cannot be attacked or targeted_). Remove it when it lands, attacks, or when a card is moved in or out of it.
 Ghost Hyperdrive;syndicate;⚜︎⚙︎;; ;R;1;Manufact;Device;SIZ 2;4;;This Ship has RNG +2.
-Neural Focusing Crystal;generic;✶;; ;C;4;Manufact;Psionic,Equipment;;3;;A member of this team has WRD +1.
+Neural Focusing Crystal;generic;✶⬡;; ;C;4;Manufact;Psionic,Equipment;;3;;A member of this team has WRD +1.
 Psi-Transducer;continuum;✶⚙︎;; ;U;2;Manufact;Psionic,Device;SIZ 1;2;;A member of this crew has WRD +1.
 Psychic Resonator;continuum;;;;U;2;Manufact;Psionic,Equipment;;1;;A Priest in this team may roll CHA instead of INT.
 Reality Anchor;continuum;✶✶;; ;R;1;Manufact;Psionic,Device;SIZ 1, level 2;5;;A Priest in this away team has WRD +2.
-Compact Astrogator;generic;⚙︎⚙︎;; ;U;2;Manufact;Device;SIZ 1;4;;This Ship has RNG +1 if a Scientist is present.
+Compact Astrogator;generic;⚙︎⬡;; ;U;2;Manufact;Device;SIZ 1;4;;This Ship has RNG +1 if a Scientist is present.
 External Supply Cache;lifters;;;;C;4;Manufact;Device;;5;;This Ship has HLD +1.
 Quantum Winch;lifters;⚙︎⚙︎;;3;R;1;Manufact;Device;SIZ 1, level 3;6;;This Ship may move Cargo to and from land as if it had *landers* (_but it cannot move Personnel this way_).
+Retroviral Plague;⚙︎⬡;;;U;2;Event;;;3;Put a *plague* marker on target away team. The plague infects any team who gets in contact with a member of an infected team. A Medic may attempt to cure it with an INT check vs 8. At the end of your turn, roll a D6: scrap all infected Personnel with that D6 value.
+Hypergate Bandwidth Saturation;✶⬡;;;U;2;Event;Superluminal;;4;Play on a Ship in hyperspace: it cannot re-enter normal space. From the next turn, the crew may attempt an INT check vs 7 to nullify _this_.
+Xenomorph Birth;⚙︎⚔︎⬡;;;R;1;Event;;;4;A random Humanoid of target crew dies as a xenomorph bursts from their belly and hides in the Ship. At the end of each of your turn, the xenomorph attacks and the crew must defend vs 9.

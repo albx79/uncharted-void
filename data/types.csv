@@ -1,6 +1,6 @@
 type;layout;attr;tracker
 Personnel;V;CHA,INT,STR,WRD;
 Ship;H;RNG,HLD,WPN,SIZ;Damage
-Location;H;LFT,RGT,LND,TKF;Progress
+Location;L;LFT,RGT,LND,TKF;Progress
 Manufact;V;;
 Event;V;;
