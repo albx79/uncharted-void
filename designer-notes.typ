@@ -90,7 +90,7 @@ The space line
 
 Overall, 1D line leaves less space for chess-like tactics (position-based interaction), 
 in favour of more interaction at each location, which is a better fit for a Sci-Fi
-game where locations are light-year apart, but each location is an entire solar
+game where locations are light-years apart, but each location is an entire solar
 system where lots of things can happen.
 
 Therefore, I'm keen to adopt the space line as a core mechanic, unless a *strictly*
@@ -195,8 +195,25 @@ Or I may just reskin Josh Till's "Strange Stars", a little known space-opera RPG
 created to be system-agnostic (it's got all the ingredients I need).
 
 The Setting is especially important in combination with the Weird. 
-"Strange Stars" has some weird everywhere, but some factions or races lean more heavily
+"Strange Stars" has some weird everywhere, but some factions or species lean more heavily
 into it.
+
+For now I'll keep Strange Stars as the setting, and I'll reskin it later if I have to 
+(but I may just involve the authors and get their blessing for the game). 
+This informs the main factions:
+- The Alliance (charisma based)
+- The Vokun Empire (strength based)
+- The Instrumentality of Aom (combining strength and charisma)
+
+The Alliance has the Deva with high weird, and the Smaragdine with low weird. 
+The rest have none.
+
+The Vokun Empire has the Yantrans and the Voidglider with medium-to-high weird. 
+The rest have none.
+
+The Instrumentality doesn't defines any species in the book. 
+We can assume that species from other factions appear here.
+They can take low-, mid-, and high-weird species from there.
 
 == The Win Condition
 
@@ -207,7 +224,82 @@ Rather, it should be furthering the goals of their faction/civilisation.
 This was best represented by Star Trek CCG, with its missions and victory points (VP).
 I'm keen on taking this wholesale, with a small tweak: 
 rather than winning by reaching a fix target of VP, you win by having the highest VP
-when all missions are completed. 
+when *all* missions one the space line have been completed (or when the time is up, if
+there is a time limit). 
 This should create more incentive to players to attempt an opponent's missions or 
 intefere with the opponent's attempts, rather than playing two solitaires.
 Missions could be even written in such a way that forces players to interact.
+
+== Exploration, Seeding, and Mission Completion
+
+Bringing it all together.
+How is the space line explored?
+How are the manufacts seeded? Are they?
+How can locations/missions interact with the seeded manufacts?
+
+Some random ideas for locations: 
+- locations are unsleeved, shuffled, and played face-down
+  as initial space line
+  - pro: fair distribution of missions between players
+  - con: risk of mixing of cards between players
+  - workaround: bring extra sleeves and put a marker in the front
+- as above, but locations aren't unsleeved so that the owner remains known
+  (if playing sleeveless, keep card orientation consistent)
+  - pro: fair distribution
+  - pro: easier of all
+  - con: a bit less mystery
+- locations are initially not on the space line (the blank slot is 
+  reserved by another seeded card, or by a token). 
+  When a ship first moves there, a location is drawn from 
+  - the ship's controller's deck
+    - pro: a player can control where his missions are placed
+    - con: first player to move can spam the space line with his missions
+    - workaround: ensure thru mulligans that a fast start is available to all?
+  - a common deck with missions from both players
+    - con: again, mixing ownership of cards
+    - workaround: again, putting a marker in the front of the sleeve
+  - the deck is chosen randomly
+    - con: in case of bad luck one player's locations may not get placed
+
+Some random ideas for manufacts:
+- they're seeded at setup, 
+  - one per player per slot; players know what they're placing where
+  - one per player per slot, from a shuffled mini-deck (players don't know which manufact is where)
+  - two per slot, from a shuffled common deck
+    - players don't know what is where, but they'll be motivated to chase those locations with 2 of their manufacts
+
+- they're not seeded; instead, locations/missions cause them to be pulled from a deck
+  - when they're first revealed
+  - when their text says so
+  If so, pull them 
+  - from the deck of the player that triggered the pull
+  - from a common deck / a randomly chosen deck (it's effectively the same)
+
+Does anything have to be seeded at all? 
+Sorcery starts with an empty grid, which makes using a custom playmat almost mandatory.
+With a 1-d space line, one could possibly start on an empty table even without aids, 
+especially if ship movement rules are designed to help it.
+
+The two players could place the initial locations next to each other (e.g. "place your
+starting location on the righ of your opponent's"), then expand rightwards at first, 
+then it depends. 
+
+Locations should have different distances from the left and from the right:
+the fastest path to another location isn't necessarily a direct jump.
+Good starting locations have a very large distance to the left, and short to the right.
+This way, the opponent's starting location would be physically close, but very far away
+in hyperspace.
+
+Would initial locations be just normal locations?
+
+=== Parenthesis: on Manufacts
+  
+I'd like Manufact to be a card type that encompasses anything from tools, to weapons, to land vehicles, 
+and even ancient relics. This is both to keep the game simple (need to write rules just for one card type)
+and to help deck construction in limited environments (e.g. drafting), where one may not be able to draw
+a plethora of ancient relics.
+
+Some manufacts could be tokens generated by cards effects (and I envision this will be the only type of token
+in the game).
+
+End of parenthesis.
