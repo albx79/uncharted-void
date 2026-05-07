@@ -520,3 +520,8 @@ Each faction’s Home Location includes a unique mission designed to reinforce t
 / Space Line: The horizontal line of Locations (with Manufacts) forming the game board.
 / Team: A group of Personnel and their Manufacts acting together for Missions or Combat.
   A team on a Ship is a *crew*, and a team landed at a Location is an *away team*.
+
+// = Card List
+
+// #let cards = csv("data/cards.csv", delimiter: ";")
+// #table(columns: 13, ..cards.flatten())
