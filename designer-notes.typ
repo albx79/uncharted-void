@@ -138,7 +138,11 @@ One concept I had in mind was having Personnel cards (roughly the requivalent of
 Sorcery's minions) double as resource providers: you could play them on the space line as active
 personnel, or you could play them in a "resource zone" in front of you and they would provide the
 resources you need for the game (they could represent the unseen people in the galaxy that work to make
-the main characters' adventures possible).
+the main characters' adventures possible). 
+Because the resource zone is physically distinct from the space line, you can play Personnel
+always face up, with the following advantages:
++ Personnel can provide colored resources, and even have special effects when they are in the resource zone
++ Players can look at their beautiful cards, instead of having to look at the back of their card sleeves.
 
 == Factions
 
@@ -163,3 +167,47 @@ My original idea was to create a handful of hard factions, with some limited mix
 (each faction's home world would provide additional rule text for how they can be mixed).
 However, it requires to get the factions flavour right upfront.
 Otherwise, some badly designed factions would poison the game forever.
+
+A more viable solution would be a "soft factions" approach, where they are defined by 
+playstyle and values rather than card restrictions. That would provide
++ More flexibility in Setting design, as a badly conceived faction may slowly fade
+  away from the game
++ More flexibility in deck creation, as players could find innovative ways to mix and
+  match cards from different factions
+
+at the cost of Setting design. 
+I couldn't have classic Federation vs Klingons anymore.
+They would have to be something that allows mixing. 
+Or maybe not? Maybe preconstructed decks can be sold as single-factions, but players
+can do whatever they want without needing a game designer to justify their deck.
+  
+== The Setting
+
+No external Intellecual Property! Because:
++ I'm poor, I can't afford to buy one.
++ It's one of the 7 sins of TCGs.
++ I'd end up serving the IP; I'd have to design a game that serves the universe, 
+  rather than designing a univers that serves my game.
+  
+That said, if I found some kind of "open source" setting compatible with the game,
+I'd use it and tweak it if needed.
+Or I may just reskin Josh Till's "Strange Stars", a little known space-opera RPG setting
+created to be system-agnostic (it's got all the ingredients I need).
+
+The Setting is especially important in combination with the Weird. 
+"Strange Stars" has some weird everywhere, but some factions or races lean more heavily
+into it.
+
+== The Win Condition
+
+This is a game of exploration and diplomacy. 
+Yes, combat, too, but the players' goal shouldn't be killing each other.
+Rather, it should be furthering the goals of their faction/civilisation.
+
+This was best represented by Star Trek CCG, with its missions and victory points (VP).
+I'm keen on taking this wholesale, with a small tweak: 
+rather than winning by reaching a fix target of VP, you win by having the highest VP
+when all missions are completed. 
+This should create more incentive to players to attempt an opponent's missions or 
+intefere with the opponent's attempts, rather than playing two solitaires.
+Missions could be even written in such a way that forces players to interact.
