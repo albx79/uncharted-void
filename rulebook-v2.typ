@@ -169,3 +169,75 @@ This mulligan may only be used once.
 / Requisition: to play a card from your hand into play, paying its cost.
 / Scrap: to discard a card to the scrapyard.
 / Scrapyard: each player's discard pile.
+
+= Turn Structure
+
+Each turn consists of four phases, resolved in order:
+
+== Refresh Phase
+
+Untap all your tapped cards. This includes Personnel in your resource zone,
+Ships on the space line, and any other tapped cards you control.
+
+== Draw Phase
+
+Draw one card from your main deck. If your main deck is empty, you may not
+draw; if you are required to draw and cannot, you lose the game.
+
+== Main Phase
+
+The main phase is where most of the game's action takes place. You may perform
+the following actions in any order, any number of times, unless otherwise stated:
+
+=== Play one resource
+
+Once per turn, you may place one Personnel card from your hand into your
+resource zone, face-up. This Personnel is now a resource provider: they
+contribute their highlighted attribute as affinity, and may be tapped to
+provide one generic resource.
+
+=== Requisition a card
+
+You may play any card from your hand by paying its cost. To requisition a card:
++ Tap a number of Personnel in your resource zone equal to the card's generic cost
++ Ensure at least one Personnel in your resource zone has a highlighted attribute
+  matching the card's affinity requirement (this Personnel does not need to be tapped)
++ Place the card into play
+
+Personnel enter play in your resource zone or on a Ship or Location you control.
+Ships enter play at your home location.
+Manufacts enter play carried by a Personnel or Ship you control, or at a location
+you control.
+Events are resolved immediately if Fleeting, or placed in the appropriate zone
+if Persistent.
+
+=== Move and act with a Ship
+
+You may tap a Ship to move it, act with it, or both. Declare your intended
+action before resolving it:
+
+*Move*: declare a destination and a course through intermediate locations.
+Your Ship's RNG must be equal to or greater than the total hyperspace distance
+travelled. Your Ship passes through all intermediate locations along its course;
+opponents may respond with Superluminal effects at any point along the route.
+
+*Act*: choose one of the following:
+- *Attack*: initiate combat against a Ship or away team at the same location
+- *Disembark*: move any number of Personnel and Manufacts from the Ship
+  to the current location, or embark them from the location onto the Ship
+- *Attempt mission*: if the Ship is at a location and meets the requirements
+  of the next incomplete mission step, resolve that step
+
+A Ship may move and act in the same turn. Crew aboard the Ship do not tap
+when the Ship taps; they may still perform their own actions.
+
+=== Act with Personnel
+
+Untapped Personnel on the space line may tap to perform an action, such as
+attempting a mission step, engaging in away team combat, or activating an
+ability on their card.
+
+== End Phase
+
+You may discard any number of cards from your hand. Then, if you have more
+than 7 cards in hand, discard down to 7. Pass the turn to your opponent.
