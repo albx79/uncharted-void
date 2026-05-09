@@ -177,7 +177,7 @@ Each turn consists of four phases, resolved in order:
 == Refresh Phase
 
 Untap all your tapped cards. This includes Personnel in your resource zone,
-Ships on the space line, and any other tapped cards you control.
+Ships and Personnel on the space line, and any other tapped cards you control.
 
 == Draw Phase
 
@@ -193,23 +193,22 @@ the following actions in any order, any number of times, unless otherwise stated
 
 Once per turn, you may place one Personnel card from your hand into your
 resource zone, face-up. This Personnel is now a resource provider: they
-contribute their highlighted attribute as affinity, and may be tapped to
+contribute their highlighted attribute(s) as affinity, and may be tapped to
 provide one generic resource.
 
 === Requisition a card
 
 You may play any card from your hand by paying its cost. To requisition a card:
 + Tap a number of Personnel in your resource zone equal to the card's generic cost
-+ Ensure at least one Personnel in your resource zone has a highlighted attribute
-  matching the card's affinity requirement (this Personnel does not need to be tapped)
++ Ensure the number and kind of highlighted attributes in the resource zone satisfies
+  the affinity requirements of the card (it doesn't matter whether resource Personnel
+  is tapped)
 + Place the card into play
 
-Personnel enter play in your resource zone or on a Ship or Location you control.
-Ships enter play at your home location.
-Manufacts enter play carried by a Personnel or Ship you control, or at a location
-you control.
+Personnel and Manufacts enter play on land at your home location.
+Ships enter play at your home location (in space).
 Events are resolved immediately if Fleeting, or placed in the appropriate zone
-if Persistent.
+(as indicated by the card text) if Persistent.
 
 === Move and act with a Ship
 
@@ -222,10 +221,12 @@ travelled. Your Ship passes through all intermediate locations along its course;
 opponents may respond with Superluminal effects at any point along the route.
 
 *Act*: choose one of the following:
-- *Attack*: initiate combat against a Ship or away team at the same location
-- *Disembark*: move any number of Personnel and Manufacts from the Ship
-  to the current location, or embark them from the location onto the Ship
-- *Attempt mission*: if the Ship is at a location and meets the requirements
+- *Attack*: initiate combat against a Ship at the same location (Ships may not
+  attack away teams)
+- *Disembark*: transfer any number of Personnel from the crew to the planet
+  (if you already control an away team there, they join it, otherwise they
+  form a new one)
+- *Attempt mission*: if the Ship is at a space location and meets the requirements
   of the next incomplete mission step, resolve that step
 
 A Ship may move and act in the same turn. Crew aboard the Ship do not tap
@@ -233,11 +234,18 @@ when the Ship taps; they may still perform their own actions.
 
 === Act with Personnel
 
-Untapped Personnel on the space line may tap to perform an action, such as
-attempting a mission step, engaging in away team combat, or activating an
-ability on their card.
+You may tap Personnel to act. Declare your intended
+action before resolving it:
+
+*Act*: choose one of the following:
+- *Attack*: an away team (as a whole) initiates combat against the opponent's
+  away team at the same location (away teams may not attack Ships)
+- *Embark*: transfer any number of Personnel from the away team to a Ship you
+  control at the same location (a tapped Ship may still receive embarking Personnel)
+- *Attempt mission*: if the away team meets the requirements of the next incomplete
+  mission step, resolve that step
 
 == End Phase
 
-You may discard any number of cards from your hand. Then, if you have more
-than 7 cards in hand, discard down to 7. Pass the turn to your opponent.
+If you have more than 7 cards in hand, discard down to 7.
+Pass the turn to your opponent.
