@@ -11,6 +11,10 @@
 
 _Subtitle_
 
+= Introduction
+
+TO BE WRITTEN LATER.
+
 = Components and Card Types
 
 == The Cards
@@ -111,3 +115,57 @@ The game uses two types of physical markers:
 
 Token Manufacts are represented by cards provided in the game or created by card
 effects; they follow all normal Manufact rules.
+
+= Setup
+
+== Preparation
+
+Each player prepares the following before the game:
++ Their *starting location*: one Location card set aside
++ Their *mission locations*: four Location cards set aside
++ Their *manufact deck*: exactly 8 Manufact cards set aside
++ Their *main deck*: all remaining cards, shuffled face-down
+
+== Building the Space Line
+
+Determine randomly which player goes first.
+
+Both players shuffle their mission locations together into a face-down common deck.
+Player one then builds the space line from left to right as follows:
+
++ Draw and place 4 locations face-down from the common deck, left to right
++ Place *player two's* starting location face-up, oriented towards player two,
+  to the right of those 4
++ Place *player one's* starting location face-up, oriented towards player one,
+  to the right of that
++ Draw and place the remaining 4 locations face-down, to the right of those
+
+The resulting space line has 10 locations total: 4 unknown on the left,
+2 face-up home locations at the centre, and 4 unknown on the right.
+
+All LFT and RGT values on non-home locations are read from player one's perspective.
+For convenience, these values are mirrored upside-down on the top border of each
+location card, so player two can read them from their side of the table without
+ambiguity.
+
+== Seeding Manufacts
+
+Each player takes their manufact deck and shuffles it face-down. Players then
+seed manufacts in parallel: each player places one manufact face-down on each
+of the 8 unknown locations, in any order they choose. Home locations are not seeded.
+
+The order in which manufacts are placed under a location is not tracked and
+has no rules significance.
+
+== Initial Draw
+
+Draw 7 cards from your main deck as your opening hand. If your opening hand
+contains no Ships or no Personnel, you may recycle all 7 and draw 7 again.
+This mulligan may only be used once.
+
+== Glossary
+
+/ Recycle: to place a card on the bottom of its owner's main deck.
+/ Requisition: to play a card from your hand into play, paying its cost.
+/ Scrap: to discard a card to the scrapyard.
+/ Scrapyard: each player's discard pile.
