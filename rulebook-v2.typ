@@ -263,24 +263,35 @@ distance budget. When you declare a move action:
 + Calculate the total hyperspace distance: sum the LFT or RGT value of each
   location travelled through, depending on the direction of travel
 + Confirm the total distance does not exceed the Ship's RNG
-+ Move the Ship and its crew to the destination
++ Your opponent may now play Superluminal Events targeting the Ship before it
+  departs; once the Ship enters hyperspace it cannot be targeted until it arrives
++ Move the Ship and its crew into hyperspace, then to the next intermediate location
++ Repeat steps 4 and 5 until the Ship reaches the set destination
 
 A Ship may carry any number of Personnel and Manufacts as it moves; they travel
-with the Ship and arrive at the destination together.
+with the Ship through hyperspace and arrive at the destination together.
 
-A Ship passes through all intermediate locations along its declared course.
-Opponents may play Superluminal Events at any point during this movement;
-unless the effect specifically requires the Ship to stop, movement continues
-uninterrupted to the declared destination.
+Hyperspace is a separate zone. Cards in hyperspace cannot be targeted by any
+effect unless that effect explicitly states otherwise.
 
 == Revealing Locations
 
-When a Ship or away team first arrives at a face-down location, that location
-is immediately revealed. Read its card text; any triggered effects resolve
-before any actions are taken there.
+Just before a Ship exits hyperspace at a face-down location, reveal the location.
+Then, check the location distance:
 
-If the revealed location has distance greater than the available range, the move
-still completes, as it was a legal move at the time is was declared.
+- If the total distance travelled does not exceed the Ship's RNG, the move is
+  legal and the Ship exits hyperspace normally
+- If the total distance exceeds the Ship's RNG, the move is cancelled: the Ship
+  instead exits hyperspace at the last location along its declared course that
+  was within range, or at its starting location if no intermediate location was within range.
+
+Any "on reveal" effects on the location resolve before the Ship exits hyperspace,
+and they resolve normally whether the ship completes the move or not.
+Effect triggered by arrival (worded as "when a Ship arrives here" or similar)
+only resolve if the Ship actually completes the move to that location.
+
+Opponents may play Superluminal effects at any point after the Ship exits
+hyperspace and arrives at its destination.
 
 == Ship Combat
 
