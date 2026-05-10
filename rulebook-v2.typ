@@ -242,6 +242,8 @@ action before resolving it:
   away team at the same location (away teams may not attack Ships)
 - *Embark*: transfer any number of Personnel from the away team to a Ship you
   control at the same location (a tapped Ship may still receive embarking Personnel)
+- *Transfer*: move any number of Personnel from their current Ship to another Ship you
+  control at the same location
 - *Attempt mission*: if the away team meets the requirements of the next incomplete
   mission step, resolve that step
 
@@ -249,3 +251,86 @@ action before resolving it:
 
 If you have more than 7 cards in hand, discard down to 7.
 Pass the turn to your opponent.
+
+= Core Mechanics
+
+== Movement
+
+Ships move through the space line by spending their RNG attribute as a hyperspace
+distance budget. When you declare a move action:
+
++ Declare the destination and the full course, listing all intermediate locations
++ Calculate the total hyperspace distance: sum the LFT or RGT value of each
+  location travelled through, depending on the direction of travel
++ Confirm the total distance does not exceed the Ship's RNG
++ Move the Ship and its crew to the destination
+
+A Ship may carry any number of Personnel and Manufacts as it moves; they travel
+with the Ship and arrive at the destination together.
+
+A Ship passes through all intermediate locations along its declared course.
+Opponents may play Superluminal Events at any point during this movement;
+unless the effect specifically requires the Ship to stop, movement continues
+uninterrupted to the declared destination.
+
+== Revealing Locations
+
+When a Ship or away team first arrives at a face-down location, that location
+is immediately revealed. Read its card text; any triggered effects resolve
+before any actions are taken there.
+
+If the revealed location has distance greater than the available range, the move
+still completes, as it was a legal move at the time is was declared.
+
+== Ship Combat
+
+Ship combat occurs when a Ship's Attack action targets an enemy Ship at the
+same location. Resolve as follows:
+
++ Each player sums the STR of all crew aboard their Ship
++ Add each Ship's WPN to its crew's total
++ The player with the lower total loses: place one damage counter on their Ship
++ In case of a tie, both Ships take one damage counter
++ A Ship is scrapped when its damage counters equal its SIZ
+
+Personnel aboard a scrapped Ship are scrapped with it, unless a card effect
+specifies otherwise.
+
+== Away Team Combat
+
+Away team combat occurs when an away team's Attack action targets an enemy
+away team at the same location. Resolve as follows:
+
++ Each player sums the STR of all Personnel in their away team
++ The player with the lower total loses: they scrap one Personnel of their choice
+  from their away team
++ In case of a tie, both players scrap one Personnel of their choice
+
+== Missions
+
+=== Attempting a Mission Step
+
+To attempt a mission step, a Ship (for space locations) or away team (for planet
+locations) must be at the location and meet the requirements listed for the next
+incomplete step on the progress tracker.
+
+If the requirements are met, place a progress counter on that step and resolve
+any effects listed. If the step awards VP, note them immediately.
+
+Steps must be completed in order: you may not attempt step 2 before step 1
+is complete.
+
+=== Completing a Mission
+
+A mission is complete when all steps on its progress tracker have a progress
+counter. The completing player:
++ Scores any VP listed on the location card itself
++ Reveals all seeded Manufacts at that location and takes control of them
+
+=== Winning the Game
+
+The game ends when all missions on the space line have been completed.
+The player with the most VP wins.
+
+If the game cannot proceed (both players are unable or unwilling to attempt
+any remaining missions), the player with the most VP wins immediately.
