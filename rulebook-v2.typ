@@ -345,3 +345,38 @@ The player with the most VP wins.
 
 If the game cannot proceed (both players are unable or unwilling to attempt
 any remaining missions), the player with the most VP wins immediately.
+
+= Keywords and Game Terms
+
+== Keywords
+
+/ Crew N: this Ship requires at least N Personnel aboard to move or act.
+  A Ship with Crew 0 is automated and requires no Personnel to operate.
+/ Hold N: this Ship can carry one Manufact or Ship of SIZ N or less.
+/ Superluminal: this card may be played, or this ability may be activated,
+  at any time — including during the opponent's turn or while another effect
+  is being resolved. All other cards may only be played, and all other
+  activated abilities may only be used, during your main phase when there
+  are no resolved effects.
+
+== Event Subtypes
+
+/ Fleeting: this Event is scrapped immediately after its effect resolves.
+/ Persistent: this Event remains in play after its effect resolves, placed
+  in the zone indicated by its card text.
+
+== Game Terms
+
+/ Away team: any number of Personnel you control at a planet location,
+  on the planet surface.
+/ Crew: any number of Personnel you control aboard a Ship.
+/ Team: a crew or an away team.
+/ Hyperspace: a separate zone that Ships pass through during movement.
+  Cards in hyperspace cannot be targeted by any effect unless that effect
+  explicitly states otherwise.
+/ Space line: the row of Location cards that forms the board. Unless otherwise
+  stated, all effects target cards on the space line.
+/ Scrapyard: a player's discard pile. Cards in the scrapyard are face-up and
+  may be inspected by either player at any time.
+/ Resource zone: the area in front of each player where Personnel are placed
+  face-up to provide resources and affinity.
