@@ -11,6 +11,8 @@
 
 _Subtitle_
 
+#outline(depth: 2)
+
 = Introduction
 
 TO BE WRITTEN LATER.
@@ -42,7 +44,8 @@ Ships are the vessels that carry your Personnel across the space line.
 Each Ship card has three attributes:
 
 / RNG (Range): how far the ship can travel in a single move action, measured in hyperspace distance units
-/ WPN (Weapons): how powerful the ship is in combat
+/ WPN (Weapons): a measure of the Ship's overall combat effectiveness, including weaponry, sensors,
+  jamming, and evasive capability
 / SIZ (Size): the physical scale of the ship, from 1 (shuttle) upward
 
 SIZ also determines the ship's durability: a ship is scrapped when it has accumulated
@@ -59,10 +62,11 @@ Each Location card has:
 
 / LFT: the hyperspace distance cost to travel to or from this location moving left
 / RGT: the hyperspace distance cost to travel to or from this location moving right
-/ Subtypes: such as _Space_ or _Planet_, which determine whether ships or away teams interact with them
+/ Subtypes: such as _Space_ or _Planet_, which determine whether ships or away teams
+  interact with them (see @missions)
 
 Locations also have a *progress tracker*: a series of steps describing the mission
-to be completed there, each optionally awarding VP upon completion.
+to be completed there, each optionally awarding *victory points* (VP) upon completion.
 
 Finally, each Location has a *seeded manufacts* zone, where manufacts are placed
 face-down at game setup. When a mission is completed, the completing player reveals
@@ -91,7 +95,7 @@ Events represent one-off occurrences or ongoing phenomena. They have two subtype
 / Persistent: remain in play after resolution, placed on a card they affect,
   at or between locations on the space line, or in a player's resource zone as appropriate
 
-Events may also have the *Superluminal* keyword, meaning they can be played at any
+Events may also have the *Superluminal* subtype, meaning they can be played at any
 time, including during an opponent's turn.
 
 == Affinity
@@ -121,7 +125,7 @@ effects; they follow all normal Manufact rules.
 == Preparation
 
 Each player prepares the following before the game:
-+ Their *starting location*: one Location card set aside
++ Their *home location*: one Location card set aside
 + Their *mission locations*: four Location cards set aside
 + Their *manufact deck*: exactly 8 Manufact cards set aside
 + Their *main deck*: all remaining cards, shuffled face-down
@@ -134,9 +138,9 @@ Both players shuffle their mission locations together into a face-down common de
 Player one then builds the space line from left to right as follows:
 
 + Draw and place 4 locations face-down from the common deck, left to right
-+ Place *player two's* starting location face-up, oriented towards player two,
++ Place *player two's* home location face-up, oriented towards player two,
   to the right of those 4
-+ Place *player one's* starting location face-up, oriented towards player one,
++ Place *player one's* home location face-up, oriented towards player one,
   to the right of that
 + Draw and place the remaining 4 locations face-down, to the right of those
 
@@ -317,7 +321,7 @@ away team at the same location. Resolve as follows:
   from their away team
 + In case of a tie, both players scrap one Personnel of their choice
 
-== Missions
+== Missions <missions>
 
 === Attempting a Mission Step
 
@@ -380,3 +384,7 @@ any remaining missions), the player with the most VP wins immediately.
   may be inspected by either player at any time.
 / Resource zone: the area in front of each player where Personnel are placed
   face-up to provide resources and affinity.
+/ Tapped: a card that has been rotated 45 degrees clockwise to indicate it has
+  been used this turn. A tapped card cannot be tapped again until it is untapped.
+  Cards are untapped during the Refresh Phase.
+/ Untapped: a card in its normal, upright orientation, available to be used.
