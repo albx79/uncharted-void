@@ -1,5 +1,5 @@
 #set page(paper: "a5", numbering: "1", margin: (1.5cm))
-#set heading(numbering: "I-1-A〉")
+#set heading(numbering: "I-A-1〉")
 #show heading: set text(font: "Exo 2")
 #set text(10pt, font: "Exo 2")
 #set par(justify: true)
@@ -40,7 +40,9 @@ Personnel provides when placed in the resource zone.
 
 === Ships (landscape)
 
-Ships are the vessels that carry your Personnel across the space line.
+Ships are the vessels that carry your Personnel and Manufacts across the space line
+(physically place the Personnel and Manufact cards atop the Ship's, to
+represent that they are being carried).
 Each Ship card has three attributes:
 
 / RNG (Range): how far the ship can travel in a single move action, measured in hyperspace distance units
@@ -62,8 +64,10 @@ Each Location card has:
 
 / LFT: the hyperspace distance cost to travel to or from this location moving left
 / RGT: the hyperspace distance cost to travel to or from this location moving right
-/ Subtypes: such as _Space_ or _Planet_, which determine whether ships or away teams
-  interact with them (see @missions)
+/ Subtypes: every location has either the surface [SURF] or void [VOID] subtype,
+  indicated by an icon, which determines how missions are attempted there (see @missions).
+  Additional subtypes such as _Planet_, _Habitat_, _Derelict_, or _Nebula_ are purely
+  flavour and have no mechanical effect unless specifically referenced by a card.
 
 Locations also have a *progress tracker*: a series of steps describing the mission
 to be completed there, each optionally awarding *victory points* (VP) upon completion.
@@ -78,14 +82,18 @@ They are the board.
 === Manufacts (portrait)
 
 Manufacts encompass any physical object: tools, weapons, land vehicles, ancient relics,
-and cargo. They can be carried by Personnel or Ships, and interact with Locations
-in a variety of ways.
+and cargo. 
+They can be carried by away teams or by the crew aboard Ships. 
+
+They can also be abandoned on a planet surface or left to float in space; 
+in this case, any away team or ship (respectively) can collect the abandoned
+manufact as a free action.
 
 Some Manufacts are *tokens*: created during play by card effects rather than drawn
 from a deck.
 
 Manufacts may have a *SIZ* attribute. A Ship with a *Hold N* keyword can carry any
-Manufact or Ship of SIZ N or less.
+number of Manufacts or Ships of SIZ N or less.
 
 === Events (portrait or landscape)
 
@@ -167,13 +175,6 @@ Draw 7 cards from your main deck as your opening hand. If your opening hand
 contains no Ships or no Personnel, you may recycle all 7 and draw 7 again.
 This mulligan may only be used once.
 
-== Glossary
-
-/ Recycle: to place a card on the bottom of its owner's main deck.
-/ Requisition: to play a card from your hand into play, paying its cost.
-/ Scrap: to discard a card to the scrapyard.
-/ Scrapyard: each player's discard pile.
-
 = Turn Structure
 
 Each turn consists of four phases, resolved in order:
@@ -196,17 +197,16 @@ the following actions in any order, any number of times, unless otherwise stated
 === Play one resource
 
 Once per turn, you may place one Personnel card from your hand into your
-resource zone, face-up. This Personnel is now a resource provider: they
+resource zone, face-up. This Personnel is now a *resource*: they
 contribute their highlighted attribute(s) as affinity, and may be tapped to
-provide one generic resource.
+produce 1 influence. Spend influence to requisition cards.
 
 === Requisition a card
 
 You may play any card from your hand by paying its cost. To requisition a card:
-+ Tap a number of Personnel in your resource zone equal to the card's generic cost
++ Tap a number of resources equal to the card's cost
 + Ensure the number and kind of highlighted attributes in the resource zone satisfies
-  the affinity requirements of the card (it doesn't matter whether resource Personnel
-  is tapped)
+  the affinity requirements of the card (it doesn't matter whether resources are tapped)
 + Place the card into play
 
 Personnel and Manufacts enter play on land at your home location.
@@ -235,6 +235,8 @@ opponents may respond with Superluminal effects at any point along the route.
 
 A Ship may move and act in the same turn. Crew aboard the Ship do not tap
 when the Ship taps; they may still perform their own actions.
+
+Personnel on a planet surface remain there if their Ship departs.
 
 === Act with Personnel
 
@@ -291,7 +293,7 @@ Then, check the location distance:
 
 Any "on reveal" effects on the location resolve before the Ship exits hyperspace,
 and they resolve normally whether the ship completes the move or not.
-Effect triggered by arrival (worded as "when a Ship arrives here" or similar)
+Effects triggered by arrival (worded as "when a Ship arrives here" or similar)
 only resolve if the Ship actually completes the move to that location.
 
 Opponents may play Superluminal effects at any point after the Ship exits
@@ -325,12 +327,21 @@ away team at the same location. Resolve as follows:
 
 === Attempting a Mission Step
 
-To attempt a mission step, a Ship (for space locations) or away team (for planet
-locations) must be at the location and meet the requirements listed for the next
+To attempt a mission step, a Ship at a void [VOID] location, or an away team
+at a surface [SURF] location, must meet the requirements listed for the next
 incomplete step on the progress tracker.
+
+You may attempt any mission, not just the ones you own.
+In fact, building a flexible deck that can complete any kind of mission is a 
+good way to ensure your victory! 
+However, if two players are attempting the same mission, each player gets
+their own progress counter. You can't exploit your opponent's first step
+to skip directly to the second.
 
 If the requirements are met, place a progress counter on that step and resolve
 any effects listed. If the step awards VP, note them immediately.
+Once a counter is placed on the final step, the mission is complete and no 
+further steps may be attempted by any player.
 
 Steps must be completed in order: you may not attempt step 2 before step 1
 is complete.
@@ -350,40 +361,73 @@ The player with the most VP wins.
 If the game cannot proceed (both players are unable or unwilling to attempt
 any remaining missions), the player with the most VP wins immediately.
 
-= Keywords and Game Terms
+= Glossary <glossary>
 
 == Keywords
 
 / Crew N: this Ship requires at least N Personnel aboard to move or act.
   A Ship with Crew 0 is automated and requires no Personnel to operate.
-/ Hold N: this Ship can carry one Manufact or Ship of SIZ N or less.
-/ Superluminal: this card may be played, or this ability may be activated,
-  at any time — including during the opponent's turn or while another effect
-  is being resolved. All other cards may only be played, and all other
-  activated abilities may only be used, during your main phase when there
-  are no resolved effects.
+/ Hold N: this Ship can carry any number of Manufacts or Ships of SIZ N or less.
+/ Superluminally: this ability may be activated at any time — including 
+  during the opponent's turn or while another effect is being resolved. 
+  All other activated abilities may only be used during your main phase 
+  when the stack is empty (i.e. there are no unresolved effects).
 
-== Event Subtypes
+== Special Subtypes
 
+In general, card subtypes don't affect how that card is played.
+However, these subtypes are specifically called out in the rules,
+and have a special meaning.
+
+/ [SURF]: (Surface); this location has a planet, habitat, station, or other environment
+  that Personnel can physically walk on. Missions here require an away team.
+/ [VOID]: (Void); this location is a region of open space. Missions here must be
+  attempted from aboard a Ship. You may not send an away team to a void [VOID] location.
 / Fleeting: this Event is scrapped immediately after its effect resolves.
+/ Home: this location is played face-up, by its owner, during the setup phase.
 / Persistent: this Event remains in play after its effect resolves, placed
   in the zone indicated by its card text.
+/ Superluminal: this card may be played at any time — including during the
+  opponent's turn or while another effect is being resolved.
+  All other cards may only be played during your main phase when the
+  stack is empty (i.e. there are no unresolved effects).
 
-== Game Terms
+== Location Types
+
+Locations are classified as either surface [SURF] or void [VOID], indicated
+by an icon on the card. This determines how missions are attempted there.
+
+Surface [SURF] locations have a planet, habitat, station, or other environment
+that Personnel can physically walk on. Examples include planets, space habitats,
+and derelict ships. Missions at surface [SURF] locations require an away team.
+
+Void [VOID] locations are regions of open space. Examples include nebulae,
+asteroid fields, and deep space waypoints. Missions at void [VOID] locations
+are attempted from aboard a Ship. 
+You may not send an away team to a void [VOID] location.
+  
+== Game Terms <game-terms>
 
 / Away team: any number of Personnel you control at a planet location,
   on the planet surface.
 / Crew: any number of Personnel you control aboard a Ship.
-/ Team: a crew or an away team.
+/ Team: a crew or an away team. There's no limit to how large a team can be.
 / Hyperspace: a separate zone that Ships pass through during movement.
   Cards in hyperspace cannot be targeted by any effect unless that effect
   explicitly states otherwise.
+/ Influence: the currency of requisitioning. Produced by tapping resources
+  in the resource zone; one tap produces one influence. Influence is spent
+  immediately and does not carry between turns.
+/ Recycle: to place a card on the bottom of its owner's main deck.
+/ Requisition: to play a card from your hand into play, paying its cost.
+/ Resource: a Personnel card in the resource zone.
+/ Resource zone: the area in front of each player where Personnel are placed
+  face-up to provide influence (by tapping) and affinity (by virtue of being there).
+/ Scrap: to discard a card to the scrapyard.
 / Space line: the row of Location cards that forms the board. Unless otherwise
   stated, all effects target cards on the space line.
 / Scrapyard: a player's discard pile. Cards in the scrapyard are face-up and
   may be inspected by either player at any time.
-/ Resource zone: the area in front of each player where Personnel are placed
-  face-up to provide resources and affinity.
 / Tapped: a card that has been rotated 45 degrees clockwise to indicate it has
   been used this turn. A tapped card cannot be tapped again until it is untapped.
   Cards are untapped during the Refresh Phase.
