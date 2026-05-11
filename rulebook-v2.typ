@@ -81,24 +81,26 @@ Welcome to the Uncharted Void. Try not to get scrapped.
 Uncharted Void uses five card types. Each type has a distinct physical format
 so players can identify them at a glance.
 
-=== Personnel (portrait)
+=== Sophonts (portrait)
 
-Personnel represent the individuals who crew your ships, attempt missions,
-and fight your battles. They are the heart of your deck.
+Sophonts are the individuals who crew your ships, attempt missions,
+and fight your battles — any intelligent being, whether human-descended, alien,
+robotic, or virtual.
+They are the heart of your deck.
 
-Each Personnel card has four attributes:
+Each Sophont card has four attributes:
 / CHA (Charisma): effectiveness in diplomacy, negotiation, and social conflict
 / INT (Intelligence): effectiveness in scientific, engineering, and analytical tasks
 / STR (Strength): effectiveness in combat and military operations
 / WRD (Weird): effectiveness in psionics, mysticism, and other space-wizardry
 
 One or more attributes may be *highlighted*: these indicate the affinity this
-Personnel provides when placed in the resource zone.
+Sophont provides when placed in the resource zone.
 
 === Ships (landscape)
 
-Ships are the vessels that carry your Personnel and Manufacts across the space line
-(physically place the Personnel and Manufact cards atop the Ship's, to
+Ships are the vessels that carry your Sophonts and Manufacts across the space line
+(physically place the Sophont and Manufact cards atop the Ship's, to
 represent that they are being carried).
 Each Ship card has three attributes:
 
@@ -110,9 +112,9 @@ Each Ship card has three attributes:
 SIZ also determines the ship's durability: a ship is scrapped when it has accumulated
 damage counters equal to its SIZ.
 
-Ships have the *Crew N* keyword, indicating the minimum number of Personnel
+Ships have the *Crew N* keyword, indicating the minimum number of Sophonts
 that must be aboard for the ship to move or act. A ship with *Crew 0*
-is assumed to be automated or NPC-crewed and requires no Personnel to operate.
+is assumed to be automated or NPC-crewed and requires no Sophonts to operate.
 
 === Locations (landscape)
 
@@ -139,10 +141,10 @@ They are the board.
 === Manufacts (portrait)
 
 Manufacts encompass any physical object: tools, weapons, land vehicles, ancient relics,
-and cargo. 
-They can be carried by away teams or by the crew aboard Ships. 
+and cargo.
+They can be carried by away teams or by the crew aboard Ships.
 
-They can also be abandoned ashore or left to float in space; 
+They can also be abandoned ashore or left to float in space;
 in this case, any away team or ship (respectively) can collect the abandoned
 manufact as a free action.
 
@@ -165,12 +167,12 @@ time, including during an opponent's turn.
 
 == Affinity
 
-Each card (except basic tokens) has an *affinity requirement* printed in its corner.
-To requisition a card, you must have at least one Personnel in your resource zone
-whose highlighted attribute matches that affinity. This Personnel does not need to
+Each card may have an *affinity requirement* printed in its corner.
+To requisition a card, you must have at least one Sophont in your resource zone
+whose highlighted attribute matches that affinity. This Sophont does not need to
 be untapped.
 
-The four affinities correspond to the four Personnel attributes:
+The four affinities correspond to the four Sophont attributes:
 *CHA*, *INT*, *STR*, and *WRD*.
 
 Cards with no affinity requirement can be requisitioned by anyone.
@@ -229,7 +231,7 @@ has no rules significance.
 == Initial Draw
 
 Draw 7 cards from your main deck as your opening hand. If your opening hand
-contains no Ships or no Personnel, you may recycle all 7 and draw 7 again.
+contains no Ships or no Sophonts, you may recycle all 7 and draw 7 again.
 This mulligan may only be used once.
 
 = Turn Structure
@@ -238,8 +240,8 @@ Each turn consists of four phases, resolved in order:
 
 == Refresh Phase
 
-Untap all your tapped cards. This includes Personnel in your resource zone,
-Ships and Personnel on the space line, and any other tapped cards you control.
+Untap all your tapped cards. This includes Sophonts in your resource zone,
+Ships and Sophonts on the space line, and any other tapped cards you control.
 
 == Draw Phase
 
@@ -253,8 +255,8 @@ the following actions in any order, any number of times, unless otherwise stated
 
 === Play one resource
 
-Once per turn, you may place one Personnel card from your hand into your
-resource zone, face-up. This Personnel is now a *resource*: they
+Once per turn, you may place one Sophont card from your hand into your
+resource zone, face-up. This Sophont is now a *resource*: they
 contribute their highlighted attribute(s) as affinity, and may be tapped to
 produce 1 influence. Spend influence to requisition cards.
 
@@ -266,7 +268,7 @@ You may play any card from your hand by paying its cost. To requisition a card:
   the affinity requirements of the card (it doesn't matter whether resources are tapped)
 + Place the card into play
 
-Personnel and Manufacts enter play on land at your home location.
+Sophonts and Manufacts enter play on land at your home location.
 Ships enter play at your home location (in space).
 Events are resolved immediately if Fleeting, or placed in the appropriate zone
 (as indicated by the card text) if Persistent.
@@ -285,7 +287,7 @@ See @movement for detailed rules.
 *Act*: choose one of the following:
 - *Attack*: initiate combat against a Ship at the same location (Ships may not
   attack away teams)
-- *Disembark*: transfer any number of Personnel from the crew to the surface [SURF]
+- *Disembark*: transfer any number of Sophonts from the crew to the surface
   (if you already control an away team there, they join it, otherwise they
   form a new one)
 - *Attempt mission*: if the Ship is at a void [VOID] location and meets the requirements
@@ -294,19 +296,19 @@ See @movement for detailed rules.
 A Ship may move and act in the same turn. Crew aboard the Ship do not tap
 when the Ship taps; they may still perform their own actions.
 
-Personnel on a planet surface remain there if their Ship departs.
+Sophonts on the surface of a land [LAND] location remain there if their Ship departs.
 
-=== Act with Personnel
+=== Act with Sophonts
 
-You may tap Personnel to act. Declare your intended
+You may tap Sophonts to act. Declare your intended
 action before resolving it:
 
 *Act*: choose one of the following:
 - *Attack*: an away team (as a whole) initiates combat against the opponent's
   away team at the same location (away teams may not attack Ships)
-- *Embark*: transfer any number of Personnel from the away team to a Ship you
-  control at the same location (a tapped Ship may still receive embarking Personnel)
-- *Transfer*: move any number of Personnel from their current Ship to another Ship you
+- *Embark*: transfer any number of Sophonts from the away team to a Ship you
+  control at the same location (a tapped Ship may still receive embarking Sophonts)
+- *Transfer*: move any number of Sophonts from their current Ship to another Ship you
   control at the same location
 - *Attempt mission*: if the away team meets the requirements of the next incomplete
   mission step, resolve that step
@@ -348,9 +350,9 @@ total hyperspace distance by summing the LFT or RGT value of each location
 you jump *to* along the course, depending on the direction of travel.
 Confirm the total distance does not exceed the Ship's RNG.
 
-Tap the Ship; it *departs* the origin and enters hyperspace. 
-Your opponent may play Superluminal effects targeting the Ship before it departs. 
-Once the Ship has entered hyperspace it is no longer on the space line, 
+Tap the Ship; it *departs* the origin and enters hyperspace.
+Your opponent may play Superluminal effects targeting the Ship before it departs.
+Once the Ship has entered hyperspace it is no longer on the space line,
 and therefore cannot be targeted until it arrives.
 
 A Ship carries all its crew and any Manufacts aboard as it moves, as well
@@ -361,7 +363,7 @@ travel through hyperspace together.
 
 While in hyperspace, the Ship passes through the hyperspace coordinates of
 each intermediate location along its course. Each such passage is called a
-*transit*. 
+*transit*.
 Nothing happens at a transit by default, but some superluminal effects
 may trigger or become playable when it happens.
 
@@ -392,7 +394,7 @@ same location. Resolve as follows:
 + In case of a tie, both Ships take one damage counter
 + A Ship is scrapped when its damage counters equal its SIZ
 
-Personnel aboard a scrapped Ship are scrapped with it, unless a card effect
+Sophonts aboard a scrapped Ship are scrapped with it, unless a card effect
 specifies otherwise.
 
 == Away Team Combat
@@ -400,29 +402,29 @@ specifies otherwise.
 Away team combat occurs when an away team's Attack action targets an enemy
 away team at the same location. Resolve as follows:
 
-+ Each player sums the STR of all Personnel in their away team
-+ The player with the lower total loses: they scrap one Personnel of their choice
++ Each player sums the STR of all Sophonts in their away team
++ The player with the lower total loses: they scrap one Sophont of their choice
   from their away team
-+ In case of a tie, both players scrap one Personnel of their choice
++ In case of a tie, both players scrap one Sophont of their choice
 
 == Missions <missions>
 
 === Attempting a Mission Step
 
 To attempt a mission step, a Ship at a void [VOID] location, or an away team
-at a surface [SURF] location, must meet the requirements listed for the next
+at on the surface of a land [LAND] location, must meet the requirements listed for the next
 incomplete step on the progress tracker.
 
 You may attempt any mission, not just the ones you own.
-In fact, building a flexible deck that can complete any kind of mission is a 
-good way to ensure your victory! 
+In fact, building a flexible deck that can complete any kind of mission is a
+good way to ensure your victory!
 However, if two players are attempting the same mission, each player gets
 their own progress counter. You can't exploit your opponent's first step
 to skip directly to the second.
 
 If the requirements are met, place a progress counter on that step and resolve
 any effects listed. If the step awards VP, note them immediately.
-Once a counter is placed on the final step, the mission is complete and no 
+Once a counter is placed on the final step, the mission is complete and no
 further steps may be attempted by any player.
 
 Steps must be completed in order: you may not attempt step 2 before step 1
@@ -447,12 +449,12 @@ any remaining missions), the player with the most VP wins immediately.
 
 == Keywords
 
-/ Crew N: this Ship requires at least N Personnel aboard to move or act.
-  A Ship with Crew 0 is automated and requires no Personnel to operate.
+/ Crew N: this Ship requires at least N Sophonts aboard to move or act.
+  A Ship with Crew 0 is automated and requires no Sophonts to operate.
 / Hold N: this Ship can carry any number of Manufacts or Ships of SIZ N or less.
-/ Superluminally: this ability may be activated at any time — including 
-  during the opponent's turn or while another effect is being resolved. 
-  All other activated abilities may only be used during your main phase 
+/ Superluminally: this ability may be activated at any time — including
+  during the opponent's turn or while another effect is being resolved.
+  All other activated abilities may only be used during your main phase
   when the stack is empty (see @stack).
 
 == Special Subtypes
@@ -461,8 +463,9 @@ In general, card subtypes don't affect how that card is played.
 However, these subtypes are specifically called out in the rules,
 and have a special meaning.
 
-/ [SURF]: (Surface); this location has a planet, habitat, station, or other environment
-  that Personnel can physically walk on. Missions here require an away team.
+/ [LAND]: (Land); this location has a planet, habitat, station, or other environment
+  on whose *surface* Sophonts can land and walk.
+  Missions here require an away team.
 / [VOID]: (Void); this location is a region of open space. Missions here must be
   attempted from aboard a Ship. You may not send an away team to a void [VOID] location.
 / Fleeting: this Event is scrapped immediately after its effect resolves.
@@ -473,20 +476,20 @@ and have a special meaning.
   opponent's turn or while another effect is being resolved.
   All other cards may only be played during your main phase when the
   stack is empty (see @stack).
-  
+
 == Game Terms <game-terms>
 
 / Arrive: to exit hyperspace at the end of a move. A Ship arrives at its
   declared destination if the move is legal, or at the last transited
   location otherwise.
-/ Away team: any number of Personnel you control on the surface of
-  a surface [SURF] location.
+/ Away team: any number of Sophonts you control on the surface of a land
+  [LAND] location.
 / Course: the declared sequence of locations from origin to destination;
   declared before a move begins.
-/ Crew: any number of Personnel you control aboard a Ship.
+/ Crew: any number of Sophonts you control aboard a Ship.
 / Depart: to leave the origin location and enter hyperspace, beginning a move.
 / Destination: the final location along a declared course.
-/ Disembark: transfer any number of Personnel from the crew to the surface [SURF].
+/ Disembark: transfer any number of Sophonts from the crew to the surface.
 / Hyperspace: a separate zone that Ships pass through during movement.
   Cards in hyperspace cannot be targeted by any effect unless that effect
   explicitly states otherwise.
@@ -495,14 +498,16 @@ and have a special meaning.
   immediately and does not carry between turns.
 / Recycle: to place a card on the bottom of its owner's main deck.
 / Requisition: to play a card from your hand into play, paying its cost.
-/ Resource: a Personnel card in the resource zone.
-/ Resource zone: the area in front of each player where Personnel are placed
+/ Resource: a Sophont card in the resource zone.
+/ Resource zone: the area in front of each player where Sophonts are placed
   face-up to provide influence (by tapping) and affinity (by virtue of being there).
 / Scrap: to discard a card to the scrapyard.
 / Space line: the row of Location cards that forms the board. Unless otherwise
   stated, all effects target cards on the space line.
 / Scrapyard: a player's discard pile. Cards in the scrapyard are face-up and
   may be inspected by either player at any time.
+/ Surface: the region of a land [LAND] location where Sophonts operate on foot,
+  as part of an away team, rather than from inside a Ship as crew members.
 / Tapped: a card that has been rotated 45 degrees clockwise to indicate it has
   been used this turn. A tapped card cannot be tapped again until it is untapped.
   Cards are untapped during the Refresh Phase.
