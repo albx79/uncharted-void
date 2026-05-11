@@ -5,17 +5,74 @@
 #set par(justify: true)
 #set quote(block: true)
 
-#set document(title: "TBD")
+#set document(title: "Uncharted Void")
 
 #title()
 
-_Subtitle_
+_A spacefaring trading cards game of exploration, diplomacy, and combat_
 
 #outline(depth: 2)
 
 = Introduction
 
-TO BE WRITTEN LATER.
+Uncharted Void is a trading cards game for two players, set in a distant future
+where humanity has long since scattered across the galaxy, diverged into dozens
+of strange and wondrous species, and built civilisations of breathtaking variety.
+The galaxy is vast, ancient, and not fully understood — even by those who live in it.
+
+In Uncharted Void, each player commands a faction: a crew of remarkable individuals
+aboard a fleet of ships, sent out into the unknown to explore, negotiate, and — when
+necessary — fight. You will chart unexplored regions of the space line, attempt
+missions that advance your faction's goals, and compete for the manufacts and victory
+points that will determine who, in the end, has done the most for their civilisation.
+
+The game is won not by destroying your opponent, but by *doing things*: completing
+missions, uncovering ancient relics, forging alliances, and occasionally applying
+carefully calibrated violence to problems that diplomacy couldn't solve.
+
+== What You Need
+
+To play Uncharted Void you need:
+- Two decks of Uncharted Void cards, one per player, each built according to the
+  deck construction rules
+- A flat surface large enough to lay out a row of 10 landscape cards (the space line)
+  with room for ships, away teams, and resource zones on each side
+- A supply of counters to track progress and damage
+- Something to track victory points: a pen and paper, spare counters, or a
+  20-sided die
+
+== The Golden Rule
+
+Uncharted Void is a game between friends. If you encounter a combination of
+effects that these rules cannot cleanly resolve, use common sense, discuss it
+amicably with your opponent, and find a solution that feels fair to both of you.
+Don't lose a friend over a card game.
+
+== The Silver Rule
+
+When a card's text contradicts these rules, the card takes precedence.
+These rules describe the default behaviour of the game; cards are the exceptions
+that make it interesting.
+
+== How to Read This Rulebook
+
+The rules are presented in the order you will need them: components first, then
+setup, then turn structure, then the detailed mechanics of movement, combat, and
+missions. A full glossary of keywords and game terms is provided at the end.
+
+== A Note on the Setting
+
+Uncharted Void is set in the *Strange Stars*: a far-future galaxy where the
+descendants of humanity have become something stranger and more varied than their
+ancestors could have imagined. Psionics, ancient relics, and forces that science
+cannot yet explain are as real as starships and laser cannons.
+
+You will encounter factions who rule through memetic persuasion, species who have
+transcended their biological origins, and places where the boundary between
+hyperspace and realspace is dangerously thin. Not everything out there can be
+reasoned with. But it's worth trying first.
+
+Welcome to the Uncharted Void. Try not to get scrapped.
 
 = Components and Card Types
 
@@ -64,7 +121,7 @@ Each Location card has:
 
 / LFT: the hyperspace distance cost to travel to or from this location moving left
 / RGT: the hyperspace distance cost to travel to or from this location moving right
-/ Subtypes: every location has either the surface [SURF] or void [VOID] subtype,
+/ Subtypes: every location has either the land [LAND] or void [VOID] subtype,
   indicated by an icon, which determines how missions are attempted there (see @missions).
   Additional subtypes such as _Planet_, _Habitat_, _Derelict_, or _Nebula_ are purely
   flavour and have no mechanical effect unless specifically referenced by a card.
@@ -85,7 +142,7 @@ Manufacts encompass any physical object: tools, weapons, land vehicles, ancient 
 and cargo. 
 They can be carried by away teams or by the crew aboard Ships. 
 
-They can also be abandoned on a planet surface or left to float in space; 
+They can also be abandoned ashore or left to float in space; 
 in this case, any away team or ship (respectively) can collect the abandoned
 manufact as a free action.
 
@@ -223,14 +280,15 @@ action before resolving it:
 Your Ship's RNG must be equal to or greater than the total hyperspace distance
 travelled. Your Ship passes through all intermediate locations along its course;
 opponents may respond with Superluminal effects at any point along the route.
+See @movement for detailed rules.
 
 *Act*: choose one of the following:
 - *Attack*: initiate combat against a Ship at the same location (Ships may not
   attack away teams)
-- *Disembark*: transfer any number of Personnel from the crew to the planet
+- *Disembark*: transfer any number of Personnel from the crew to the surface [SURF]
   (if you already control an away team there, they join it, otherwise they
   form a new one)
-- *Attempt mission*: if the Ship is at a space location and meets the requirements
+- *Attempt mission*: if the Ship is at a void [VOID] location and meets the requirements
   of the next incomplete mission step, resolve that step
 
 A Ship may move and act in the same turn. Crew aboard the Ship do not tap
@@ -260,44 +318,68 @@ Pass the turn to your opponent.
 
 = Core Mechanics
 
-== Movement
+== The Stack <stack>
 
-Ships move through the space line by spending their RNG attribute as a hyperspace
-distance budget. When you declare a move action:
+When you play a card or activate an ability, it does not resolve immediately.
+Instead, it is placed on the *stack* — a temporary holding area where effects
+wait to be resolved.
 
-+ Declare the destination and the full course, listing all intermediate locations
-+ Calculate the total hyperspace distance: sum the LFT or RGT value of each
-  location travelled through, depending on the direction of travel
-+ Confirm the total distance does not exceed the Ship's RNG
-+ Your opponent may now play Superluminal Events targeting the Ship before it
-  departs; once the Ship enters hyperspace it cannot be targeted until it arrives
-+ Move the Ship and its crew into hyperspace, then to the next intermediate location
-+ Repeat steps 4 and 5 until the Ship reaches the set destination
+After each card or ability is placed on the stack, your opponent has the
+opportunity to respond by playing a Superluminal card or activating a
+Superluminal ability, which is then placed on top of the stack. This
+continues until both players pass in succession, at which point the stack
+begins to resolve: the top-most effect resolves first, then the next, and
+so on until the stack is empty.
 
-A Ship may carry any number of Personnel and Manufacts as it moves; they travel
-with the Ship through hyperspace and arrive at the destination together.
+This means that the last effect played resolves first. If your opponent
+responds to your attack with a Superluminal effect that scraps your Ship,
+your attack never resolves — the Ship was scrapped before it could fire.
 
-Hyperspace is a separate zone. Cards in hyperspace cannot be targeted by any
-effect unless that effect explicitly states otherwise.
+During your main phase, when the stack is empty and it is your turn to act,
+you may play any non-Superluminal card or activate any non-Superluminal
+ability. Superluminal cards and abilities may be played at any time, even
+in response to effects on the stack.
 
-== Revealing Locations
+== Movement <movement>
 
-Just before a Ship exits hyperspace at a face-down location, reveal the location.
-Then, check the location distance:
+To move a Ship, declare a *course*: a sequence of locations starting from
+the Ship's current location and ending at the *destination*. Calculate the
+total hyperspace distance by summing the LFT or RGT value of each location
+you jump *to* along the course, depending on the direction of travel.
+Confirm the total distance does not exceed the Ship's RNG.
 
-- If the total distance travelled does not exceed the Ship's RNG, the move is
-  legal and the Ship exits hyperspace normally
-- If the total distance exceeds the Ship's RNG, the move is cancelled: the Ship
-  instead exits hyperspace at the last location along its declared course that
-  was within range, or at its starting location if no intermediate location was within range.
+Tap the Ship; it *departs* the origin and enters hyperspace. 
+Your opponent may play Superluminal effects targeting the Ship before it departs. 
+Once the Ship has entered hyperspace it is no longer on the space line, 
+and therefore cannot be targeted until it arrives.
 
-Any "on reveal" effects on the location resolve before the Ship exits hyperspace,
-and they resolve normally whether the ship completes the move or not.
-Effects triggered by arrival (worded as "when a Ship arrives here" or similar)
-only resolve if the Ship actually completes the move to that location.
+A Ship carries all its crew and any Manufacts aboard as it moves, as well
+as any persistent event attached to them or to the Ship itself; they
+travel through hyperspace together.
 
-Opponents may play Superluminal effects at any point after the Ship exits
-hyperspace and arrives at its destination.
+=== Transits
+
+While in hyperspace, the Ship passes through the hyperspace coordinates of
+each intermediate location along its course. Each such passage is called a
+*transit*. 
+Nothing happens at a transit by default, but some superluminal effects
+may trigger or become playable when it happens.
+
+=== Arrival
+
+As the Ship approaches its destination through hyperspace, if the destination
+is face-down, reveal it now. Resolve any "on reveal" effects before the Ship
+exits hyperspace.
+
+Then check legality:
+- If the total distance does not exceed the Ship's RNG, the Ship *arrives*
+  at the destination
+- If the total distance exceeds the Ship's RNG, the Ship *arrives* at the
+  last transited location instead (or at the origin if no location was transited)
+
+The Ship exits hyperspace and resolves any "on arrival" effects.
+Opponents may play Superluminal effects targeting the Ship at this point,
+as it is again on the space line.
 
 == Ship Combat
 
@@ -371,7 +453,7 @@ any remaining missions), the player with the most VP wins immediately.
 / Superluminally: this ability may be activated at any time — including 
   during the opponent's turn or while another effect is being resolved. 
   All other activated abilities may only be used during your main phase 
-  when the stack is empty (i.e. there are no unresolved effects).
+  when the stack is empty (see @stack).
 
 == Special Subtypes
 
@@ -390,28 +472,21 @@ and have a special meaning.
 / Superluminal: this card may be played at any time — including during the
   opponent's turn or while another effect is being resolved.
   All other cards may only be played during your main phase when the
-  stack is empty (i.e. there are no unresolved effects).
-
-== Location Types
-
-Locations are classified as either surface [SURF] or void [VOID], indicated
-by an icon on the card. This determines how missions are attempted there.
-
-Surface [SURF] locations have a planet, habitat, station, or other environment
-that Personnel can physically walk on. Examples include planets, space habitats,
-and derelict ships. Missions at surface [SURF] locations require an away team.
-
-Void [VOID] locations are regions of open space. Examples include nebulae,
-asteroid fields, and deep space waypoints. Missions at void [VOID] locations
-are attempted from aboard a Ship. 
-You may not send an away team to a void [VOID] location.
+  stack is empty (see @stack).
   
 == Game Terms <game-terms>
 
-/ Away team: any number of Personnel you control at a planet location,
-  on the planet surface.
+/ Arrive: to exit hyperspace at the end of a move. A Ship arrives at its
+  declared destination if the move is legal, or at the last transited
+  location otherwise.
+/ Away team: any number of Personnel you control on the surface of
+  a surface [SURF] location.
+/ Course: the declared sequence of locations from origin to destination;
+  declared before a move begins.
 / Crew: any number of Personnel you control aboard a Ship.
-/ Team: a crew or an away team. There's no limit to how large a team can be.
+/ Depart: to leave the origin location and enter hyperspace, beginning a move.
+/ Destination: the final location along a declared course.
+/ Disembark: transfer any number of Personnel from the crew to the surface [SURF].
 / Hyperspace: a separate zone that Ships pass through during movement.
   Cards in hyperspace cannot be targeted by any effect unless that effect
   explicitly states otherwise.
@@ -431,4 +506,7 @@ You may not send an away team to a void [VOID] location.
 / Tapped: a card that has been rotated 45 degrees clockwise to indicate it has
   been used this turn. A tapped card cannot be tapped again until it is untapped.
   Cards are untapped during the Refresh Phase.
+/ Team: a crew or an away team. There's no limit to how large a team can be.
+/ Transit: the passage of a Ship in hyperspace through the hyperspace
+  coordinates of an intermediate location along its course.
 / Untapped: a card in its normal, upright orientation, available to be used.

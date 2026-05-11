@@ -432,3 +432,12 @@ also double as toughness against combat damage, and the rules are simple.
 Don't allow ships to land - just assume they have plenty of shuttles, as the interaction
 surface between locations, personnel and ships is a lot and complex to cover with rules. 
 Let's save it for a future expansion.
+
+=== Summary of Hooks
+
+Card effects may trigger at the following moments during a move:
+- *Before departure*: Superluminal effects targeting the Ship at its origin
+- *On transit*: Superluminal effects targeting the Ship at an intermediate location
+- *On reveal*: effects on a face-down destination, resolved before arrival
+- *On arrival*: effects triggered when the Ship exits hyperspace for the last time
+- *When a Ship exits hyperspace*: effects that trigger on both transit and arrival
