@@ -386,3 +386,49 @@ tracker:
     Bring all Manufacts with cost > INT to your opponent starting Location.
       
 ```
+
+== On What Ships Can Do
+
+Can ships land on planets? 
+Can they transport other ships? 
+How many?
+How do away teams land on planets if ships can't land?
+
+The source material here isn't just scant: it's absent.
+Nothing in the Strange Stars books tell us whether their ships can land, 
+and how to get planetside if they can't.
+But given my source material, most ships *can* land on planets.
+
+I have vague memories about Star Trek CCG, but I think their ship couldn't land, 
+untill a few expansions later when they added rules for landing, which were complicated
+and unclear.
+If I decide that they can land, I want to set out clear rules from the start, otherwise 
+I swear never to make them land!
+
+So, landing on a planet:
+- pro: it's cool and source-appropriate
+- con: complicates the rules (is landing an action? is it part of a move? how much range does it use up?)
+
+Not landing on a planet: we can just assume that even small ships are large (and draw them accordingly),
+and say that they have shuttles to move personnel and manufacts to and from orbit.
+No "beam me up Scotty", please.
+
+Ships carrying other ships is another common trope. 
+The Enterprise with its shuttles, a Battlestar with its vipers, Andromeda with Bekka's transport.
+Even Moya from farscape had a landing deck.
+
+Star Trek CCG, indeed, allowed ships equipped with a tractor beam to carry a shuttle.
+I can't remember if there were limits to how many shuttles (probably not, as you wouldn't 
+want to play too many anyway).
+
+Is it works adding cargo hold and size attributes to ships, and say that they can carry
+any other ship as long as their size fits the cargo hold?
+It would add a new dimension of play, for example there could be large manufacts that have
+a size attribute and need a larger ship to carry them.
+While I find all of this exciting, would it make the game more exciting?
+
+Eventual decision: allow ships to carry other ships (have SIZ and Hold N), as SIZ
+also double as toughness against combat damage, and the rules are simple.
+Don't allow ships to land - just assume they have plenty of shuttles, as the interaction
+surface between locations, personnel and ships is a lot and complex to cover with rules. 
+Let's save it for a future expansion.
