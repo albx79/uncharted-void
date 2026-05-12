@@ -38,8 +38,7 @@ To play Uncharted Void you need:
 - A flat surface large enough to lay out a row of 10 landscape cards (the space line)
   with room for ships, away teams, and resource zones on each side
 - A supply of counters to track progress and damage
-- Something to track victory points: a pen and paper, spare counters, or a
-  20-sided die
+- Pen and paper to track victory points
 
 == The Golden Rule
 
