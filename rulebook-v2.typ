@@ -187,7 +187,7 @@ The game uses two types of physical markers:
 Token Manufacts are represented by cards provided in the game or created by card
 effects; they follow all normal Manufact rules.
 
-= Setup
+= Setup <setup>
 
 == Preparation
 
@@ -444,6 +444,193 @@ The player with the most VP wins.
 
 If the game cannot proceed (both players are unable or unwilling to attempt
 any remaining missions), the player with the most VP wins immediately.
+
+= Deck Construction
+
+Before playing, each player builds their deck according to the following rules.
+
+== The Full Deck
+
+Your full deck consists of exactly 60 cards. Before the game begins, you will
+separate it into your *main deck* and your *setup deck* (see below).
+
+You may include any number of cards in your deck, subject to the following limits:
+- A maximum of 4 copies of any single card
+- A maximum of 1 copy of any Unique card
+
+Unique cards in your setup deck count toward these limits: if you seed a Unique
+Manufact in your setup deck, you may not include another copy in your main deck.
+
+== The Setup Deck
+
+Set aside exactly 15 cards from your full deck to form your setup deck:
+- 1 home location
+- 4 mission locations
+- 10 manufacts
+
+These cards are used during setup (see @setup) and are not shuffled into your
+main deck. The remaining 45 cards form your main deck.
+
+== Deck Identity
+
+Your deck's identity is shaped by your choice of home location and by the
+affinities of your resources. A deck heavy on CHA resources will excel at
+diplomacy and social missions; one built around STR will dominate in combat.
+Consider the affinity requirements of your most important cards when selecting
+your resources, and ensure your setup deck's locations and manufacts support
+your overall strategy.
+
+There are no restrictions on which factions or species you may include in your
+deck. Mix and match freely — or build a pure faction deck for maximum affinity
+consistency.
+
+= Frequently Asked Questions
+
+== Setup
+
+*Can I look at my opponent's uncharted locations before the game begins?*
+
+No. Uncharted locations are placed face-down and may not be inspected by
+either player until they are charted.
+
+*Can I look at the manufacts I am seeding?*
+
+Yes. You know exactly which manufacts you are placing and where you are
+placing them. Your opponent does not.
+
+*Can my opponent look at the manufacts I have seeded?*
+
+No. Seeded manufacts are placed face-down and may not be inspected until
+the mission at that location is completed.
+
+== Resources and Influence
+
+*Can I tap a resource to produce influence even if I don't need it?*
+
+Yes, but the influence is wasted: it does not carry between turns.
+
+*Can I place more than one resource per turn?*
+
+No. You may place exactly one Personnel card into your resource zone per turn.
+
+*Can I move a resource back to my hand?*
+
+Not unless a card effect specifically allows it.
+
+*Does a resource need to be untapped to provide affinity?*
+
+No. A resource provides affinity simply by being in the resource zone,
+regardless of whether it is tapped or untapped.
+
+== Movement
+
+*Can a Ship move to a location it is already at?*
+
+No. A course must include at least one jump.
+
+*Can a Ship move through a location occupied by an enemy Ship?*
+
+Yes. Transiting a location does not require you to stop or engage.
+Your opponent may play Superluminal effects during the transit, but
+the Ship continues along its course unless an effect specifically stops it.
+
+*Can a Ship move backwards along its course?*
+
+No. A course must be declared in a single direction: either left or right.
+A Ship may not change direction mid-move.
+
+*What happens if a Ship has no crew and no Crew 0 keyword?*
+
+A Ship without the required crew cannot move or act. It remains at its
+current location until sufficient crew come aboard.
+
+*Can a Ship carry another Ship?*
+
+Only if it has the Hold N keyword and the carried Ship's SIZ does not
+exceed N.
+
+== Combat
+
+*Can I attack an enemy Ship that has no crew?*
+
+Yes. An uncrewed Ship (one with Crew 0, or one whose crew have all
+disembarked) may still be attacked. It contributes only its WPN to
+the combat total, with no crew STR to add.
+
+*What happens to Personnel aboard a scrapped Ship?*
+
+They are scrapped with the Ship, unless a card effect specifically
+states otherwise.
+
+*Can an away team attack a Ship?*
+
+No. Away teams may only attack other away teams. Ships may only attack
+other Ships.
+
+*Can I choose to lose combat deliberately?*
+
+You cannot choose the outcome of combat, but you do choose which
+Personnel to scrap if your away team loses.
+
+== Missions
+
+*Can I attempt a mission on my opponent's home location?*
+
+Yes. You may attempt any mission on the space line, including your
+opponent's home location.
+
+*Can two players both complete the same mission?*
+
+No. Once a progress counter is placed on the final step of a mission,
+it is complete and closed. No further steps may be attempted by any player.
+
+*Do I score VP for steps completed by my opponent on a mission I later complete?*
+
+No. Each player tracks their own progress counters. You only score VP
+for steps you complete yourself.
+
+*What if I complete a mission but have no room to take the seeded manufacts?*
+
+There is no hand or carrying limit for manufacts. You take control of
+all seeded manufacts at that location regardless.
+
+== Cards and Effects
+
+*If a card's text contradicts these rules, which takes precedence?*
+
+The card takes precedence. See the Silver Rule in the Introduction.
+
+*Can I play a Superluminal card during my own turn?*
+
+Yes. Superluminal cards may be played at any time, including during
+your own main phase.
+
+*Can Persistent events be scrapped?*
+
+Yes, if a card effect specifically scraps them. They do not leave play
+on their own.
+
+*Can I inspect my opponent's scrapyard?*
+
+Yes. The scrapyard is face-up and may be inspected by either player
+at any time.
+
+== Deck Construction
+
+*Can I include locations in my main deck?*
+
+Yes, but they currently cannot be played from hand and will have no
+effect if drawn. Future expansions may introduce ways to play locations
+from hand.
+
+*Do Unique cards in my setup deck count toward my deck's copy limit?*
+
+Yes. If you include a Unique Manufact in your setup deck, you may not
+include another copy in your main deck.
+
+*Can I include cards from multiple factions in my deck?*
+
+Yes. There are no faction restrictions on deck construction.
 
 = Glossary <glossary>
 
