@@ -211,8 +211,8 @@ Player one then builds the space line from left to right as follows:
   to the right of that
 + Draw and place the remaining 4 locations face-down, to the right of those
 
-The resulting space line has 10 locations total: 4 unknown on the left,
-2 face-up home locations at the centre, and 4 unknown on the right.
+The resulting space line has 10 locations total: 4 uncharted on the left,
+2 face-up home locations at the centre, and 4 uncharted on the right.
 
 All LFT and RGT values on non-home locations are read from player one's perspective.
 For convenience, these values are mirrored upside-down on the top border of each
@@ -223,7 +223,7 @@ ambiguity.
 
 Each player takes their manufact deck and shuffles it face-down. Players then
 seed manufacts in parallel: each player places one manufact face-down on each
-of the 8 unknown locations, in any order they choose. Home locations are not seeded.
+of the 8 uncharted locations, in any order they choose. Home locations are not seeded.
 
 The order in which manufacts are placed under a location is not tracked and
 has no rules significance.
@@ -394,6 +394,10 @@ same location. Resolve as follows:
 + In case of a tie, both Ships take one damage counter
 + A Ship is scrapped when its damage counters equal its SIZ
 
+A Ship with Crew 0 and no Sophonts aboard contributes only its WPN to
+the combat total. A Ship whose crew falls below its Crew N requirement
+cannot fight back and automatically loses, regardless of its WPN value.
+
 Sophonts aboard a scrapped Ship are scrapped with it, unless a card effect
 specifies otherwise.
 
@@ -412,7 +416,7 @@ away team at the same location. Resolve as follows:
 === Attempting a Mission Step
 
 To attempt a mission step, a Ship at a void [VOID] location, or an away team
-at on the surface of a land [LAND] location, must meet the requirements listed for the next
+on the surface of a land [LAND] location, must meet the requirements listed for the next
 incomplete step on the progress tracker.
 
 You may attempt any mission, not just the ones you own.
@@ -463,13 +467,13 @@ Manufact in your setup deck, you may not include another copy in your main deck.
 
 == The Setup Deck
 
-Set aside exactly 15 cards from your full deck to form your setup deck:
+Set aside exactly 13 cards from your full deck to form your setup deck:
 - 1 home location
 - 4 mission locations
-- 10 manufacts
+- 8 manufacts
 
 These cards are used during setup (see @setup) and are not shuffled into your
-main deck. The remaining 45 cards form your main deck.
+main deck. The remaining 47 cards form your main deck.
 
 == Deck Identity
 
@@ -495,8 +499,8 @@ either player until they are charted.
 
 *Can I look at the manufacts I am seeding?*
 
-Yes. You know exactly which manufacts you are placing and where you are
-placing them. Your opponent does not.
+No. You shuffle your manufacts deck before seeding the cards face down.
+Therefore, you know what you're seeding, but you don't know where.
 
 *Can my opponent look at the manufacts I have seeded?*
 
@@ -511,7 +515,7 @@ Yes, but the influence is wasted: it does not carry between turns.
 
 *Can I place more than one resource per turn?*
 
-No. You may place exactly one Personnel card into your resource zone per turn.
+No. You may place exactly one Sophont card into your resource zone per turn.
 
 *Can I move a resource back to my hand?*
 
@@ -526,7 +530,11 @@ regardless of whether it is tapped or untapped.
 
 *Can a Ship move to a location it is already at?*
 
-No. A course must include at least one jump.
+Yes. The departure location and the destination don't have to be
+different locations. 
+You may even plot a course through several other locations before
+arriving back to where you had started, provided you have enough
+range.
 
 *Can a Ship move through a location occupied by an enemy Ship?*
 
@@ -536,8 +544,8 @@ the Ship continues along its course unless an effect specifically stops it.
 
 *Can a Ship move backwards along its course?*
 
-No. A course must be declared in a single direction: either left or right.
-A Ship may not change direction mid-move.
+No. A course must be set before the move begins, at which point you
+cannot change your mind and go back.
 
 *What happens if a Ship has no crew and no Crew 0 keyword?*
 
@@ -553,14 +561,17 @@ exceed N.
 
 *Can I attack an enemy Ship that has no crew?*
 
-Yes. An uncrewed Ship (one with Crew 0, or one whose crew have all
-disembarked) may still be attacked. It contributes only its WPN to
-the combat total, with no crew STR to add.
+Yes. Both uncrewed Ships (whose crew is smaller than it requires), 
+and *Crew 0* Ships may be attacked. 
+A *Crew 0* with no one on board can use only its WPN attribute in
+combat, as there is no crew STR to add.
+An uncrewed Ship, on the other hand, cannot fight back at all, and will
+automatically lose the combat, regardless of its WPN value.
 
-*What happens to Personnel aboard a scrapped Ship?*
+*What happens to Sophonts aboard a scrapped Ship?*
 
-They are scrapped with the Ship, unless a card effect specifically
-states otherwise.
+They are scrapped together with the Ship and all Manufacts on board, 
+unless a card effect specifically states otherwise.
 
 *Can an away team attack a Ship?*
 
@@ -570,14 +581,13 @@ other Ships.
 *Can I choose to lose combat deliberately?*
 
 You cannot choose the outcome of combat, but you do choose which
-Personnel to scrap if your away team loses.
+Sophont to scrap if your away team loses.
 
 == Missions
 
 *Can I attempt a mission on my opponent's home location?*
 
-Yes. You may attempt any mission on the space line, including your
-opponent's home location.
+Home locations are special and don't have missions.
 
 *Can two players both complete the same mission?*
 
@@ -591,8 +601,12 @@ for steps you complete yourself.
 
 *What if I complete a mission but have no room to take the seeded manufacts?*
 
-There is no hand or carrying limit for manufacts. You take control of
-all seeded manufacts at that location regardless.
+There is no carrying limit for manufacts. You take control of
+all seeded manufacts at that location regardless. 
+If you can't move them away because they have SIZ larger than your Ship's hold,
+that's tough luck. You'll have to bring a bigger Ship.
+You can always leave some Sophonts there to keep control of the Manufacts
+(but watch out! The opponent may try to come and get them from you!)
 
 == Cards and Effects
 
@@ -663,6 +677,7 @@ and have a special meaning.
   opponent's turn or while another effect is being resolved.
   All other cards may only be played during your main phase when the
   stack is empty (see @stack).
+/ Unique: you may put at most 1 copy of this card in your deck.
 
 == Game Terms <game-terms>
 
@@ -678,8 +693,8 @@ and have a special meaning.
 / Destination: the final location along a declared course.
 / Disembark: transfer any number of Sophonts from the crew to the surface.
 / Hyperspace: a separate zone that Ships pass through during movement.
-  Cards in hyperspace cannot be targeted by any effect unless that effect
-  explicitly states otherwise.
+  Cards in hyperspace are not on the space line, therefore cannot be targeted 
+  by any effect unless it explicitly states otherwise.
 / Influence: the currency of requisitioning. Produced by tapping resources
   in the resource zone; one tap produces one influence. Influence is spent
   immediately and does not carry between turns.
@@ -702,3 +717,5 @@ and have a special meaning.
 / Transit: the passage of a Ship in hyperspace through the hyperspace
   coordinates of an intermediate location along its course.
 / Untapped: a card in its normal, upright orientation, available to be used.
+/ Uncharted: a face-down location is said to be "uncharted". You can chart it
+  by moving there with a ship.
