@@ -295,6 +295,10 @@ See @movement for detailed rules.
 A Ship may move and act in the same turn. Crew aboard the Ship do not tap
 when the Ship taps; they may still perform their own actions.
 
+A Ship with *Crew 0* and no Sophonts aboard can take any Ship action as if some Sophont
+was always aboard. 
+A Ship with *Crew N* but fewer than N Sophonts aboard, on the other hand, cannot take any action.
+
 Sophonts on the surface of a land [LAND] location remain there if their Ship departs.
 
 === Act with Sophonts
@@ -312,6 +316,10 @@ action before resolving it:
 - *Attempt mission*: if the away team meets the requirements of the next incomplete
   mission step, resolve that step
 
+Additionally, as a free action, an untapped crew member can *transfer a Manufact*
+- from this Ship to space
+- from space to this Ship
+  
 == End Phase
 
 If you have more than 7 cards in hand, discard down to 7.
@@ -556,6 +564,11 @@ current location until sufficient crew come aboard.
 Only if it has the Hold N keyword and the carried Ship's SIZ does not
 exceed N.
 
+*Can I transfer a Manufact between a Ship and the surface without a Sophont?*
+
+No. Manufacts cannot move on their own. To move a Manufact between a Ship 
+and the surface, at least one Sophont must disembark or embark carrying it.
+
 == Combat
 
 *Can I attack an enemy Ship that has no crew?*
@@ -581,6 +594,22 @@ other Ships.
 
 You cannot choose the outcome of combat, but you do choose which
 Sophont to scrap if your away team loses.
+
+== Manufacts
+
+*When is a Manufact in space considered abandoned?*
+
+A Manufact in space is abandoned when there is no Ship at its location.
+A Manufact carried by a crew member, or present at a location where at
+least one Ship is docked, is not abandoned.
+Any Ship arriving at a location with an abandoned Manufact may pick it
+up as a free action, regardless of who it belongs to.
+
+*When is a Manufact on the surface considered abandoned?*
+
+A Manufact on the surface is abandoned when there is no away team at
+its location. Any away team arriving at a location with an abandoned
+Manufact may pick it up as a free action, regardless of who it belongs to.
 
 == Missions
 
