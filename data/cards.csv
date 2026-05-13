@@ -1,0 +1,9 @@
+name;cost;affty;type;subtypes;rarity;attrs;highlight;text;tracker
+Ensign Redshirt;1;[];Sophont;[Vokun, Pilot];?;[CHA: 1, INT: 1, STR: 1, WRD: 0];;;
+Captain Coolman;3;[CHA, STR];Sophont;[Smarragdine, Commander, VIP];?;[CHA: 3, INT: 2, STR: 4, WRD: 0];[STR];;
+Space Scuttler;1;[];Ship;[Aom, Shuttle];?;[SIZ: 1, RNG: 2, WPN: 0];;*Crew 1*;
+Battlecruiser;4;[STR, STR];Ship;[Vokun, Cruiser];?;[SIZ: 3, RNG: 2, WPN: 4];;*Crew 2*  *Hold 3*;
+Blaster;1;[];Manufact;[Weapon];?;;;This away team has STR +3.;
+Engine Overload;1;[INT];Event;[Superluminal, Fleeting];?;;;Target allied Ship gets RNG +4 and takes 1 damage.;
+Mira's Nebula;;[];Location;[Nebula, VOID_icon];?;[LFT: 10, RGT: 2];;#VP(5)  On completion: LFT becomes 2.;["Analyse the structure of the nebula. Requires INT > 8.", "Hyperspace is leaking into realspace! Reveal the seeded Manufacts; requires WRD > 8+X, where X is the highest cost among those manufacts. If you fail, the Ship takes 1 damage.", "Use high enegry beams to restore hyperspace structure. Requires STR+WPN > 12+Y, where Y is the lowest cost of the seeded Manufacts."]
+Grangian Civil War;;[];Location;[Planet, LAND_icon];?;[LFT: 3, RGT: 2];;Scrap a resource: requisition a Weapon Manufact token with «this away team has STR +1».;["#VP(1)  Deliver military supplies to an allied faction; scrap a Weapon from this away team.", "#VP(2)  Help negotiate a peace deal; requires CHA > 12-X, where X is the cost of the scrapped Weapon"]
