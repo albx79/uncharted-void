@@ -47,3 +47,18 @@ Dromon;4;[STR, STR];Ship;[Vokun, Destroyer];U;[SIZ: 3, RNG: 2, WPN: 6];;*Crew 2*
 Leviathan;6;[STR, STR];Ship;[Vokun, Destroyer];R;[SIZ: 4, RNG: 2, WPN: 8];;*Crew 3*;
 Kalyon;3;[STR];Ship;[Vokun, Transport];U;[SIZ: 2, RNG: 2, WPN: 1];;*Crew 1*  *Hold 2*;
 Dreadnought;5;[STR, STR];Ship;[Vokun, Destroyer];R;[SIZ: 3, RNG: 2, WPN: 7];;*Crew 2*  *Hold 2*;
+name;cost;affty;type;subtypes;rarity;attrs;highlight;text;tracker
+Blaster;1;[];Manufact;[Weapon];C;;;This away team has STR +2.;
+Medikit;1;[];Manufact;[Equipment];C;;;If a Medic is present, when you lose combat you may recycle _this_ instead of scrapping a Sophont.;
+Survey Drone;;[];Manufact;[Equipment];C;;;_;
+Hyperspace Beacon;2;[];Manufact;[Device];U;[SIZ: 1];;The Ship carrying _this_ gets RNG +1.;
+Ancient Relic;;[];Manufact;[Relic];C;;;When _this_ is at your home location: scrap it ▶ score #VP(2).;
+Smaragdine Mind Shard;2;[WRD];Manufact;[Relic];U;;;The crew of the Ship carrying _this_ get WRD +1.;
+Deva Memory Core;3;[INT];Manufact;[Relic];R;;;When _this_ is requisitioned: reveal all seeded Manufacts at one location of your choice.;
+Gnome Drill;;[];Manufact;[Equipment];C;;;_;
+Hyehoon Glider;;[];Manufact;[Vehicle];U;;;This away team gets INT +2 and STR +2 while attempting mission steps if an Explorer is present.;
+Botanical Sample;;[];Manufact;[Relic];C;;;When _this_ is at your home location: scrap it ▶ score #VP(1).;
+Vokun Warblade;2;[STR];Manufact;[Weapon];U;;;This away team has STR +4.;
+Vokun Shock Cannon;3;[STR];Manufact;[Device];U;[SIZ: 1];;The Ship carrying _this_ gets WPN +2.;
+Vokun Restraint Collar;1;[];Manufact;[Equipment];C;;;Tap target Sophont.;
+Mnaat Cybernetic Implant;2;[INT];Manufact;[Equipment];U;;;The Sophont carrying _this_ gets INT +2. On death: recycle that Sophont.;
