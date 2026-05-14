@@ -5,5 +5,45 @@ Space Scuttler;1;[];Ship;[Aom, Shuttle];?;[SIZ: 1, RNG: 2, WPN: 0];;*Crew 1*;
 Battlecruiser;4;[STR, STR];Ship;[Vokun, Cruiser];?;[SIZ: 3, RNG: 2, WPN: 4];;*Crew 2*  *Hold 3*;
 Blaster;1;[];Manufact;[Weapon];?;;;This away team has STR +3.;
 Engine Overload;1;[INT];Event;[Superluminal, Fleeting];?;;;Target allied Ship gets RNG +4 and takes 1 damage.;
-Mira's Nebula;;[];Location;[Nebula, VOID_icon];?;[LFT: 10, RGT: 2];;#VP(5)  On completion: LFT becomes 2.;["Analyse the structure of the nebula. Requires INT > 8.", "Hyperspace is leaking into realspace! Reveal the seeded Manufacts; requires WRD > 8+X, where X is the highest cost among those manufacts. If you fail, the Ship takes 1 damage.", "Use high enegry beams to restore hyperspace structure. Requires STR+WPN > 12+Y, where Y is the lowest cost of the seeded Manufacts."]
-Grangian Civil War;;[];Location;[Planet, LAND_icon];?;[LFT: 3, RGT: 2];;Scrap a resource: requisition a Weapon Manufact token with «this away team has STR +1».;["#VP(1)  Deliver military supplies to an allied faction; scrap a Weapon from this away team.", "#VP(2)  Help negotiate a peace deal; requires CHA > 12-X, where X is the cost of the scrapped Weapon"]
+Mira's Nebula;;[];Location;[Nebula, VOID_icon];?;[LFT: 10, RGT: 2];;#VP(5)  On completion: LFT becomes 2.;"[""Analyse the structure of the nebula. Requires INT > 8."", ""Hyperspace is leaking into realspace! Reveal the seeded Manufacts: requires WRD > 8+X, where X is the highest cost among those manufacts. If you fail, the Ship takes 1 damage."", ""Use high enegry beams to restore hyperspace structure: requires STR+WPN > 12+Y, where Y is the lowest cost of the seeded Manufacts.""]"
+Grangian Civil War;;[];Location;[Planet, LAND_icon];?;[LFT: 3, RGT: 2];;Scrap a resource: requisition a Weapon Manufact token with «this away team has STR +1».;"[""#VP(1)  Deliver military supplies to an allied faction: scrap a Weapon from this away team."", ""#VP(2)  Help negotiate a peace deal: requires CHA > 12-X, where X is the cost of the scrapped Weapon""]"
+name;cost;affty;type;subtypes;rarity;attrs;highlight;text;tracker
+Gnome Worker;1;[];Sophont;[Gnome];C;[CHA: 1, INT: 1, STR: 1, WRD: 0];;;
+Gnome Foreman;2;[STR];Sophont;[Gnome, Commander];C;[CHA: 2, INT: 1, STR: 2, WRD: 0];[STR];;
+Hyehoon Scout;1;[];Sophont;[Hyehoon, Explorer];C;[CHA: 1, INT: 1, STR: 1, WRD: 0];;;
+Hyehoon Negotiator;2;[CHA];Sophont;[Hyehoon, Diplomat];C;[CHA: 3, INT: 1, STR: 1, WRD: 0];[CHA];;
+Hyehoon Naturalist;2;[INT];Sophont;[Hyehoon, Scientist];C;[CHA: 1, INT: 3, STR: 0, WRD: 0];[INT];;
+Hyehoon Pathfinder;3;[INT];Sophont;[Hyehoon, Explorer];U;[CHA: 2, INT: 3, STR: 1, WRD: 0];[INT];;
+Neshekk Broker;3;[CHA];Sophont;[Neshekk, Diplomat, VIP];R;[CHA: 3, INT: 2, STR: 0, WRD: 0];[CHA];;
+Smaragdine Adept;2;[WRD];Sophont;[Smaragdine, Scientist];C;[CHA: 1, INT: 2, STR: 0, WRD: 2];[WRD];;
+Smaragdine Warrior;2;[STR];Sophont;[Smaragdine, Soldier];C;[CHA: 1, INT: 1, STR: 2, WRD: 2];[STR];;
+Smaragdine Elder;3;[WRD];Sophont;[Smaragdine, Diplomat];U;[CHA: 2, INT: 2, STR: 0, WRD: 3];[WRD];;
+Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP];R;[CHA: 3, INT: 2, STR: 2, WRD: 4];[WRD];;
+Deva Artificer;4;[INT];Sophont;[Deva, Engineer, VIP];R;[CHA: 2, INT: 4, STR: 0, WRD: 2];[INT];;
+Vokun Conscript;1;[];Sophont;[Vokun, Soldier];C;[CHA: 0, INT: 1, STR: 2, WRD: 0];[STR];;
+Vokun Lord;3;[STR];Sophont;[Vokun, Commander];U;[CHA: 3, INT: 1, STR: 3, WRD: 0];[STR];;
+Vokun Warlord;5;[STR, CHA];Sophont;[Vokun, Commander, VIP];R;[CHA: 5, INT: 1, STR: 3, WRD: 0];[CHA];Sophonts at this location with STR < 3 cannot act.;
+Vokun Grand Elder;6;[CHA, CHA];Sophont;[Vokun, Diplomat, VIP];R;[CHA: 7, INT: 1, STR: 1, WRD: 0];[CHA];_this_ cannot go ashore. Your opponent's Sophonts at this location with STR < 3 cannot act.;
+Kuath Shock Trooper;2;[STR];Sophont;[Kuath, Soldier];C;[CHA: 0, INT: 0, STR: 5, WRD: 0];[STR];;
+Kuath Sergeant;3;[STR];Sophont;[Kuath, Commander];U;[CHA: 1, INT: 1, STR: 5, WRD: 0];[STR];;
+Mnaat Technician;2;[INT];Sophont;[Mnaat, Engineer];C;[CHA: 0, INT: 3, STR: 1, WRD: 0];[INT];On death: recycle _this_.;
+Mnaat Researcher;3;[INT];Sophont;[Mnaat, Scientist];U;[CHA: 0, INT: 4, STR: 0, WRD: 1];[INT];On death: recycle _this_.;
+Voidglider Navigator;2;[WRD];Sophont;[Voidglider, Pilot];C;[CHA: 0, INT: 2, STR: 1, WRD: 2];[WRD];Ships crewed by _this_ get RNG +1.;
+Voidglider Seer;3;[WRD];Sophont;[Voidglider, Scientist];U;[CHA: 0, INT: 3, STR: 0, WRD: 4];[WRD];When _this_ is aboard a Ship that transits a location, you may look at all seeded Manufacts there.;
+Ibglib Analyst;2;[INT];Sophont;[Ibglib, Scientist];C;[CHA: 1, INT: 4, STR: 0, WRD: 0];[INT];When your opponent plays a Superluminal effect, tap _this_.;
+Ibglib Envoy;3;[INT];Sophont;[Ibglib, Diplomat];U;[CHA: 2, INT: 3, STR: 0, WRD: 0];[INT];When your opponent plays a Superluminal effect, tap _this_.;
+name;cost;affty;type;subtypes;rarity;attrs;highlight;text;tracker
+Alliance Shuttle;1;[];Ship;[Shuttle];C;[SIZ: 1, RNG: 3, WPN: 0];;*Crew 0*;
+Gnome Hauler;2;[INT];Ship;[Gnome, Transport];C;[SIZ: 1, RNG: 2, WPN: 0];;*Crew 1*  *Hold 1*;
+Caldera;4;[INT];Ship;[Gnome, Transport];U;[SIZ: 3, RNG: 2, WPN: 1];;*Crew 2*  *Hold 3*;
+Basalt;6;[INT, STR];Ship;[Gnome, Transport];R;[SIZ: 4, RNG: 1, WPN: 2];;*Crew 3*  *Hold 4*;
+Zephyr;2;[INT];Ship;[Hyehoon, Scout];C;[SIZ: 1, RNG: 4, WPN: 1];;*Crew 1*;
+Boreas;4;[INT, STR];Ship;[Hyehoon, Scout];U;[SIZ: 2, RNG: 5, WPN: 2];;*Crew 2*;
+Pneuma;3;[WRD];Ship;[Smaragdine, Scout];U;[SIZ: 2, RNG: 3, WPN: 2];;*Crew 1*;
+Eidolon;4;[WRD, STR];Ship;[Smaragdine, Destroyer];R;[SIZ: 3, RNG: 2, WPN: 5];;*Crew 2*;
+Vokun Shuttle;1;[];Ship;[Vokun, Shuttle];C;[SIZ: 1, RNG: 3, WPN: 0];;*Crew 0*;
+Kadirga;2;[STR];Ship;[Vokun, Destroyer];C;[SIZ: 1, RNG: 3, WPN: 2];;*Crew 1*;
+Dromon;4;[STR, STR];Ship;[Vokun, Destroyer];U;[SIZ: 3, RNG: 2, WPN: 6];;*Crew 2*;
+Leviathan;6;[STR, STR];Ship;[Vokun, Destroyer];R;[SIZ: 4, RNG: 2, WPN: 8];;*Crew 3*;
+Kalyon;3;[STR];Ship;[Vokun, Transport];U;[SIZ: 2, RNG: 2, WPN: 1];;*Crew 1*  *Hold 2*;
+Dreadnought;5;[STR, STR];Ship;[Vokun, Destroyer];R;[SIZ: 3, RNG: 2, WPN: 7];;*Crew 2*  *Hold 2*;
