@@ -1,6 +1,9 @@
 // ── Uncharted Void card prototype — Option B layout ─────────────────────────
 // Card size: standard US playing card 63.5mm × 88.9mm
 
+// ── Fonts ────────────────────────────────────────────────────────────────────
+#set text(font: "Exo 2")
+
 // ── Colour palette ──────────────────────────────────────────────────────────
 #let attr-cha-sat   = rgb("#8b2fc9")
 #let attr-int-sat   = rgb("#1a6bbf")
@@ -26,7 +29,6 @@
   ..aff.map(a => affinity-pill(a, color-fn(a)))
 )
 
-// Attribute section with selective corner rounding
 #let attr-section(name, value, bg, sat, highlighted,
                   tl: 0pt, tr: 0pt, bl: 0pt, br: 0pt) = box(
   fill: if highlighted { sat } else { bg },
@@ -49,6 +51,7 @@
   cha: 0, int: 0, pstr: 0, wrd: 0,
   highlight: (),
   rules:     "",
+  rarity:    "C",
   art:       none,
 ) = {
 
@@ -60,7 +63,8 @@
     else               { rgb("#888888") }
   }
 
-  let r = 4pt  // corner radius for bottom box and attribute strip
+  let r  = 4pt   // corner radius for bottom box
+  let cs = 4mm   // cut size
 
   // Outer card — rounded corners, clips art to card shape
   block(
@@ -76,7 +80,7 @@
       }
     )
 
-    // ── Card frame (sharp corners, no fill, 2mm inside card edge) ──
+    // ── Card frame ──
     #place(top + left, dx: 2mm, dy: 2mm)[
       #block(
         width: 59.5mm, height: 84.9mm,
@@ -84,18 +88,18 @@
         fill: none,
       )[
 
-        // ── Top bar: cost + pills (vertically centred) + name + subtypes ──
+        // ── Top bar ──
         #place(top + left)[
           #rect(
             fill: black-bar,
             width: 59.5mm,
-            inset: (x: 2.5mm, y: 1.2mm),
+            inset: (x: 1.2mm, y: 1.2mm),
           )[
+            #set par(leading: 2pt)
             #grid(
               columns: (auto, auto, 1fr),
-              column-gutter: 2mm,
+              column-gutter: 1.2mm,
               align(horizon)[
-                // Cost circle
                 #box(
                   fill: white,
                   radius: 3pt,
@@ -103,22 +107,20 @@
                 )[#text(fill: black-bar, size: 9pt, weight: "bold")[#cost]]
               ],
               align(horizon)[
-                // Affinity pills stacked
                 #affinity-stack(affinity, affinity-color)
               ],
               align(horizon)[
-                // Name + subtypes stacked
                 #text(fill: white, size: 7.5pt, weight: "bold")[#name]
                 #linebreak()
                 #text(fill: rgb("#aaaaaa"), size: 5pt)[
-                  Sophont · #subtypes.join(" · ")
+                   #subtypes.join(" ") · *Sophont*
                 ]
               ],
             )
           ]
         ]
 
-        // ── Bottom box: floating with padding, all corners rounded ──
+        // ── Bottom box ──
         #place(bottom + left, dx: 2mm, dy: -2mm)[
           #block(
             width: 55.5mm,
@@ -128,14 +130,12 @@
             clip: true,
             inset: 0mm,
           )[
-            // Text area with padding
             #block(
               width: 100%,
-              inset: (x: 2.5mm, top: 2.5mm, bottom: 2mm),
+              inset: (x: 1.2mm, top: 1.2mm, bottom: 2mm),
             )[
               #text(fill: black-bar, size: 6pt)[#rules]
             ]
-            // Attribute strip — no padding, full width, outer corners rounded
             #grid(
               columns: (1fr, 1fr, 1fr, 1fr),
               gutter: 0mm,
@@ -150,8 +150,27 @@
             )
           ]
         ]
+
       ]
     ]
+
+    // ── Cut corner with rarity circle ──
+    //Frame bottom-right is at card coords (61.5mm, 86.9mm)
+    #place(top + left,
+      dx: 61.5mm - cs,
+      dy: 86.9mm - cs,
+    )[
+      #polygon(stroke: 5pt + rgb("#2a3a4a"), fill: rgb("#2a3a4a"), (0mm, cs), (cs, 0mm), (cs, cs))
+      #line(stroke: 1pt + frame-col, start: (cs, 0mm), end: (cs, cs))
+    ]
+    #place(top + left,
+      dx: 61.5mm - cs * 0.72,
+      dy: 86.9mm - cs * 0.72,
+    )[#circle(radius: cs * 0.38, fill: black-bar)[
+      #align(center + horizon)[
+        #text(fill: white, size: 5pt, weight: "bold")[#rarity]
+      ]
+    ]]
   ]
 }
 
@@ -167,4 +186,5 @@
   cha: 3, int: 2, pstr: 2, wrd: 4,
   highlight: ("WRD",),
   rules:     "Sophonts at this location with STR < 3 cannot act.",
+  rarity:    "R",
 )
