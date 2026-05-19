@@ -1,6 +1,5 @@
-// ── Uncharted Void card prototype ──────────────────────────────────────────
+// ── Uncharted Void card prototype — Option B layout ─────────────────────────
 // Card size: standard US playing card 63.5mm × 88.9mm
-// Layout: full-art background, floating UI elements on top
 
 // ── Colour palette ──────────────────────────────────────────────────────────
 #let attr-cha-sat   = rgb("#8b2fc9")
@@ -11,174 +10,161 @@
 #let attr-int-desat = rgb("#d8eaf8")
 #let attr-str-desat = rgb("#f8ddd8")
 #let attr-wrd-desat = rgb("#d8f0e8")
-#let attr-rng-sat   = rgb("#0a6a9a")
-#let attr-wpn-sat   = rgb("#b04a10")
-#let attr-siz-sat   = rgb("#555555")
-#let attr-lft-sat   = rgb("#7a7a20")
-#let attr-rgt-sat   = rgb("#a06020")
 
-// Semi-transparent overlays for text boxes
-#let overlay-dark  = rgb(0, 0, 0, 160)   // 63% opacity black
-#let overlay-light = rgb(0, 0, 0, 120)   // 47% opacity black
+#let black-bar  = rgb("#111111")
+#let text-bg    = rgb(255, 255, 255, 220)
+#let frame-col  = rgb("#111111")
 
-// ── Helper: affinity pill (small, stackable) ────────────────────────────────
+// ── Helpers ──────────────────────────────────────────────────────────────────
 #let affinity-pill(attr, color) = box(
-  fill: color,
-  radius: 2pt,
+  fill: color, radius: 2pt,
   inset: (x: 2pt, y: 1pt),
-)[
-  #text(fill: white, size: 4.5pt, weight: "bold")[#attr]
-]
+)[#text(fill: white, size: 4.5pt, weight: "bold")[#attr]]
 
-// ── Helper: stacked affinity pills column ───────────────────────────────────
-#let affinity-stack(affinity, color-fn) = stack(
-  dir: ttb,
-  spacing: 1pt,
-  ..affinity.map(a => affinity-pill(a, color-fn(a)))
+#let affinity-stack(aff, color-fn) = stack(
+  dir: ttb, spacing: 1.5pt,
+  ..aff.map(a => affinity-pill(a, color-fn(a)))
 )
 
-// ── Helper: attribute box (inline name + value) ─────────────────────────────
-#let attr-box(name, value, bg-color, sat-color, highlighted: false) = box(
-  fill: if highlighted { sat-color } else { bg-color },
-  stroke: none,
-  radius: 2pt,
-  inset: (x: 3pt, y: 2pt),
-)[
+// Attribute section with selective corner rounding
+#let attr-section(name, value, bg, sat, highlighted,
+                  tl: 0pt, tr: 0pt, bl: 0pt, br: 0pt) = box(
+  fill: if highlighted { sat } else { bg },
+  inset: (x: 3pt, y: 3pt),
+  width: 100%,
+  radius: (top-left: tl, top-right: tr, bottom-left: bl, bottom-right: br),
+)[#align(center)[
   #text(
-    fill: if highlighted { white } else { bg-color.darken(70%) },
-    size: 6pt,
-    weight: "bold",
+    fill: if highlighted { white } else { bg.darken(60%) },
+    size: 5.5pt, weight: "bold",
   )[#name #h(1pt) #value]
-]
+]]
 
-// ── Helper: floating box with dark overlay ──────────────────────────────────
-#let card-box(content, width: auto) = box(
-  fill: overlay-dark,
-  radius: 4pt,
-  inset: (x: 5pt, y: 4pt),
-  width: width,
-)[#content]
-
-// ── Card template ───────────────────────────────────────────────────────────
+// ── Card template ────────────────────────────────────────────────────────────
 #let sophont-card(
   name:      "Unnamed Sophont",
   cost:      0,
-  affinity:  (),       // list of attr strings e.g. ("CHA", "STR")
-  subtypes:  (),       // list of subtype strings
-  cha: 0, int: 0, str: 0, wrd: 0,
-  highlight: (),       // list of highlighted attr names
+  affinity:  (),
+  subtypes:  (),
+  cha: 0, int: 0, pstr: 0, wrd: 0,
+  highlight: (),
   rules:     "",
-  art:       none,     // path to art file, or none for placeholder
+  art:       none,
 ) = {
-  // Affinity colour lookup
+
   let affinity-color(a) = {
-    if a == "CHA" { attr-cha-sat }
+    if a == "CHA"      { attr-cha-sat }
     else if a == "INT" { attr-int-sat }
     else if a == "STR" { attr-str-sat }
     else if a == "WRD" { attr-wrd-sat }
-    else { rgb("#888888") }
+    else               { rgb("#888888") }
   }
 
-  // Attribute background colour lookup
-  let attr-bg(a) = {
-    if a == "CHA" { attr-cha-desat }
-    else if a == "INT" { attr-int-desat }
-    else if a == "STR" { attr-str-desat }
-    else if a == "WRD" { attr-wrd-desat }
-    else { rgb("#eeeeee") }
-  }
+  let r = 4pt  // corner radius for bottom box and attribute strip
 
+  // Outer card — rounded corners, clips art to card shape
   block(
-    width: 63.5mm,
-    height: 88.9mm,
-    clip: true,
-    radius: 4pt,
-    stroke: 0.5pt + rgb("#333333"),
+    width: 63.5mm, height: 88.9mm,
+    clip: true, radius: 4pt,
   )[
-    // ── Background art (or placeholder) ──
+    // ── Full-bleed art ──
     #place(top + left,
       if art != none {
         image(art, width: 63.5mm, height: 88.9mm, fit: "cover")
       } else {
-        // Placeholder gradient-like background using a rect
-        rect(
-          width: 63.5mm,
-          height: 88.9mm,
-          fill: rgb("#2a3a4a"),
-        )
+        rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
       }
     )
 
-    // ── Top bar: cost + stacked pills + name ──
+    // ── Card frame (sharp corners, no fill, 2mm inside card edge) ──
     #place(top + left, dx: 2mm, dy: 2mm)[
-      #card-box(width: 59.5mm)[
-        #grid(
-          columns: (auto, auto, 1fr),
-          gutter: 2mm,
-          align(left + horizon)[
-            // Cost circle
-            #box(
-              fill: white,
-              radius: 5pt,
-              inset: (x: 3pt, y: 2pt),
-            )[
-              #text(fill: rgb("#111111"), size: 8pt, weight: "bold")[#cost]
-            ]
-          ],
-          align(left + horizon)[
-            #affinity-stack(affinity, affinity-color)
-          ],
-          align(left + horizon)[
-            #text(fill: white, size: 7pt, weight: "bold")[#name]
-          ],
-        )
-      ]
-    ]
+      #block(
+        width: 59.5mm, height: 84.9mm,
+        stroke: 1pt + frame-col,
+        fill: none,
+      )[
 
-    // ── Subtype bar (close to top bar) ──
-    #place(top + left, dx: 2mm, dy: 9mm)[
-      #card-box()[
-        #text(fill: rgb("#cccccc"), size: 5.5pt)[
-          Sophont · #subtypes.join(" · ")
+        // ── Top bar: cost + pills (vertically centred) + name + subtypes ──
+        #place(top + left)[
+          #rect(
+            fill: black-bar,
+            width: 59.5mm,
+            inset: (x: 2.5mm, y: 1.2mm),
+          )[
+            #grid(
+              columns: (auto, auto, 1fr),
+              column-gutter: 2mm,
+              align(horizon)[
+                // Cost circle
+                #box(
+                  fill: white,
+                  radius: 3pt,
+                  inset: (x: 3pt, y: 2pt),
+                )[#text(fill: black-bar, size: 9pt, weight: "bold")[#cost]]
+              ],
+              align(horizon)[
+                // Affinity pills stacked
+                #affinity-stack(affinity, affinity-color)
+              ],
+              align(horizon)[
+                // Name + subtypes stacked
+                #text(fill: white, size: 7.5pt, weight: "bold")[#name]
+                #linebreak()
+                #text(fill: rgb("#aaaaaa"), size: 5pt)[
+                  Sophont · #subtypes.join(" · ")
+                ]
+              ],
+            )
+          ]
+        ]
+
+        // ── Bottom box: floating with padding, all corners rounded ──
+        #place(bottom + left, dx: 2mm, dy: -2mm)[
+          #block(
+            width: 55.5mm,
+            fill: text-bg,
+            radius: r,
+            stroke: 0.75pt + frame-col,
+            clip: true,
+            inset: 0mm,
+          )[
+            // Text area with padding
+            #block(
+              width: 100%,
+              inset: (x: 2.5mm, top: 2.5mm, bottom: 2mm),
+            )[
+              #text(fill: black-bar, size: 6pt)[#rules]
+            ]
+            // Attribute strip — no padding, full width, outer corners rounded
+            #grid(
+              columns: (1fr, 1fr, 1fr, 1fr),
+              gutter: 0mm,
+              attr-section("CHA", cha,  attr-cha-desat, attr-cha-sat,
+                "CHA" in highlight, bl: r),
+              attr-section("INT", int,  attr-int-desat, attr-int-sat,
+                "INT" in highlight),
+              attr-section("STR", pstr, attr-str-desat, attr-str-sat,
+                "STR" in highlight),
+              attr-section("WRD", wrd,  attr-wrd-desat, attr-wrd-sat,
+                "WRD" in highlight, br: r),
+            )
+          ]
         ]
       ]
-    ]
-
-    // ── Rules text box ──
-    #place(bottom + left, dx: 2mm, dy: -9mm)[
-      #card-box(width: 59.5mm)[
-        #text(fill: white, size: 6pt)[#rules]
-      ]
-    ]
-
-    // ── Attribute row (below rules, at very bottom) ──
-    #place(bottom + left, dx: 2mm, dy: -2mm)[
-      #grid(
-        columns: (1fr, 1fr, 1fr, 1fr),
-        gutter: 1mm,
-        attr-box("CHA", cha, attr-cha-desat, attr-cha-sat, highlighted: "CHA" in highlight),
-        attr-box("INT", int, attr-int-desat, attr-int-sat, highlighted: "INT" in highlight),
-        attr-box("STR", str, attr-str-desat, attr-str-sat, highlighted: "STR" in highlight),
-        attr-box("WRD", wrd, attr-wrd-desat, attr-wrd-sat, highlighted: "WRD" in highlight),
-      )
     ]
   ]
 }
 
-// ── Page setup ──────────────────────────────────────────────────────────────
-#set page(
-  width: 63.5mm,
-  height: 88.9mm,
-  margin: 0mm,
-)
+// ── Page setup ───────────────────────────────────────────────────────────────
+#set page(width: 63.5mm, height: 88.9mm, margin: 0mm)
 
-// ── Render a sample card ─────────────────────────────────────────────────────
+// ── Sample card ──────────────────────────────────────────────────────────────
 #sophont-card(
-  name:     "Smaragdine Archon",
-  cost:     4,
-  affinity: ("WRD", "CHA"),
-  subtypes: ("Smaragdine", "Commander", "VIP"),
-  cha: 3, int: 2, str: 2, wrd: 4,
+  name:      "Smaragdine Archon",
+  cost:      4,
+  affinity:  ("WRD", "CHA"),
+  subtypes:  ("Smaragdine", "Commander", "VIP"),
+  cha: 3, int: 2, pstr: 2, wrd: 4,
   highlight: ("WRD",),
-  rules:    "Sophonts at this location with STR < 3 cannot act.",
+  rules:     "Sophonts at this location with STR < 3 cannot act.",
 )
