@@ -5,14 +5,18 @@
 #set text(font: "Exo 2")
 
 // ── Colour palette ──────────────────────────────────────────────────────────
-#let attr-cha-sat = rgb("#8b2fc9")
-#let attr-int-sat = rgb("#1a6bbf")
-#let attr-str-sat = rgb("#c0392b")
-#let attr-wrd-sat = rgb("#1a7a4a")
-#let attr-cha-desat = rgb("#e8d8f0")
-#let attr-int-desat = rgb("#d8eaf8")
-#let attr-str-desat = rgb("#f8ddd8")
-#let attr-wrd-desat = rgb("#d8f0e8")
+#let attr-sat = (
+  CHA: rgb("#8b2fc9"),
+  INT: rgb("#1a6bbf"),
+  STR: rgb("#c0392b"),
+  WRD: rgb("#1a7a4a"),
+)
+#let attr-desat = (
+  CHA: rgb("#e8d8f0"),
+  INT: rgb("#d8eaf8"),
+  STR: rgb("#f8ddd8"),
+  WRD: rgb("#d8f0e8"),
+)
 
 #let black-bar = rgb("#111111")
 #let text-bg = rgb(255, 255, 255, 220)
@@ -50,21 +54,13 @@
   cost: 0,
   affinity: (),
   subtypes: (),
-  cha: 0,
-  int: 0,
-  pstr: 0,
-  wrd: 0,
+  attrs: (),
   highlight: (),
   rules: "",
   rarity: "C",
   art: none,
 ) = {
-  let affinity-color(a) = {
-    if a == "CHA" { attr-cha-sat } else if a == "INT" { attr-int-sat } else if a == "STR" { attr-str-sat } else if (
-      a == "WRD"
-    ) { attr-wrd-sat } else { rgb("#888888") }
-  }
-
+  let affinity-color(a) = attr-sat.at(a)
   let r = 4pt // corner radius for bottom box
   let cs = 5mm // cut size
 
@@ -153,12 +149,24 @@
               #text(fill: black-bar, size: 6pt)[#rules]
             ]
             #grid(
-              columns: (1fr, 1fr, 1fr, 1fr),
+              columns: attrs.keys().map(_ => 1fr),
               gutter: 0mm,
-              attr-section("CHA", cha, attr-cha-desat, attr-cha-sat, "CHA" in highlight, bl: r),
-              attr-section("INT", int, attr-int-desat, attr-int-sat, "INT" in highlight),
-              attr-section("STR", pstr, attr-str-desat, attr-str-sat, "STR" in highlight),
-              attr-section("WRD", wrd, attr-wrd-desat, attr-wrd-sat, "WRD" in highlight, br: r),
+              ..attrs
+                .keys()
+                .enumerate(start: 1)
+                .map(x => {
+                  let attr = x.at(1)
+                  let i = x.at(0)
+                  attr-section(
+                    attr,
+                    attrs.at(attr),
+                    attr-desat.at(attr, default: gray),
+                    attr-sat.at(attr, default: gray),
+                    attr in highlight,
+                    bl: if i == 1 { r } else { 0pt },
+                    br: if (i == attrs.keys().len()) { r } else { 0pt },
+                  )
+                }),
             )
           ]
         ]
@@ -185,10 +193,12 @@
   cost: 4,
   affinity: ("WRD", "CHA"),
   subtypes: ("Smaragdine", "Commander", "VIP"),
-  cha: 3,
-  int: 2,
-  pstr: 2,
-  wrd: 4,
+  attrs: (
+    CHA: 3,
+    INT: 2,
+    STR: 2,
+    WRD: 4,
+  ),
   highlight: ("WRD",),
   rules: "Sophonts at this location with STR < 3 cannot act.",
   rarity: "R",
