@@ -65,10 +65,9 @@
   art: none,
 ) = {
   let affinity-color(a) = attr-sat.at(a)
-  let r = 4pt // corner radius for bottom box
-  let cs = 5mm // cut size
+  let r = 4pt
+  let cs = 5mm
 
-  // Outer card — rounded corners, clips art to card shape
   block(
     width: 63.5mm,
     height: 88.9mm,
@@ -82,15 +81,14 @@
       rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
     })
 
-    // Outer card frame with cut-off corner
+    // ── Card frame polygon with cut corner ──
     #place(top + left, dx: 2mm, dy: 2mm)[
       #polygon(
-        (0mm, 0mm), // left top
-        (59.5mm, 0mm), // right top
-        // (59.5mm, 84.9mm), // right bottom, but it's cut off
-        (59.5mm, 84.9mm - cs), // cut-off upper right
-        (59.5mm - cs, 84.9mm), // cut-off lower left
-        (0mm, 84.9mm), // left bottom
+        (0mm, 0mm),
+        (59.5mm, 0mm),
+        (59.5mm, 84.9mm - cs),
+        (59.5mm - cs, 84.9mm),
+        (0mm, 84.9mm),
         stroke: 1pt + frame-col,
         fill: none,
       )
@@ -98,11 +96,7 @@
 
     // ── Card content ──
     #place(top + left, dx: 2mm, dy: 2mm)[
-      #block(
-        width: 59.5mm,
-        height: 84.9mm,
-        fill: none,
-      )[
+      #block(width: 59.5mm, height: 84.9mm, fill: none)[
 
         // ── Top bar ──
         #place(top + left)[
@@ -111,7 +105,6 @@
             width: 59.5mm,
             inset: (x: 1.2mm, y: 1.2mm),
           )[
-            #set par(leading: 2pt)
             #grid(
               columns: (auto, auto, 1fr),
               column-gutter: 1.2mm,
@@ -126,11 +119,13 @@
                 #affinity-stack(affinity, affinity-color)
               ],
               align(horizon)[
-                #text(fill: white, size: 7.5pt, weight: "bold")[#name]
-                #linebreak()
-                #text(fill: rgb("#aaaaaa"), size: 5pt)[
-                  #subtypes.join(" ") · *Sophont*
-                ]
+                // Stack with tight spacing instead of linebreak
+                #stack(dir: ttb, spacing: 2.5pt,
+                  text(fill: white, size: 7.5pt, weight: "bold")[#name],
+                  text(fill: rgb("#aaaaaa"), size: 5pt)[
+                    #subtypes.join(" · ") · *Sophont*
+                  ],
+                )
               ],
             )
           ]
@@ -177,7 +172,7 @@
       ]
     ]
 
-    // ── Rarity circle (positioned relative to the cut corner) ──
+    // ── Rarity circle ──
     #place(top + left, dx: 61.5mm - cs * 0.72, dy: 86.9mm - cs * 0.72)[
       #circle(radius: cs * 0.38, fill: black-bar)[
         #align(center + horizon)[
