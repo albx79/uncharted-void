@@ -5,18 +5,22 @@
 #set text(font: "Exo 2")
 
 // ── Colour palette ──────────────────────────────────────────────────────────
-#let attr-sat = (
-  CHA: rgb("#8b2fc9"),
-  INT: rgb("#1a6bbf"),
-  STR: rgb("#c0392b"),
-  WRD: rgb("#1a7a4a"),
-)
-#let attr-desat = (
-  CHA: rgb("#e8d8f0"),
-  INT: rgb("#d8eaf8"),
-  STR: rgb("#f8ddd8"),
-  WRD: rgb("#d8f0e8"),
-)
+#let attr-data = csv("../data/attrs.csv", delimiter: ";", row-type: dictionary)
+
+#let attr-sat = {
+  let res = (:)
+  for r in attr-data {
+    res.insert(r.at("NAM"), rgb(r.at("full-sat")))
+  }
+  res
+}
+#let attr-desat = {
+  let res = (:)
+  for r in attr-data {
+    res.insert(r.at("NAM"), rgb(r.at("desat")))
+  }
+  res
+}
 
 #let black-bar = rgb("#111111")
 #let text-bg = rgb(255, 255, 255, 220)
