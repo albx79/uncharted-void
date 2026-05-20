@@ -161,7 +161,7 @@
       dy: 86.9mm - cs,
     )[
       #polygon(stroke: 5pt + rgb("#2a3a4a"), fill: rgb("#2a3a4a"), (0mm, cs), (cs, 0mm), (cs, cs))
-      #line(stroke: 1pt + frame-col, start: (cs, 0mm), end: (cs, cs))
+      #line(stroke: 1pt + frame-col, start: (0mm, cs), end: (cs, 0mm))
     ]
     #place(top + left,
       dx: 61.5mm - cs * 0.72,
