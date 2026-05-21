@@ -100,24 +100,25 @@
 
         // ── Top bar ──
         #place(top + left)[
-          #rect(
+          #rotate(90deg, reflow: true, block(
             fill: black-bar,
-            width: 59.5mm,
             inset: (x: 1.2mm, y: 1.2mm),
           )[
             #grid(
-              columns: (auto, auto, 1fr),
+              columns: (auto, 1fr, 20%),
               column-gutter: 1.2mm,
-              align(horizon)[
-                #box(
-                  fill: white,
-                  radius: 3pt,
-                  inset: (x: 3pt, y: 2pt),
-                )[#text(fill: black-bar, size: 9pt, weight: "bold")[#cost]]
-              ],
-              align(horizon)[
-                #affinity-stack(affinity, affinity-color)
-              ],
+              rotate(-90deg, reflow: true, align(horizon)[
+                #stack(dir: ttb, spacing: 2.5pt,                  
+                  box(
+                    fill: white,
+                    radius: 3pt,
+                    inset: (x: 3pt, y: 2pt),
+                  )[
+                    #text(fill: black-bar, size: 9pt, weight: "bold")[#cost]
+                  ],
+                 affinity-stack(affinity, affinity-color) 
+                )
+              ]),
               align(horizon)[
                 // Stack with tight spacing instead of linebreak
                 #stack(dir: ttb, spacing: 2.5pt,
@@ -127,15 +128,34 @@
                   ],
                 )
               ],
+
+              grid(
+                columns: attrs.keys().map(_ => 1fr),
+                gutter: 0mm,
+                ..attrs
+                  .keys()
+                  .enumerate(start: 1)
+                  .map(x => {
+                    let attr = x.at(1)
+                    let i = x.at(0)
+                    attr-section(
+                      attr,
+                      attrs.at(attr),
+                      attr-desat.at(attr, default: gray),
+                      attr-sat.at(attr, default: gray),
+                      attr in highlight,
+                    )
+                  }),
+              )
             )
-          ]
-        ]
+          ])
+        ])
 
         // ── Bottom box ──
-        #place(bottom + left, dx: 2mm, dy: -2mm)[
-          #block(
+        #place(bottom + left, dx: 9mm, dy: -2mm)[
+          #rotate(90deg, reflow: true, block(
             clip: true,
-            width: 55.5mm,
+            width: 80.9mm,
             fill: text-bg,
             radius: r,
             stroke: 0.75pt + frame-col,
@@ -147,27 +167,7 @@
             )[
               #text(fill: black-bar, size: 6pt)[#rules]
             ]
-            #grid(
-              columns: attrs.keys().map(_ => 1fr),
-              gutter: 0mm,
-              ..attrs
-                .keys()
-                .enumerate(start: 1)
-                .map(x => {
-                  let attr = x.at(1)
-                  let i = x.at(0)
-                  attr-section(
-                    attr,
-                    attrs.at(attr),
-                    attr-desat.at(attr, default: gray),
-                    attr-sat.at(attr, default: gray),
-                    attr in highlight,
-                    bl: if i == 1 { r } else { 0pt },
-                    br: if (i == attrs.keys().len()) { r } else { 0pt },
-                  )
-                }),
-            )
-          ]
+          ])
         ]
       ]
     ]
@@ -190,15 +190,14 @@
 #sophont-card(
   name: "Smaragdine Archon",
   cost: 4,
-  affinity: ("WRD", "CHA"),
-  subtypes: ("Smaragdine", "Commander", "VIP"),
+  affinity: ("INT", "STR"),
+  subtypes: ("Hyehoon", "Scout"),
   attrs: (
-    CHA: 3,
-    INT: 2,
-    STR: 2,
-    WRD: 4,
+    RNG: 3,
+    WPN: 2,
+    SIZ: 2,
   ),
-  highlight: ("WRD",),
-  rules: "Sophonts at this location with STR < 3 cannot act.",
+  highlight: (),
+  rules: [*Crew 2*\ *Hold 1*],
   rarity: "R",
 )
