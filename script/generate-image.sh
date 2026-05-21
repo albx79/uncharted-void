@@ -2,7 +2,6 @@
 
 # Hugging Face API settings
 API_URL="https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-API_TOKEN="YOUR_HUGGING_FACE_TOKEN"  # Replace with your token
 OUTPUT_DIR="data/img"                  # Directory to save images
 WIDTH=512                            # Image width
 HEIGHT=768                           # Image height
@@ -14,8 +13,6 @@ if -z
 mkdir -p "$OUTPUT_DIR"
 
 PROMPT="${PROMPTS[$i]}"
-
-SAFE_PROMPT=$(echo "$PROMPT" | tr ' ' '_' | tr -dc 'a-zA-Z0-9_' | head -c 20)  # Sanitize filename
 
 echo "Generating image $((i+1)): $PROMPT"
 
