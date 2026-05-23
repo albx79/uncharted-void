@@ -120,9 +120,10 @@ is assumed to be automated or NPC-crewed and requires no Sophonts to operate.
 Locations form the space line itself and are where missions are attempted.
 Each Location card has:
 
-/ LFT: the hyperspace distance cost to travel to or from this location moving left
-/ RGT: the hyperspace distance cost to travel to or from this location moving right
-/ Subtypes: every location has either the land [LAND] or void [VOID] subtype,
+/ Symbol: a hyperspace network icon, from a set of six. Ships may jump
+  directly to any other location sharing the same symbol, regardless of
+  physical distance on the space line. Home locations have no symbol.
+/ Subtypes: every location has either the surface [LAND] or void [VOID] subtype,
   indicated by an icon, which determines how missions are attempted there (see @missions).
   Additional subtypes such as _Planet_, _Habitat_, _Derelict_, or _Nebula_ are purely
   flavour and have no mechanical effect unless specifically referenced by a card.
@@ -200,23 +201,26 @@ Each player prepares the following before the game:
 
 Determine randomly which player goes first.
 
-Both players shuffle their mission locations together into a face-down common deck.
-Player one then builds the space line from left to right as follows:
+Both players shuffle their mission location decks.
+Then, they alternate placing their mission locations face-down, starting with
+player two, following this fixed sequence from left to right:
 
-+ Draw and place 4 locations face-down from the common deck, left to right
-+ Place *player two's* home location face-up, oriented towards player two,
-  to the right of those 4
-+ Place *player one's* home location face-up, oriented towards player one,
-  to the right of that
-+ Draw and place the remaining 4 locations face-down, to the right of those
+#align(center)[
+  H1 — L2 — L1 — L2 — L1 — L2 — L1 — L2 — L1 — H2
+]
 
-The resulting space line has 10 locations total: 4 uncharted on the left,
-2 face-up home locations at the centre, and 4 uncharted on the right.
+where H1 and H2 are the home locations of player one and two respectively,
+and L1/L2 are their mission locations. Player two places first so that
+player one's home location ends up on the right.
 
-All LFT and RGT values on non-home locations are read from player one's perspective.
-For convenience, these values are mirrored upside-down on the top border of each
-location card, so player two can read them from their side of the table without
-ambiguity.
+Home locations are placed face-up at the ends of the space line, oriented
+towards their owner. All other locations are placed face-down (uncharted).
+
+The resulting space line has 10 locations total:
+- your home location, face-up, on the left,
+- eight mission locations face-down (uncharted),
+  alternating between your opponent's and yours,
+- your opponent's home location, face-up, on the right.
 
 == Seeding Manufacts
 
@@ -296,7 +300,7 @@ A Ship may move and act in the same turn. Crew aboard the Ship do not tap
 when the Ship taps; they may still perform their own actions.
 
 A Ship with *Crew 0* and no Sophonts aboard can take any Ship action as if some Sophont
-was always aboard. 
+was always aboard.
 A Ship with *Crew N* but fewer than N Sophonts aboard, on the other hand, cannot take any action.
 
 Sophonts on the surface of a land [LAND] location remain there if their Ship departs.
@@ -319,7 +323,7 @@ action before resolving it:
 Additionally, as a free action, an untapped crew member can *transfer a Manufact*
 - from this Ship to space
 - from space to this Ship
-  
+
 == End Phase
 
 If you have more than 7 cards in hand, discard down to 7.
@@ -351,16 +355,22 @@ in response to effects on the stack.
 
 == Movement <movement>
 
-To move a Ship, declare a *course*: a sequence of locations starting from
-the Ship's current location and ending at the *destination*. Calculate the
-total hyperspace distance by summing the LFT or RGT value of each location
-you jump *to* along the course, depending on the direction of travel.
-Confirm the total distance does not exceed the Ship's RNG.
+Ships move through the space line by declaring a *course* and spending RNG.
+Each step along a course costs 1 RNG, regardless of type:
+
+- *Adjacent move*: move to the next location on the space line. The ship
+  transits any intermediate locations along the way.
+- *Symbol jump*: move directly to any other location on the space line that
+  shares the same hyperspace symbol as the current location. The ship does
+  not transit any intermediate locations — it jumps directly.
+
+To move a Ship, declare a *course*: a sequence of steps ending at the
+*destination*. The total number of steps must not exceed the Ship's RNG.
 
 Tap the Ship; it *departs* the origin and enters hyperspace.
-Your opponent may play Superluminal effects targeting the Ship before it departs.
-Once the Ship has entered hyperspace it is no longer on the space line,
-and therefore cannot be targeted until it arrives.
+Your opponent may play Superluminal effects targeting the Ship before it
+departs. Once the Ship has entered hyperspace it is no longer on the space
+line, and therefore cannot be targeted until it arrives.
 
 A Ship carries all its crew and any Manufacts aboard as it moves, as well
 as any persistent event attached to them or to the Ship itself; they
@@ -368,27 +378,21 @@ travel through hyperspace together.
 
 === Transits
 
-While in hyperspace, the Ship passes through the hyperspace coordinates of
-each intermediate location along its course. Each such passage is called a
-*transit*.
-Nothing happens at a transit by default, but some superluminal effects
-may trigger or become playable when it happens.
+During a move, the Ship passes through the hyperspace coordinates
+of each intermediate location along its course.
+Each such passage is called a *transit*.
+Nothing happens at a transit by default, but some Superluminal
+effects may trigger or become playable when it happens.
 
 === Arrival
 
-As the Ship approaches its destination through hyperspace, if the destination
-is face-down, reveal it now. Resolve any "on reveal" effects before the Ship
-exits hyperspace.
+When the Ship reaches its set destination, it exits hyperspace.
+It is on the space line again, and may be targeted by superluminal
+effects as normal.
 
-Then check legality:
-- If the total distance does not exceed the Ship's RNG, the Ship *arrives*
-  at the destination
-- If the total distance exceeds the Ship's RNG, the Ship *arrives* at the
-  last transited location instead (or at the origin if no location was transited)
-
-The Ship exits hyperspace and resolves any "on arrival" effects.
-Opponents may play Superluminal effects targeting the Ship at this point,
-as it is again on the space line.
+If the Location has any "on arrival" effect, it triggers now.
+If the location is uncharted, chart it now: turn it face-up,
+and trigger its "on reveal" effect if has one.
 
 == Ship Combat
 
@@ -538,10 +542,22 @@ regardless of whether it is tapped or untapped.
 *Can a Ship move to a location it is already at?*
 
 Yes. The departure location and the destination don't have to be
-different locations. 
+different locations.
 You may even plot a course through several other locations before
 arriving back to where you had started, provided you have enough
 range.
+
+*Can a ship make multiple symbol jumps in one move?*
+
+Yes, as long as the total does not exceed the Ship's RNG
+(each jump costs 1 RNG).
+Each jump must be to a location sharing the symbol of the
+location the ship is jumping from, not the origin.
+
+*Can a ship jump to an uncharted location via symbol?*
+
+No. Uncharted locations are face-down, therefore you cannot
+know their hyperspace symbol until they're charted.
 
 *Can a Ship move through a location occupied by an enemy Ship?*
 
@@ -566,15 +582,15 @@ exceed N.
 
 *Can I transfer a Manufact between a Ship and the surface without a Sophont?*
 
-No. Manufacts cannot move on their own. To move a Manufact between a Ship 
+No. Manufacts cannot move on their own. To move a Manufact between a Ship
 and the surface, at least one Sophont must disembark or embark carrying it.
 
 == Combat
 
 *Can I attack an enemy Ship that has no crew?*
 
-Yes. Both uncrewed Ships (whose crew is smaller than it requires), 
-and *Crew 0* Ships may be attacked. 
+Yes. Both uncrewed Ships (whose crew is smaller than it requires),
+and *Crew 0* Ships may be attacked.
 A *Crew 0* with no one on board can use only its WPN attribute in
 combat, as there is no crew STR to add.
 An uncrewed Ship, on the other hand, cannot fight back at all, and will
@@ -582,7 +598,7 @@ automatically lose the combat, regardless of its WPN value.
 
 *What happens to Sophonts aboard a scrapped Ship?*
 
-They are scrapped together with the Ship and all Manufacts on board, 
+They are scrapped together with the Ship and all Manufacts on board,
 unless a card effect specifically states otherwise.
 
 *Can an away team attack a Ship?*
@@ -630,7 +646,7 @@ for steps you complete yourself.
 *What if I complete a mission but have no room to take the seeded manufacts?*
 
 There is no carrying limit for manufacts. You take control of
-all seeded manufacts at that location regardless. 
+all seeded manufacts at that location regardless.
 If you can't move them away because they have SIZ larger than your Ship's hold,
 that's tough luck. You'll have to bring a bigger Ship.
 You can always leave some Sophonts there to keep control of the Manufacts
@@ -709,9 +725,9 @@ and have a special meaning.
 
 == Game Terms <game-terms>
 
-/ Arrive: to exit hyperspace at the end of a move. A Ship arrives at its
-  declared destination if the move is legal, or at the last transited
-  location otherwise.
+/ Arrive: to exit hyperspace at the end of a move, at the declared destination.
+/ Adjacent move: a movement step to the next location on the space line,
+  costing 1 RNG.
 / Away team: any number of Sophonts you control on the surface of a land
   [LAND] location.
 / Course: the declared sequence of locations from origin to destination;
@@ -721,7 +737,7 @@ and have a special meaning.
 / Destination: the final location along a declared course.
 / Disembark: transfer any number of Sophonts from the crew to the surface.
 / Hyperspace: a separate zone that Ships pass through during movement.
-  Cards in hyperspace are not on the space line, therefore cannot be targeted 
+  Cards in hyperspace are not on the space line, therefore cannot be targeted
   by any effect unless it explicitly states otherwise.
 / Influence: the currency of requisitioning. Produced by tapping resources
   in the resource zone; one tap produces one influence. Influence is spent
@@ -738,6 +754,8 @@ and have a special meaning.
   may be inspected by either player at any time.
 / Surface: the region of a land [LAND] location where Sophonts operate on foot,
   as part of an away team, rather than from inside a Ship as crew members.
+/ Symbol jump: a movement step directly to any location sharing the current
+  location's hyperspace symbol, costing 1 RNG.
 / Tapped: a card that has been rotated 45 degrees clockwise to indicate it has
   been used this turn. A tapped card cannot be tapped again until it is untapped.
   Cards are untapped during the Refresh Phase.
