@@ -2,6 +2,8 @@ from dotenvx import load_dotenvx
 from huggingface_hub import InferenceClient
 import os
 import csv
+import yaml
+import time
 
 load_dotenvx()
 
@@ -25,9 +27,9 @@ with open("data/cards.csv", mode="r", encoding="utf-8") as file:
     reader = csv.DictReader(file, delimiter=";", quotechar='"')
     for row in reader:
         name = row["name"]
-        subtypes = row["subtypes"].removeprefix("[").removesuffix("]").split(",") if row["subtypes"] else []
-        descriptions = [type_descriptions.get(t.removeprefix(" ").removesuffix(" "), "") for t in subtypes]
-        prompt = f"{name}, {', '.join(descriptions)}, traditional gouache with clean linework"
+        subtypes = yaml.safe_load(row.get("subtypes", "[]")) or []
+        descriptions = [type_descriptions.get(t, t) for t in subtypes]
+        prompt = f"{name}, {', '.join(descriptions)}, traditional gouache painting with clean linework"
         prompts.append(prompt)
 
 # --- GENERATE IMAGES ---
@@ -48,5 +50,7 @@ for i, prompt in enumerate(prompts):
     image.save(filename)
     print(f"Saved: {filename}")
     break
+    print("Sleeping for 5 seconds before generating next image...")
+    time.sleep(5)
 
 print("Done! All images generated.")
