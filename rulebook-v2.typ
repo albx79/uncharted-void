@@ -281,10 +281,14 @@ Events are resolved immediately if Fleeting, or placed in the appropriate zone
 You may tap a Ship to move it, act with it, or both. Declare your intended
 action before resolving it:
 
-*Move*: declare a destination and a course through intermediate locations.
-Your Ship's RNG must be equal to or greater than the total hyperspace distance
-travelled. Your Ship passes through all intermediate locations along its course;
-opponents may respond with Superluminal effects at any point along the route.
+*Move*: declare a destination and a course. A course is a sequence of steps,
+each of which is either:
+- an *adjacent move* to the next location on the space line (costs 1 RNG), or
+- a *symbol jump* to any location sharing the current location's hyperspace
+  symbol (costs 1 RNG).
+
+The total number of steps must not exceed the Ship's RNG. Your opponent may
+play Superluminal effects targeting the Ship before it departs.
 See @movement for detailed rules.
 
 *Act*: choose one of the following:
@@ -300,7 +304,8 @@ A Ship may move and act in the same turn. Crew aboard the Ship do not tap
 when the Ship taps; they may still perform their own actions.
 
 A Ship with *Crew 0* and no Sophonts aboard can take any Ship action as if some Sophont
-was always aboard.
+was always aboard (except the *disembark* action, that would require some Sophont to actually
+be aboard).
 A Ship with *Crew N* but fewer than N Sophonts aboard, on the other hand, cannot take any action.
 
 Sophonts on the surface of a land [LAND] location remain there if their Ship departs.
