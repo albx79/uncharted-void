@@ -46,7 +46,7 @@ with open("data/cards.csv", mode="r", encoding="utf-8") as file:
         print(f"Generating prompt for {type} {name} - {subtypes}")
         descriptions = [type_descriptions[type].get(t, t) for t in subtypes]
         prompt = f"{name}, {', '.join(descriptions)}, traditional gouache painting with clean linework"
-        prompts.append(prompt)
+        prompts.append((name, prompt, type_orientations[type]))
 
 # --- GENERATE IMAGES ---
 os.makedirs(OUTPUT_DIR, exist_ok=True)  # Create output directory
@@ -56,16 +56,15 @@ for i, prompt in enumerate(prompts):
 
     # Generate image
     image = client.text_to_image(
-        prompt=prompt,
-        width=WIDTH,
-        height=HEIGHT,
+        prompt=prompt[1],
+        width=WIDTH if prompt[2] == "Portrait" else HEIGHT,
+        height=HEIGHT if prompt[2] == "Portrait" else WIDTH,
     )
 
     # Save image
     filename = f"{OUTPUT_DIR}/card_{i}.png"
     image.save(filename)
     print(f"Saved: {filename}")
-    break
     print("Sleeping for 5 seconds before generating next image...")
     time.sleep(10)
 
