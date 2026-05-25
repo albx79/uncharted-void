@@ -67,6 +67,6 @@ for i, prompt in enumerate(prompts):
     print(f"Saved: {filename}")
     break
     print("Sleeping for 5 seconds before generating next image...")
-    time.sleep(5)
+    time.sleep(10)
 
 print("Done! All images generated.")
