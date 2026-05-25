@@ -19,6 +19,8 @@
 #let black-bar = rgb("#111111")
 #let text-bg   = rgb(255, 255, 255, 220)
 #let frame-col = rgb("#111111")
+#let name-size = 7.5pt
+#let typeline-size = 5.5pt
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
 
@@ -129,9 +131,9 @@
               align(horizon)[#affinity-stack(affinity)],
               align(horizon)[
                 #stack(dir: ttb, spacing: 2.5pt,
-                  text(fill: white, size: 7.5pt, weight: "bold")[#name],
-                  text(fill: rgb("#aaaaaa"), size: 5pt)[
-                    #subtypes.join(" · ") · *#card-type*
+                  text(fill: white, size: name-size, weight: "bold")[#name],
+                  text(fill: rgb("#aaaaaa"), size: typeline-size)[
+                    #subtypes.join(" ") · *#card-type*
                   ],
                 )
               ],
@@ -204,9 +206,9 @@
               // Name + subtypes
               align(horizon)[
                 #stack(dir: ttb, spacing: 2.5pt,
-                  text(fill: white, size: 7.5pt, weight: "bold")[#name],
-                  text(fill: rgb("#aaaaaa"), size: 5pt)[
-                    #subtypes.join(" · ") · *#card-type*
+                  text(fill: white, size: name-size, weight: "bold")[#name],
+                  text(fill: rgb("#aaaaaa"), size: typeline-size)[
+                    #subtypes.join(" ") · *#card-type*
                   ],
                 )
               ],
@@ -263,18 +265,17 @@
             inset: (x: 1.2mm, y: 1.2mm),
           )[
             #grid(
-              columns: (auto, 1fr, 20%),
+              columns: (10%, 1fr, 10%),
               column-gutter: 1.2mm,
               // Attrs upside-down (counter-rotated + 180°)
-              rotate(-90deg, reflow: true, align(horizon)[
-                #rotate(180deg, attr-strip(attrs, highlight))
-              ]),
+              rotate(180deg, attr-strip(attrs, highlight)),
               // Name + subtypes: centered
               align(center + horizon)[
-                #stack(dir: ttb, spacing: 2.5pt,
-                  text(fill: white, size: 7.5pt, weight: "bold")[#name],
-                  text(fill: rgb("#aaaaaa"), size: 5pt)[
-                    #subtypes.join(" · ") · *#card-type*
+                #stack(
+                  spacing: 2.5pt,
+                  text(fill: white, size: name-size, weight: "bold")[#name],
+                  text(fill: rgb("#aaaaaa"), size: typeline-size)[
+                    #subtypes.join(" ") · *#card-type*
                   ],
                 )
               ],
@@ -323,8 +324,8 @@
   let rarity   = row.at("rarity",  default: "C")
   let cost     = row.at("cost",    default: "")
   let tracker  = yaml.decode(row.at("tracker",  default: "[]"))
-  let art-path = "../data/img/" + name + ".png"
   // Use art if file exists — Typst will error if missing, so pass none for now
+  // let art = "../data/img/" + name + ".png"
   let art      = none
 
   if card-type == "Location" {
@@ -360,6 +361,7 @@
   highlight: ("WRD",),
   rules: "Sophonts at this location with STR < 3 cannot act.",
   rarity: "R",
+  art: "../data/img/card_0.png"
 )
 
 #pagebreak()
