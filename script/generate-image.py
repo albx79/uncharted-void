@@ -14,12 +14,26 @@ MODEL = os.getenv("MODEL", "stabilityai/stable-diffusion-xl-base-1.0")
 WIDTH = int(os.getenv("WIDTH", 512))
 HEIGHT = int(os.getenv("HEIGHT", 768))
 
-#--- LOAD TYPE DESCRIPTIONS ---
-type_descriptions = {}
-with open("data/species.csv", mode="r") as file:
+type_orientations = {}
+with open("data/types.csv", mode="r") as file:
     reader = csv.DictReader(file, delimiter=";", quotechar='"')
     for row in reader:
-        type_descriptions[row["subtype"]] = row["description"]
+        type_orientations[row["type"]] = row["layout"]
+
+print(f"Orientations:\n{type_orientations}")
+
+#--- LOAD TYPE DESCRIPTIONS ---
+type_descriptions = {}
+for type in type_orientations.keys():
+    print(f"processing {type}")
+    with open(f"data/{type}-descriptions.csv", mode="r") as file:
+        reader = csv.DictReader(file, delimiter=";", quotechar='"')
+        desc_for_type = type_descriptions.get(type, {})
+        for row in reader:
+            desc_for_type[row["subtype"]] = row["description"]
+        type_descriptions[type] = desc_for_type
+
+print(f"Type descriptions: {type_descriptions}")
 
 #--- READ CARDS AND GENERATE PROMPTS ---
 prompts = []
@@ -28,7 +42,9 @@ with open("data/cards.csv", mode="r", encoding="utf-8") as file:
     for row in reader:
         name = row["name"]
         subtypes = yaml.safe_load(row.get("subtypes", "[]")) or []
-        descriptions = [type_descriptions.get(t, t) for t in subtypes]
+        type = row["type"]
+        print(f"Generating prompt for {type} {name} - {subtypes}")
+        descriptions = [type_descriptions[type].get(t, t) for t in subtypes]
         prompt = f"{name}, {', '.join(descriptions)}, traditional gouache painting with clean linework"
         prompts.append(prompt)
 
