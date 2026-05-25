@@ -62,7 +62,7 @@ for i, prompt in enumerate(prompts):
     )
 
     # Save image
-    filename = f"{OUTPUT_DIR}/card_{i}.png"
+    filename = f"{OUTPUT_DIR}/{prompt[0]}.png"
     image.save(filename)
     print(f"Saved: {filename}")
     print("Sleeping for 5 seconds before generating next image...")
