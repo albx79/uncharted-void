@@ -1,6 +1,6 @@
 type;layout;attr;tracker
-Sophont;P;CHA,INT,STR,WRD;
-Ship;H;RNG,SIZ,WPN;
-Location;L;LFT,RGT;Progress
-Manufact;P;;
-Event;P;;
+Sophont;Portrait;CHA,INT,STR,WRD;
+Ship;Landscape;RNG,SIZ,WPN;
+Location;Landscape;HTN;Progress
+Manufact;Portrait;;
+Event;Portrait;;
