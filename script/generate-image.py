@@ -53,14 +53,15 @@ prompts = []
 with open("data/cards.csv", mode="r", encoding="utf-8") as file:
     reader = csv.DictReader(file, delimiter=";", quotechar='"')
     for row in reader:
+        hint = row["prompt_hint"]
         name = row["name"]
         subtypes = yaml.safe_load(row.get("subtypes", "[]")) or []
         type = row["type"]
         print(f"Generating prompt for {type} {name} - {subtypes}")
         descriptions = [type_descriptions[type].get(t, t) for t in subtypes]
         prompts.append(CardPrompt(
-            name=name, 
-            prompt=f"{name}, {', '.join(descriptions)}, {STYLE_SUFFIX}", 
+            name=name,
+            prompt=f"{hint if hint else name}, {', '.join(descriptions)}, {STYLE_SUFFIX}",
             layout=type_orientations[type],
             filename=f"{OUTPUT_DIR}/{name}.png"
         ))
@@ -72,7 +73,7 @@ for i, card in enumerate(prompts):
     if os.path.exists(card.filename):
         print(f"Skipping {card.name} — already exists")
         continue
-        
+
     print(f"Generating image {i+1}/{len(prompts)}: {card}...")
 
     # Generate image
@@ -83,7 +84,7 @@ for i, card in enumerate(prompts):
     )
 
     # Save image
-    
+
     image.save(card.filename)
     print(f"Saved: {card.filename}")
     print("Sleeping for 10 seconds before generating next image...")

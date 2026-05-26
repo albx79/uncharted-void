@@ -1,75 +1,75 @@
-name;cost;affty;type;subtypes;rarity;attrs;highlight;text;tracker
-Gnome Worker;1;[];Sophont;[Gnome];C;[CHA: 1, INT: 1, STR: 1, WRD: 0];;;
-Gnome Foreman;2;[STR];Sophont;[Gnome, Commander];C;[CHA: 2, INT: 1, STR: 2, WRD: 0];[STR];;
-Hyehoon Scout;1;[];Sophont;[Hyehoon, Explorer];C;[CHA: 1, INT: 1, STR: 1, WRD: 0];;;
-Hyehoon Negotiator;2;[CHA];Sophont;[Hyehoon, Diplomat];C;[CHA: 3, INT: 1, STR: 1, WRD: 0];[CHA];;
-Hyehoon Naturalist;2;[INT];Sophont;[Hyehoon, Scientist];C;[CHA: 1, INT: 3, STR: 0, WRD: 0];[INT];;
-Hyehoon Pathfinder;3;[INT];Sophont;[Hyehoon, Explorer];U;[CHA: 2, INT: 3, STR: 1, WRD: 0];[INT];;
-Neshekk Broker;3;[CHA];Sophont;[Neshekk, Diplomat, VIP];R;[CHA: 3, INT: 2, STR: 0, WRD: 0];[CHA];;
-Smaragdine Adept;2;[WRD];Sophont;[Smaragdine, Scientist];C;[CHA: 1, INT: 2, STR: 0, WRD: 2];[WRD];;
-Smaragdine Warrior;2;[STR];Sophont;[Smaragdine, Soldier];C;[CHA: 1, INT: 1, STR: 2, WRD: 2];[STR];;
-Smaragdine Elder;3;[WRD];Sophont;[Smaragdine, Diplomat];U;[CHA: 2, INT: 2, STR: 0, WRD: 3];[WRD];;
-Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP];R;[CHA: 3, INT: 2, STR: 2, WRD: 4];[WRD];;
-Deva Artificer;4;[INT];Sophont;[Deva, Engineer, VIP];R;[CHA: 2, INT: 4, STR: 0, WRD: 2];[INT];;
-Vokun Conscript;1;[];Sophont;[Vokun, Soldier];C;[CHA: 0, INT: 1, STR: 2, WRD: 0];[STR];;
-Vokun Lord;3;[STR];Sophont;[Vokun, Commander];U;[CHA: 3, INT: 1, STR: 3, WRD: 0];[STR];;
-Vokun Warlord;5;[STR, CHA];Sophont;[Vokun, Commander, VIP];R;[CHA: 5, INT: 1, STR: 3, WRD: 0];[CHA];Sophonts at this location with STR < 3 cannot act.;
-Vokun Grand Elder;6;[CHA, CHA];Sophont;[Vokun, Diplomat, VIP];R;[CHA: 7, INT: 1, STR: 1, WRD: 0];[CHA];_this_ cannot go ashore. Your opponent's Sophonts at this location with STR < 3 cannot act.;
-Kuath Shock Trooper;2;[STR];Sophont;[Kuath, Soldier];C;[CHA: 0, INT: 0, STR: 5, WRD: 0];[STR];;
-Kuath Sergeant;3;[STR];Sophont;[Kuath, Commander];U;[CHA: 1, INT: 1, STR: 5, WRD: 0];[STR];;
-Mnaat Technician;2;[INT];Sophont;[Mnaat, Cybernetic, Engineer];C;[CHA: 0, INT: 3, STR: 1, WRD: 0];[INT];On death: recycle _this_.;
-Mnaat Researcher;3;[INT];Sophont;[Mnaat, Cybernetic, Scientist];U;[CHA: 0, INT: 4, STR: 0, WRD: 1];[INT];On death: recycle _this_.;
-Voidglider Navigator;2;[WRD];Sophont;[Voidglider, Pilot];C;[CHA: 0, INT: 2, STR: 1, WRD: 2];[WRD];Ships crewed by _this_ get RNG +1.;
-Voidglider Seer;3;[WRD];Sophont;[Voidglider, Scientist];U;[CHA: 0, INT: 3, STR: 0, WRD: 4];[WRD];When _this_ is aboard a Ship that transits a location, you may look at all seeded Manufacts there.;
-Ibglib Analyst;2;[INT];Sophont;[Ibglib, Scientist];C;[CHA: 1, INT: 4, STR: 0, WRD: 0];[INT];When your opponent plays a Superluminal effect, tap _this_.;
-Ibglib Envoy;3;[INT];Sophont;[Ibglib, Diplomat];U;[CHA: 2, INT: 3, STR: 0, WRD: 0];[INT];When your opponent plays a Superluminal effect, tap _this_.;
-Alliance Shuttle;1;[];Ship;[Shuttle];C;[SIZ: 1, RNG: 3, WPN: 0];;*Crew 0*;
-Gnome Hauler;2;[INT];Ship;[Gnome, Transport];C;[SIZ: 1, RNG: 2, WPN: 0];;*Crew 1*  *Hold 1*;
-Caldera;4;[INT];Ship;[Gnome, Transport];U;[SIZ: 3, RNG: 2, WPN: 1];;*Crew 2*  *Hold 3*;
-Basalt;6;[INT, STR];Ship;[Gnome, Transport];R;[SIZ: 4, RNG: 1, WPN: 2];;*Crew 3*  *Hold 4*;
-Zephyr;2;[INT];Ship;[Hyehoon, Scout];C;[SIZ: 1, RNG: 4, WPN: 1];;*Crew 1*;
-Boreas;4;[INT, STR];Ship;[Hyehoon, Scout];U;[SIZ: 2, RNG: 5, WPN: 2];;*Crew 2*;
-Pneuma;3;[WRD];Ship;[Smaragdine, Scout];U;[SIZ: 2, RNG: 3, WPN: 2];;*Crew 1*;
-Eidolon;4;[WRD, STR];Ship;[Smaragdine, Destroyer];R;[SIZ: 3, RNG: 2, WPN: 5];;*Crew 2*;
-Vokun Shuttle;1;[];Ship;[Vokun, Shuttle];C;[SIZ: 1, RNG: 3, WPN: 0];;*Crew 0*;
-Kadirga;2;[STR];Ship;[Vokun, Destroyer];C;[SIZ: 1, RNG: 3, WPN: 2];;*Crew 1*;
-Dromon;4;[STR, STR];Ship;[Vokun, Destroyer];U;[SIZ: 3, RNG: 2, WPN: 6];;*Crew 2*;
-Leviathan;6;[STR, STR];Ship;[Vokun, Destroyer];R;[SIZ: 4, RNG: 2, WPN: 8];;*Crew 3*;
-Kalyon;3;[STR];Ship;[Vokun, Transport];U;[SIZ: 2, RNG: 2, WPN: 1];;*Crew 1*  *Hold 2*;
-Dreadnought;5;[STR, STR];Ship;[Vokun, Destroyer];R;[SIZ: 3, RNG: 2, WPN: 7];;*Crew 2*  *Hold 2*;
-Blaster;1;[];Manufact;[Weapon];C;;;This away team gets STR +2.;
-Medikit;1;[];Manufact;[Equipment];C;;;If a Medic is present, when you lose combat you may recycle _this_ instead of scrapping a Sophont.;
-Survey Drone;;[];Manufact;[Equipment];C;;;_;
-Hyperspace Beacon;2;[];Manufact;[Device];U;[SIZ: 1];;This Ship gets RNG +1.;
-Ancient Relic;;[];Manufact;[Relic];C;;;When _this_ is on the surface at your home location: scrap it ▶ score #VP(2).;
-Smaragdine Mind Shard;2;[WRD];Manufact;[Relic];U;;;This crew gets WRD +1 if it has WRD > 2.;
-Deva Memory Core;2;[INT, WRD];Manufact;[Relic];R;;;On requisition: reveal all seeded Manufacts at one location of your choice.;
-Gnome Drill;;[];Manufact;[Equipment];C;;;If a Gnome is in your resource zone, scrap _this_ ▶ generate 3 influence.;
-Hyehoon Glider;;[];Manufact;[Vehicle];U;;;This away team gets INT +2 and STR +2 while attempting mission steps if an Explorer is present.;
-Botanical Sample;;[];Manufact;[Relic];C;;;When _this_ is at your home location: scrap it ▶ score #VP(1).;
-Vokun Warblade;2;[STR];Manufact;[Weapon];U;;;This away team gets STR +3 if a Soldier is present.;
-Vokun Shock Cannon;3;[STR];Manufact;[Device];U;[SIZ: 1];;This Ship gets WPN +2.;
-Vokun Restraint Collar;1;[];Manufact;[Equipment];C;;;When this away team attacks: tap target Sophont in the defending away team. It's disabled until the next Untap phase.;
-Mnaat Cybernetic Implants;2;[INT];Manufact;[Equipment];U;;;Sophonts in this team are Cybernetic (_in addition to their other subtypes_) and have: «On death: recycle this Sophont».;
-Emergency Repairs;2;[INT];Event;[Fleeting];C;;;If an Engineer is aboard: remove 2 damage counters from target Ship.;
-Ambush;1;[STR];Event;[Superluminal, Fleeting];C;;;When in combat: this away team gets STR +3 until end of combat.;
-Psionic Veil;2;[WRD];Event;[Persistent, Superluminal];U;;;If this crew has WRD > 2: target Ship cannot be attacked until _this_ leaves play.;
-Group Mind Consensus;3;[WRD];Event;[Persistent];U;;;All Smaragdine Sophonts at this location get WRD +1.;
-Diplomatic Immunity;2;[CHA];Event;[Superluminal, Fleeting];U;;;Target Ship or away team with CHA > 2 cannot be attacked this turn.;
-Hyperspace Anomaly;2;[WRD];Event;[Persistent];R;;;Place _this_ between two locations: their LFT and RGT values swap.;
-Rapid Deployment;1;[];Event;[Superluminal, Fleeting];U;;;Disembark any number of Sophonts from target Ship as a free action.;
-Pheromone Surge;2;[CHA];Event;[Fleeting];U;;;All Vokun Sophonts at this location get STR +2 and CHA +2 until end of turn.;
-Hyperspace Interception;2;[WRD];Event;[Superluminal, Fleeting];U;;;When an enemy Ship transits this location: it must stop here.;
-Neural Deadlock;1;[INT];Event;[Superluminal, Fleeting];C;;;Tap target Ibglib. That player cannot play Superluminal effects until their next turn.;
-Vokun War Drums;3;[STR];Event;[Persistent];U;;;All Vokun Soldiers at this location get STR +2.;
-Scorched Hyperspace;2;[WRD];Event;[Persistent];U;;;Place _this_ between two locations: Ships must spend 2 additional RNG whenever their route passes through here.;
-Alliance Homeworld;;[];Location;[Home, LAND_icon];R;[LFT: 8, RGT: 2];;+1 CHA affinity. When the 4th location is charted: if you have never initiated an attack, score #VP(2).;
-Vokun Prime;;[];Location;[Home, LAND_icon];R;[LFT: 8, RGT: 2];;+1 STR affinity. When you win 3 combats, each at a different location: score #VP(2).;
-Mira's Nebula;;[];Location;[Nebula, VOID_icon];R;[LFT: 10, RGT: 2];;#VP(5) On completion: LFT becomes 2.;["Analyse the structure of the nebula. Requires INT > 8.", "Hyperspace is leaking into realspace! Reveal the seeded Manufacts; requires WRD > 8+X, where X is the highest cost among those Manufacts. If you fail, the Ship takes 1 damage.", "Use high energy beams to restore hyperspace structure. Requires STR+WPN > 12+Y, where Y is the lowest cost of the seeded Manufacts."]
-Smaragdine Conclave;;[];Location;[Planet, LAND_icon];U;[LFT: 3, RGT: 4];;#VP(3);["#VP(1) Establish diplomatic contact. Requires CHA > 6-X where X is the number of Diplomats in this away team.", "Reveal seeded Manufacts. For each Relic among them, score #VP(1).", "#VP(2) Ratify the Conclave charter. Requires CHA > 10-X where X is the number of Diplomats in this away team."]
-Deva Moon Restoration;;[];Location;[Planetoid, VOID_icon];R;[LFT: 5, RGT: 3];;#VP(4) On reveal: place all seeded Manufacts face-up.;["#VP(1) Survey the moon's systems. Requires INT > 8 or WRD > 6.", "Restore primary power. Requires INT > 10-X where X is the number of Engineers in this crew.", "#VP(3) Awaken the cybernetic brain. Requires WRD > 8. On completion: claim all face-up Manufacts at this location."]
-Grangian Civil War;;[];Location;[Planet, LAND_icon];U;[LFT: 3, RGT: 2];;Scrap a resource: requisition a Weapon Manufact token with «this away team gets STR +1».;["#VP(1) Deliver military supplies to an allied faction: scrap a Weapon from this away team.", "#VP(2) Help negotiate a peace deal. Requires CHA > 12-X where X is the cost of the scrapped Weapon."]
-Vokun Staging Ground;;[];Location;[Station, LAND_icon];C;[LFT: 2, RGT: 4];;#VP(2);["#VP(1) Establish dominance. Requires STR > 8.", "#VP(1) Deploy ground forces. Requires an away team of at least 3 Sophonts."]
-Mnaat Subjugation;;[];Location;[Habitat, LAND_icon];U;[LFT: 4, RGT: 3];;#VP(3) On reveal: reveal seeded Manufacts. Any Equipment among them is immediately claimed by the first away team to disembark.  On completion: recycle all Mnaat Sophonts in your scrapyard.;["#VP(1) Breach the asteroid defences. Requires STR > 8.", "Locate the Mnaat engineering bays. Requires INT > 6-X where X is the number of Engineers in this away team.", "#VP(2) Establish Vokun control. Requires STR > 10."]
-Derelict Station;;[];Location;[Derelict, LAND_icon];U;[LFT: 4, RGT: 4];;#VP(3) On arrival: tap all Ships at this location.;["Restore life support. Requires INT > 6 and STR > 6.", "#VP(1) Access the station archives. Requires INT > 8. On completion: look at opponent's hand.", "#VP(2) Restore the station to full operation. Requires INT > 10 or STR > 12-X where X is the number of Engineers in this away team."]
-Hyperspace Rift;;[];Location;[Nebula, VOID_icon];R;[LFT: 6, RGT: 3];;#VP(4) On reveal: the next Ship to arrive here this turn takes 1 damage.;["#VP(1) Stabilise the rift boundary. Requires WRD > 6 or INT > 8.", "Analyse the rift structure. Requires WRD > 8-X where X is the number of Scientists in this crew. Reveal seeded Manufacts.", "#VP(3) Seal the rift. Requires WRD > 10 or INT+WRD > 14. On completion: RGT becomes 2."]
+name;cost;affty;type;subtypes;rarity;attrs;highlight;text;tracker;prompt_hint
+Gnome Worker;1;[];Sophont;[Gnome];C;{CHA: 1, INT: 1, STR: 1, WRD: 0};;;;Worker
+Gnome Foreman;2;[STR];Sophont;[Gnome, Commander];C;{CHA: 2, INT: 1, STR: 2, WRD: 0};[STR];;;Foreman
+Hyehoon Scout;1;[];Sophont;[Hyehoon, Explorer];C;{CHA: 1, INT: 1, STR: 1, WRD: 0};;;;
+Hyehoon Negotiator;2;[CHA];Sophont;[Hyehoon, Diplomat];C;{CHA: 3, INT: 1, STR: 1, WRD: 0};[CHA];;;
+Hyehoon Naturalist;2;[INT];Sophont;[Hyehoon, Scientist];C;{CHA: 1, INT: 3, STR: 0, WRD: 0};[INT];;;
+Hyehoon Pathfinder;3;[INT];Sophont;[Hyehoon, Explorer];U;{CHA: 2, INT: 3, STR: 1, WRD: 0};[INT];;;
+Neshekk Broker;3;[CHA];Sophont;[Neshekk, Diplomat, VIP];R;{CHA: 3, INT: 2, STR: 0, WRD: 0};[CHA];;;
+Smaragdine Adept;2;[WRD];Sophont;[Smaragdine, Scientist];C;{CHA: 1, INT: 2, STR: 0, WRD: 2};[WRD];;;
+Smaragdine Warrior;2;[STR];Sophont;[Smaragdine, Soldier];C;{CHA: 1, INT: 1, STR: 2, WRD: 2};[STR];;;
+Smaragdine Elder;3;[WRD];Sophont;[Smaragdine, Diplomat];U;{CHA: 2, INT: 2, STR: 0, WRD: 3};[WRD];;;
+Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP];R;{CHA: 3, INT: 2, STR: 2, WRD: 4};[WRD];;;
+Deva Artificer;4;[INT];Sophont;[Deva, Engineer, VIP];R;{CHA: 2, INT: 4, STR: 0, WRD: 2};[INT];;;Artificier
+Vokun Conscript;1;[];Sophont;[Vokun, Soldier];C;{CHA: 0, INT: 1, STR: 2, WRD: 0};[STR];;;
+Vokun Lord;3;[STR];Sophont;[Vokun, Commander];U;{CHA: 3, INT: 1, STR: 3, WRD: 0};[STR];;;
+Vokun Warlord;5;[STR, CHA];Sophont;[Vokun, Commander, VIP];R;{CHA: 5, INT: 1, STR: 3, WRD: 0};[CHA];Sophonts at this location with STR < 3 cannot act.;;
+Vokun Grand Elder;6;[CHA, CHA];Sophont;[Vokun, Diplomat, VIP];R;{CHA: 7, INT: 1, STR: 1, WRD: 0};[CHA];_this_ cannot go ashore. Your opponent's Sophonts at this location with STR < 3 cannot act.;;
+Kuath Shock Trooper;2;[STR];Sophont;[Kuath, Soldier];C;{CHA: 0, INT: 0, STR: 5, WRD: 0};[STR];;;
+Kuath Sergeant;3;[STR];Sophont;[Kuath, Commander];U;{CHA: 1, INT: 1, STR: 5, WRD: 0};[STR];;;
+Mnaat Technician;2;[INT];Sophont;[Mnaat, Cybernetic, Engineer];C;{CHA: 0, INT: 3, STR: 1, WRD: 0};[INT];On death: recycle _this_.;;
+Mnaat Researcher;3;[INT];Sophont;[Mnaat, Cybernetic, Scientist];U;{CHA: 0, INT: 4, STR: 0, WRD: 1};[INT];On death: recycle _this_.;;
+Voidglider Navigator;2;[WRD];Sophont;[Voidglider, Pilot];C;{CHA: 0, INT: 2, STR: 1, WRD: 2};[WRD];Ships crewed by _this_ get RNG +1.;;Navigator
+Voidglider Seer;3;[WRD];Sophont;[Voidglider, Scientist];U;{CHA: 0, INT: 3, STR: 0, WRD: 4};[WRD];When _this_ is aboard a Ship that transits a location, you may look at all seeded Manufacts there.;;Seeer
+Ibglib Analyst;2;[INT];Sophont;[Ibglib, Scientist];C;{CHA: 1, INT: 4, STR: 0, WRD: 0};[INT];When your opponent plays a Superluminal effect, tap _this_.;;
+Ibglib Envoy;3;[INT];Sophont;[Ibglib, Diplomat];U;{CHA: 2, INT: 3, STR: 0, WRD: 0};[INT];When your opponent plays a Superluminal effect, tap _this_.;;
+Alliance Shuttle;1;[];Ship;[Shuttle];C;{SIZ: 1, RNG: 3, WPN: 0};;*Crew 0*;;
+Gnome Hauler;2;[INT];Ship;[Gnome, Transport];C;{SIZ: 1, RNG: 2, WPN: 0};;*Crew 1*  *Hold 1*;;Hauler
+Caldera;4;[INT];Ship;[Gnome, Transport];U;{SIZ: 3, RNG: 2, WPN: 1};;*Crew 2*  *Hold 3*;;Hauler
+Basalt;6;[INT, STR];Ship;[Gnome, Transport];R;{SIZ: 4, RNG: 1, WPN: 2};;*Crew 3*  *Hold 4*;;Hauler
+Zephyr;2;[INT];Ship;[Hyehoon, Scout];C;{SIZ: 1, RNG: 4, WPN: 1};;*Crew 1*;;Scout
+Boreas;4;[INT, STR];Ship;[Hyehoon, Scout];U;{SIZ: 2, RNG: 5, WPN: 2};;*Crew 2*;;Scout
+Pneuma;3;[WRD];Ship;[Smaragdine, Scout];U;{SIZ: 2, RNG: 3, WPN: 2};;*Crew 1*;;Scout
+Eidolon;4;[WRD, STR];Ship;[Smaragdine, Destroyer];R;{SIZ: 3, RNG: 2, WPN: 5};;*Crew 2*;;Warship
+Vokun Shuttle;1;[];Ship;[Vokun, Shuttle];C;{SIZ: 1, RNG: 3, WPN: 0};;*Crew 0*;;
+Kadirga;2;[STR];Ship;[Vokun, Destroyer];C;{SIZ: 1, RNG: 3, WPN: 2};;*Crew 1*;;
+Dromon;4;[STR, STR];Ship;[Vokun, Destroyer];U;{SIZ: 3, RNG: 2, WPN: 6};;*Crew 2*;;
+Leviathan;6;[STR, STR];Ship;[Vokun, Destroyer];R;{SIZ: 4, RNG: 2, WPN: 8};;*Crew 3*;;Warship
+Kalyon;3;[STR];Ship;[Vokun, Transport];U;{SIZ: 2, RNG: 2, WPN: 1};;*Crew 1*  *Hold 2*;;
+Dreadnought;5;[STR, STR];Ship;[Vokun, Destroyer];R;{SIZ: 3, RNG: 2, WPN: 7};;*Crew 2*  *Hold 2*;;
+Blaster;1;[];Manufact;[Weapon];C;;;This away team gets STR +2.;;
+Medikit;1;[];Manufact;[Equipment];C;;;If a Medic is present, when you lose combat you may recycle _this_ instead of scrapping a Sophont.;;
+Survey Drone;;[];Manufact;[Equipment];C;;;_;;
+Hyperspace Beacon;2;[];Manufact;[Device];U;{SIZ: 1};;This Ship gets RNG +1.;;
+Ancient Relic;;[];Manufact;[Relic];C;;;When _this_ is on the surface at your home location: scrap it ▶ score #VP(2).;;
+Smaragdine Mind Shard;2;[WRD];Manufact;[Relic];U;;;This crew gets WRD +1 if it has WRD > 2.;;
+Deva Memory Core;2;[INT, WRD];Manufact;[Relic];R;;;On requisition: reveal all seeded Manufacts at one location of your choice.;;
+Gnome Drill;;[];Manufact;[Equipment];C;;;If a Gnome is in your resource zone, scrap _this_ ▶ generate 3 influence.;;small drilling machine
+Hyehoon Glider;;[];Manufact;[Vehicle];U;;;This away team gets INT +2 and STR +2 while attempting mission steps if an Explorer is present.;;
+Botanical Sample;;[];Manufact;[Relic];C;;;When _this_ is at your home location: scrap it ▶ score #VP(1).;;
+Vokun Warblade;2;[STR];Manufact;[Weapon];U;;;This away team gets STR +3 if a Soldier is present.;;
+Vokun Shock Cannon;3;[STR];Manufact;[Device];U;{SIZ: 1};;This Ship gets WPN +2.;;
+Vokun Restraint Collar;1;[];Manufact;[Equipment];C;;;When this away team attacks: tap target Sophont in the defending away team. It's disabled until the next Untap phase.;;
+Mnaat Cybernetic Implants;2;[INT];Manufact;[Equipment];U;;;Sophonts in this team are Cybernetic (_in addition to their other subtypes_) and have: «On death: recycle this Sophont».;;
+Emergency Repairs;2;[INT];Event;[Fleeting];C;;;If an Engineer is aboard: remove 2 damage counters from target Ship.;;
+Ambush;1;[STR];Event;[Superluminal, Fleeting];C;;;When in combat: this away team gets STR +3 until end of combat.;;
+Psionic Veil;2;[WRD];Event;[Persistent, Superluminal];U;;;If this crew has WRD > 2: target Ship cannot be attacked until _this_ leaves play.;;
+Group Mind Consensus;3;[WRD];Event;[Persistent];U;;;All Smaragdine Sophonts at this location get WRD +1.;;
+Diplomatic Immunity;2;[CHA];Event;[Superluminal, Fleeting];U;;;Target Ship or away team with CHA > 2 cannot be attacked this turn.;;
+Hyperspace Anomaly;2;[WRD];Event;[Persistent];R;;;Place _this_ between two locations: their LFT and RGT values swap.;;
+Rapid Deployment;1;[];Event;[Superluminal, Fleeting];U;;;Disembark any number of Sophonts from target Ship as a free action.;;
+Pheromone Surge;2;[CHA];Event;[Fleeting];U;;;All Vokun Sophonts at this location get STR +2 and CHA +2 until end of turn.;;
+Hyperspace Interception;2;[WRD];Event;[Superluminal, Fleeting];U;;;When an enemy Ship transits this location: it must stop here.;;
+Neural Deadlock;1;[INT];Event;[Superluminal, Fleeting];C;;;Tap target Ibglib. That player cannot play Superluminal effects until their next turn.;;
+Vokun War Drums;3;[STR];Event;[Persistent];U;;;All Vokun Soldiers at this location get STR +2.;;
+Scorched Hyperspace;2;[WRD];Event;[Persistent];U;;;Place _this_ between two locations: Ships must spend 2 additional RNG whenever their route passes through here.;;
+Alliance Homeworld;;[];Location;[Home, LAND_icon];R;[LFT: 8, RGT: 2];;+1 CHA affinity. When the 4th location is charted: if you have never initiated an attack, score #VP(2).;;
+Vokun Prime;;[];Location;[Home, LAND_icon];R;[LFT: 8, RGT: 2];;+1 STR affinity. When you win 3 combats, each at a different location: score #VP(2).;;
+Mira's Nebula;;[];Location;[Nebula, VOID_icon];R;[LFT: 10, RGT: 2];;#VP(5) On completion: LFT becomes 2.;["Analyse the structure of the nebula. Requires INT > 8.", "Hyperspace is leaking into realspace! Reveal the seeded Manufacts; requires WRD > 8+X, where X is the highest cost among those Manufacts. If you fail, the Ship takes 1 damage.", "Use high energy beams to restore hyperspace structure. Requires STR+WPN > 12+Y, where Y is the lowest cost of the seeded Manufacts."];
+Smaragdine Conclave;;[];Location;[Planet, LAND_icon];U;[LFT: 3, RGT: 4];;#VP(3);["#VP(1) Establish diplomatic contact. Requires CHA > 6-X where X is the number of Diplomats in this away team.", "Reveal seeded Manufacts. For each Relic among them, score #VP(1).", "#VP(2) Ratify the Conclave charter. Requires CHA > 10-X where X is the number of Diplomats in this away team."];
+Deva Moon Restoration;;[];Location;[Planetoid, VOID_icon];R;[LFT: 5, RGT: 3];;#VP(4) On reveal: place all seeded Manufacts face-up.;["#VP(1) Survey the moon's systems. Requires INT > 8 or WRD > 6.", "Restore primary power. Requires INT > 10-X where X is the number of Engineers in this crew.", "#VP(3) Awaken the cybernetic brain. Requires WRD > 8. On completion: claim all face-up Manufacts at this location."];
+Grangian Civil War;;[];Location;[Planet, LAND_icon];U;[LFT: 3, RGT: 2];;Scrap a resource: requisition a Weapon Manufact token with «this away team gets STR +1».;["#VP(1) Deliver military supplies to an allied faction: scrap a Weapon from this away team.", "#VP(2) Help negotiate a peace deal. Requires CHA > 12-X where X is the cost of the scrapped Weapon."];
+Vokun Staging Ground;;[];Location;[Station, LAND_icon];C;[LFT: 2, RGT: 4];;#VP(2);["#VP(1) Establish dominance. Requires STR > 8.", "#VP(1) Deploy ground forces. Requires an away team of at least 3 Sophonts."];
+Mnaat Subjugation;;[];Location;[Habitat, LAND_icon];U;[LFT: 4, RGT: 3];;#VP(3) On reveal: reveal seeded Manufacts. Any Equipment among them is immediately claimed by the first away team to disembark.  On completion: recycle all Mnaat Sophonts in your scrapyard.;["#VP(1) Breach the asteroid defences. Requires STR > 8.", "Locate the Mnaat engineering bays. Requires INT > 6-X where X is the number of Engineers in this away team.", "#VP(2) Establish Vokun control. Requires STR > 10."];
+Derelict Station;;[];Location;[Derelict, LAND_icon];U;[LFT: 4, RGT: 4];;#VP(3) On arrival: tap all Ships at this location.;["Restore life support. Requires INT > 6 and STR > 6.", "#VP(1) Access the station archives. Requires INT > 8. On completion: look at opponent's hand.", "#VP(2) Restore the station to full operation. Requires INT > 10 or STR > 12-X where X is the number of Engineers in this away team."];
+Hyperspace Rift;;[];Location;[Nebula, VOID_icon];R;[LFT: 6, RGT: 3];;#VP(4) On reveal: the next Ship to arrive here this turn takes 1 damage.;["#VP(1) Stabilise the rift boundary. Requires WRD > 6 or INT > 8.", "Analyse the rift structure. Requires WRD > 8-X where X is the number of Scientists in this crew. Reveal seeded Manufacts.", "#VP(3) Seal the rift. Requires WRD > 10 or INT+WRD > 14. On completion: RGT becomes 2."];
