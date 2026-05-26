@@ -1,18 +1,31 @@
-from dotenvx import load_dotenvx
+from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
+from dataclasses import dataclass
 import os
 import csv
 import yaml
 import time
 
-load_dotenvx()
+@dataclass
+class CardPrompt:
+    name: str
+    prompt: str
+    layout: str
+    filename: str
+
+load_dotenv()
 
 # --- CONFIGURATION ---
 TOKEN = os.getenv("API_TOKEN")
-OUTPUT_DIR = os.getenv("OUTPUT_DIR", "../data/img")
+OUTPUT_DIR = os.getenv("OUTPUT_DIR", "data/img")
 MODEL = os.getenv("MODEL", "stabilityai/stable-diffusion-xl-base-1.0")
 WIDTH = int(os.getenv("WIDTH", 512))
 HEIGHT = int(os.getenv("HEIGHT", 768))
+STYLE_SUFFIX = os.getenv(
+    "STYLE_SUFFIX",
+    "\nTraditional gouache painting, clean linework, warm amber tones, "
+    "dramatic side lighting, retro sci-fi illustration"
+)
 
 type_orientations = {}
 with open("data/types.csv", mode="r") as file:
@@ -45,27 +58,35 @@ with open("data/cards.csv", mode="r", encoding="utf-8") as file:
         type = row["type"]
         print(f"Generating prompt for {type} {name} - {subtypes}")
         descriptions = [type_descriptions[type].get(t, t) for t in subtypes]
-        prompt = f"{name}, {', '.join(descriptions)}, traditional gouache painting with clean linework"
-        prompts.append((name, prompt, type_orientations[type]))
+        prompts.append(CardPrompt(
+            name=name, 
+            prompt=f"{name}, {', '.join(descriptions)}, {STYLE_SUFFIX}", 
+            layout=type_orientations[type],
+            filename=f"{OUTPUT_DIR}/{name}.png"
+        ))
 
 # --- GENERATE IMAGES ---
 os.makedirs(OUTPUT_DIR, exist_ok=True)  # Create output directory
 client = InferenceClient(token=TOKEN, model=MODEL)
-for i, prompt in enumerate(prompts):
-    print(f"Generating image {i+1}/{len(prompts)}: {prompt}...")
+for i, card in enumerate(prompts):
+    if os.path.exists(card.filename):
+        print(f"Skipping {card.name} — already exists")
+        continue
+        
+    print(f"Generating image {i+1}/{len(prompts)}: {card}...")
 
     # Generate image
     image = client.text_to_image(
-        prompt=prompt[1],
-        width=WIDTH if prompt[2] == "Portrait" else HEIGHT,
-        height=HEIGHT if prompt[2] == "Portrait" else WIDTH,
+        prompt=card.prompt,
+        width=WIDTH if card.layout == "Portrait" else HEIGHT,
+        height=HEIGHT if card.layout == "Portrait" else WIDTH,
     )
 
     # Save image
-    filename = f"{OUTPUT_DIR}/{prompt[0]}.png"
-    image.save(filename)
-    print(f"Saved: {filename}")
-    print("Sleeping for 5 seconds before generating next image...")
+    
+    image.save(card.filename)
+    print(f"Saved: {card.filename}")
+    print("Sleeping for 10 seconds before generating next image...")
     time.sleep(10)
 
 print("Done! All images generated.")
