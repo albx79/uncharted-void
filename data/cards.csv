@@ -54,13 +54,13 @@ Mnaat Cybernetic Implants;2;[INT];Manufact;[Equipment];U;;;Sophonts in this team
 Emergency Repairs;2;[INT];Event;[Fleeting];C;;;If an Engineer is aboard: remove 2 damage counters from target Ship.;;
 Ambush;1;[STR];Event;[Superluminal, Fleeting];C;;;When in combat: this away team gets STR +3 until end of combat.;;
 Psionic Veil;2;[WRD];Event;[Persistent, Superluminal];U;;;If this crew has WRD > 2: target Ship cannot be attacked until _this_ leaves play.;;
-Group Mind Consensus;3;[WRD];Event;[Persistent];U;;;All Smaragdine Sophonts at this location get WRD +1.;;
+Group Mind Consensus;3;[WRD];Event;[Persistent];U;;;All Smaragdine Sophonts at target Location get WRD +1.;;
 Diplomatic Immunity;2;[CHA];Event;[Superluminal, Fleeting];U;;;Target Ship or away team with CHA > 2 cannot be attacked this turn.;;
-Hyperspace Anomaly;2;[WRD];Event;[Persistent];R;;;Place _this_ between two locations: their LFT and RGT values swap.;;
+Hyperspace Anomaly;2;[WRD];Event;[Persistent];R;;;Place _this_ between two locations: adjacent movement between them requires 2 more RNG.;;
 Rapid Deployment;1;[];Event;[Superluminal, Fleeting];U;;;Disembark any number of Sophonts from target Ship as a free action.;;
-Pheromone Surge;2;[CHA];Event;[Fleeting];U;;;All Vokun Sophonts at this location get STR +2 and CHA +2 until end of turn.;;
-Hyperspace Interception;2;[WRD];Event;[Superluminal, Fleeting];U;;;When an enemy Ship transits this location: it must stop here.;;
-Neural Deadlock;1;[INT];Event;[Superluminal, Fleeting];C;;;Tap target Ibglib. That player cannot play Superluminal effects until their next turn.;;
+Pheromone Surge;2;[CHA];Event;[Fleeting];U;;;All Vokun Sophonts at target Location get STR +2 and CHA +2 until end of turn.;;
+Hyperspace Interception;2;[WRD];Event;[Superluminal, Fleeting];U;;;Target an enemy Ship as it enters hyperspace, and an allied Destroyer. If the Ship transits the Destroyer location, it stops there and the Destroyer attacks it.;;
+Neural Deadlock;1;[INT];Event;[Superluminal, Fleeting];C;;;Tap an Ibglib ally ▶ target player cannot activate Superluminal effects until the end of your next turn.;;
 Vokun War Drums;3;[STR];Event;[Persistent];U;;;All Vokun Soldiers at this location get STR +2.;;
 Scorched Hyperspace;2;[WRD];Event;[Persistent];U;;;Place _this_ between two locations: Ships must spend 2 additional RNG whenever their route passes through here.;;
 Alliance Homeworld;;[];Location;[Home, LAND_icon];R;{HTN: α};;+1 CHA affinity. When the 4th location is charted: if you have never initiated an attack, score #VP(2).;;
