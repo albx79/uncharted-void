@@ -323,7 +323,7 @@
   let rules    = row.at("text",    default: "")
   let rarity   = row.at("rarity",  default: "C")
   let cost     = row.at("cost",    default: "")
-  let tracker  = yaml.decode(row.at("tracker",  default: "[]"))
+  let tracker  = yaml(bytes(row.at("tracker",  default: "[]")))
   // Use art if file exists — Typst will error if missing, so pass none for now
   let art = "../data/img/" + name + ".png"
   // let art      = none
