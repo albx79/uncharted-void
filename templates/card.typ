@@ -98,8 +98,13 @@
 ]
 
 // Full-bleed art or placeholder
-#let card-art(art) = place(top + left, if art != none {
-  image(art, width: 63.5mm, height: 88.9mm, fit: "cover")
+#let card-art(art, orientation: "portrait") = place(top + left, if art != none {
+  if orientation == "portrait" {
+    image(art, width: 63.5mm, height: 88.9mm, fit: "cover")
+  } else {
+    rotate(90deg, image(art, width: 88.9mm, height: 63.5mm, fit: "cover"))
+  }
+
 } else {
   rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
 })
@@ -193,7 +198,7 @@
   let cs = 5mm
 
   block(width: 63.5mm, height: 88.9mm, clip: true, radius: 4pt)[
-    #card-art(art)
+    #card-art(art, orientation: "landscape")
     #card-frame(cs)
 
     #place(top + left, dx: 2mm, dy: 2mm)[
@@ -272,7 +277,7 @@
   let cs = 5mm
 
   block(width: 63.5mm, height: 88.9mm, clip: true, radius: 4pt)[
-    #card-art(art)
+    #card-art(art, orientation: "landscape")
     #card-frame(cs)
 
     #place(top + left, dx: 2mm, dy: 2mm)[
@@ -316,20 +321,13 @@
             inset: 0mm,
           )[
             #block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 1.2mm))[
-                #text(fill: black-bar, size: 6pt)[
-                  #eval(rules, mode: "markup", scope: (VP: VP))
-                  #line(length: 100%, stroke: 0.2pt)
-                  #for step in tracker [
-                    - #eval(step, mode: "markup", scope: (VP: VP))
-                  ]
+              #text(fill: black-bar, size: 6pt)[
+                #eval(rules, mode: "markup", scope: (VP: VP))
+                #line(length: 100%, stroke: 0.2pt)
+                #for step in tracker [
+                  - #eval(step, mode: "markup", scope: (VP: VP))
                 ]
-                
-              // #for step in tracker [
-              //   #text(fill: black-bar, size: 5.5pt)[
-              //     #sym.bullet #h(0.5mm) #step
-              //   ]
-              //   #linebreak()
-              // ]
+              ]
             ]
           ])
         ]
@@ -439,7 +437,7 @@
   name: "Mira's Nebula",
   type: "Location",
   subtypes: "[Nebula, Void]",
-  cost: "", 
+  cost: "",
   affty: "[]",
   attrs: "{HTN: a}",
   highlight: "[]",
