@@ -1,6 +1,6 @@
-type;layout;attr;tracker
-Sophont;Portrait;CHA,INT,STR,WRD;
-Ship;Landscape;RNG,SIZ,WPN;
-Location;Landscape;HTN;Progress
-Manufact;Portrait;;
-Event;Portrait;;
+type;layout;attr;tracker;prompt
+Sophont;Portrait;CHA,INT,STR,WRD;;
+Ship;Landscape;RNG,SIZ,WPN;;A futuristic spaceship, against the blackness of space, with stars and galaxies in the background
+Location;Landscape;HTN;Progress;
+Manufact;Portrait;;;
+Event;Portrait;;;

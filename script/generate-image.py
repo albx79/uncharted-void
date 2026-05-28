@@ -1,10 +1,11 @@
 from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
 from dataclasses import dataclass
-import os
 import csv
-import yaml
+import os
+import sys
 import time
+import yaml
 
 @dataclass
 class CardPrompt:
@@ -23,8 +24,8 @@ WIDTH = int(os.getenv("WIDTH", 512))
 HEIGHT = int(os.getenv("HEIGHT", 768))
 STYLE_SUFFIX = os.getenv(
     "STYLE_SUFFIX",
-    "\nTraditional gouache painting, clean linework, warm amber tones, "
-    "dramatic side lighting, retro sci-fi illustration"
+    "\nTraditional gouache painting, clean linework, "
+    "dramatic side lighting, colorful retro sci-fi illustration"
 )
 
 type_orientations = {}
@@ -69,6 +70,13 @@ with open("data/cards.csv", mode="r", encoding="utf-8") as file:
 # --- GENERATE IMAGES ---
 os.makedirs(OUTPUT_DIR, exist_ok=True)  # Create output directory
 client = InferenceClient(token=TOKEN, model=MODEL)
+
+if "--dry-run" in sys.argv:
+    for card in prompts:
+        if not os.path.exists(card.filename):
+            print(f"{card.name}:\n  {card.prompt}\n")
+    exit(0)
+    
 for i, card in enumerate(prompts):
     if os.path.exists(card.filename):
         print(f"Skipping {card.name} — already exists")
