@@ -316,17 +316,17 @@
 #let draw-card(row) = {
   let name     = row.at("name")
   let card-type = row.at("type")
-  let subtypes = yaml.decode(row.at("subtypes", default: "[]"))
-  let attrs    = yaml.decode(row.at("attrs",    default: "{}"))
-  let highlight = yaml.decode(row.at("highlight", default: "[]"))
-  let affinity = yaml.decode(row.at("affty",    default: "[]"))
+  let subtypes = yaml(bytes(row.at("subtypes", default: "[]")))
+  let attrs    = yaml(bytes(row.at("attrs",    default: "{}")))
+  let highlight = yaml(bytes(row.at("highlight", default: "[]")))
+  let affinity = yaml(bytes(row.at("affty",    default: "[]")))
   let rules    = row.at("text",    default: "")
   let rarity   = row.at("rarity",  default: "C")
   let cost     = row.at("cost",    default: "")
   let tracker  = yaml.decode(row.at("tracker",  default: "[]"))
   // Use art if file exists — Typst will error if missing, so pass none for now
-  // let art = "../data/img/" + name + ".png"
-  let art      = none
+  let art = "../data/img/" + name + ".png"
+  // let art      = none
 
   if card-type == "Location" {
     draw-location(
@@ -361,7 +361,7 @@
   highlight: ("WRD",),
   rules: "Sophonts at this location with STR < 3 cannot act.",
   rarity: "R",
-  art: "../data/img/card_0.png"
+  art: none
 )
 
 #pagebreak()
