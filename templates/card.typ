@@ -316,16 +316,20 @@
             inset: 0mm,
           )[
             #block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 1.2mm))[
-              #if rules != "" [
-                #text(fill: black-bar, size: 6pt)[#rules]
-                #v(1mm)
-              ]
-              #for step in tracker [
-                #text(fill: black-bar, size: 5.5pt)[
-                  #sym.bullet #h(0.5mm) #step
+                #text(fill: black-bar, size: 6pt)[
+                  #eval(rules, mode: "markup", scope: (VP: VP))
+                  #line(length: 100%, stroke: 0.2pt)
+                  #for step in tracker [
+                    - #eval(step, mode: "markup", scope: (VP: VP))
+                  ]
                 ]
-                #linebreak()
-              ]
+                
+              // #for step in tracker [
+              //   #text(fill: black-bar, size: 5.5pt)[
+              //     #sym.bullet #h(0.5mm) #step
+              //   ]
+              //   #linebreak()
+              // ]
             ]
           ])
         ]
@@ -431,17 +435,15 @@
 
 #pagebreak()
 
-#draw-location(
+#draw-card((
   name: "Mira's Nebula",
-  card-type: "Location",
-  subtypes: ("Nebula", "Void"),
-  attrs: (HTN: 3),
-  highlight: (),
-  rules: [#sym.star VP(5). On completion: gain HTN symbol.],
-  tracker: (
-    "Analyse the structure. Requires INT > 8.",
-    "Hyperspace is leaking! Requires WRD > 8+X.",
-    "Restore structure. Requires STR > 12+Y.",
-  ),
+  type: "Location",
+  subtypes: "[Nebula, Void]",
+  cost: "", 
+  affty: "[]",
+  attrs: "{HTN: a}",
+  highlight: "[]",
+  text: "#VP(5) On completion: add an HTN symbol of your choice.",
+  tracker: "[Analyse the structure. Requires INT > 8., Hyperspace is leaking! Requires WRD > 8+X., Restore structure. Requires STR > 12+Y.]",
   rarity: "R",
-)
+))

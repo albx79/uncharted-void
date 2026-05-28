@@ -24,9 +24,9 @@ Voidglider Seer;3;[WRD];Sophont;[Voidglider, Scientist];U;{CHA: 0, INT: 3, STR: 
 Ibglib Analyst;2;[INT];Sophont;[Ibglib, Scientist];C;{CHA: 1, INT: 4, STR: 0, WRD: 0};[INT];When an opponent's Superluminal effect targets this team, tap _this_. It doesn't untap during your next untap step.;[];this analyst is a
 Ibglib Envoy;3;[INT];Sophont;[Ibglib, Diplomat];U;{CHA: 2, INT: 3, STR: 0, WRD: 0};[INT];When an opponent's Superluminal effect targets this team, tap _this_. It doesn't untap during your next untap step.;[];this envoy is a
 Alliance Shuttle;1;[];Ship;[Shuttle];C;{SIZ: 1, RNG: 3, WPN: 0};[];*Crew 0*;[];
-Gnome Hauler;2;[INT];Ship;[Gnome, Transport];C;{SIZ: 1, RNG: 2, WPN: 0};[];*Crew 1*  *Hold 1*;[];Hauler
-Caldera;4;[INT];Ship;[Gnome, Transport];U;{SIZ: 3, RNG: 2, WPN: 1};[];*Crew 2*  *Hold 3*;[];Hauler
-Basalt;6;[INT, STR];Ship;[Gnome, Transport];R;{SIZ: 4, RNG: 1, WPN: 2};[];*Crew 3*  *Hold 4*;[];Hauler
+Gnome Hauler;2;[INT];Ship;[Gnome, Transport];C;{SIZ: 1, RNG: 2, WPN: 0};[];*Crew 1*\ *Hold 1*;[];Hauler
+Caldera;4;[INT];Ship;[Gnome, Transport];U;{SIZ: 3, RNG: 2, WPN: 1};[];*Crew 2*\ *Hold 3*;[];Hauler
+Basalt;6;[INT, STR];Ship;[Gnome, Transport];R;{SIZ: 4, RNG: 1, WPN: 2};[];*Crew 3*\ *Hold 4*;[];Hauler
 Zephyr;2;[INT];Ship;[Hyehoon, Scout];C;{SIZ: 1, RNG: 4, WPN: 1};[];*Crew 1*;[];Scout
 Boreas;4;[INT, STR];Ship;[Hyehoon, Scout];U;{SIZ: 2, RNG: 5, WPN: 2};[];*Crew 2*;[];Scout
 Pneuma;3;[WRD];Ship;[Smaragdine, Scout];U;{SIZ: 2, RNG: 3, WPN: 2};[];*Crew 1*;[];Scout
@@ -35,11 +35,11 @@ Vokun Shuttle;1;[];Ship;[Vokun, Shuttle];C;{SIZ: 1, RNG: 3, WPN: 0};[];*Crew 0*;
 Kadirga;2;[STR];Ship;[Vokun, Destroyer];C;{SIZ: 1, RNG: 3, WPN: 2};[];*Crew 1*;[];
 Dromon;4;[STR, STR];Ship;[Vokun, Destroyer];U;{SIZ: 3, RNG: 2, WPN: 6};[];*Crew 2*;[];
 Leviathan;6;[STR, STR];Ship;[Vokun, Destroyer];R;{SIZ: 4, RNG: 2, WPN: 8};[];*Crew 3*;[];Warship
-Kalyon;3;[STR];Ship;[Vokun, Transport];U;{SIZ: 2, RNG: 2, WPN: 1};[];*Crew 1*  *Hold 2*;[];
-Dreadnought;5;[STR, STR];Ship;[Vokun, Destroyer];R;{SIZ: 3, RNG: 2, WPN: 7};[];*Crew 2*  *Hold 2*;[];
+Kalyon;3;[STR];Ship;[Vokun, Transport];U;{SIZ: 2, RNG: 2, WPN: 1};[];*Crew 1*\ *Hold 2*;[];
+Dreadnought;5;[STR, STR];Ship;[Vokun, Destroyer];R;{SIZ: 3, RNG: 2, WPN: 7};[];*Crew 2*\ *Hold 2*;[];
 Blaster;1;[];Manufact;[Weapon];C;{};[];This away team gets STR +2.;[];
 Medikit;1;[];Manufact;[Equipment];C;{};[];If a Medic is present, when you lose combat you may recycle _this_ instead of scrapping a Sophont.;[];
-Survey Drone;;[];Manufact;[Equipment];C;{};[];_;[];
+Survey Drone;;[];Manufact;[Equipment];C;{};[];Tap ▶ look at one seeded manufact at this LAND_icon Location.;[];
 Hyperspace Beacon;2;[];Manufact;[Device];U;{SIZ: 1};[];This Ship gets RNG +1.;[];
 Ancient Relic;;[];Manufact;[Relic];C;{};[];When _this_ is on the surface at your home location: scrap it ▶ score #VP(2).;[];
 Smaragdine Mind Shard;2;[WRD];Manufact;[Relic];U;{};[];This crew gets WRD +1 if it has WRD > 2.;[];
