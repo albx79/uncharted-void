@@ -25,8 +25,9 @@
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
 #let styling(it) = {
-  show "LAND_icon" : box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, rest: 0.5pt), baseline: 2pt, radius: 1pt, text(font: "Noto Emoji")[🥾])
-  show "VOID_icon" : box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, rest: 0.5pt), baseline: 2pt, radius: 1pt, text(font: "Noto Emoji")[🌌])
+  show "LAND_icon" : " " + box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, rest: 0.5pt), baseline: 2pt, radius: 1pt, text(font: "Noto Emoji")[🥾])
+  show "VOID_icon" : " " + box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, rest: 0.5pt), baseline: 2pt, radius: 1pt, text(font: "Noto Emoji")[🌌])
+  show "UNIQUE_icon" : " " + box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, top: 0.5pt, x: 2pt), baseline: 1pt, radius: 1pt, text(font: "Noto Emoji")[★])
   it
 }
 

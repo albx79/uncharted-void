@@ -5,16 +5,16 @@ Hyehoon Scout;1;[];Sophont;[Hyehoon, Explorer];C;{CHA: 1, INT: 1, STR: 1, WRD: 0
 Hyehoon Negotiator;2;[CHA];Sophont;[Hyehoon, Diplomat];C;{CHA: 3, INT: 1, STR: 1, WRD: 0};[CHA];;[];
 Hyehoon Naturalist;2;[INT];Sophont;[Hyehoon, Scientist];C;{CHA: 1, INT: 3, STR: 0, WRD: 0};[INT];;[];
 Hyehoon Pathfinder;3;[INT];Sophont;[Hyehoon, Explorer];U;{CHA: 2, INT: 3, STR: 1, WRD: 0};[INT];;[];
-Neshekk Broker;3;[CHA];Sophont;[Neshekk, Diplomat, VIP];R;{CHA: 3, INT: 2, STR: 0, WRD: 0};[CHA];;[];
+Neshekk Broker;3;[CHA];Sophont;[Neshekk, Diplomat, VIP, UNIQUE_icon];R;{CHA: 3, INT: 2, STR: 0, WRD: 0};[CHA];;[];
 Smaragdine Adept;2;[WRD];Sophont;[Smaragdine, Scientist];C;{CHA: 1, INT: 2, STR: 0, WRD: 2};[WRD];;[];
 Smaragdine Warrior;2;[STR];Sophont;[Smaragdine, Soldier];C;{CHA: 1, INT: 1, STR: 2, WRD: 2};[STR];;[];
 Smaragdine Elder;3;[WRD];Sophont;[Smaragdine, Diplomat];U;{CHA: 2, INT: 2, STR: 0, WRD: 3};[WRD];;[];
-Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP];R;{CHA: 3, INT: 2, STR: 2, WRD: 4};[WRD];;[];
-Deva Artificer;4;[INT];Sophont;[Deva, Engineer, VIP];R;{CHA: 2, INT: 4, STR: 0, WRD: 2};[INT];;[];Artificer
+Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP, UNIQUE_icon];R;{CHA: 3, INT: 2, STR: 2, WRD: 4};[WRD];;[];
+Deva Artificer;4;[INT];Sophont;[Deva, Engineer, VIP, UNIQUE_icon];R;{CHA: 2, INT: 4, STR: 0, WRD: 2};[INT];;[];Artificer
 Vokun Conscript;1;[];Sophont;[Vokun, Soldier];C;{CHA: 0, INT: 1, STR: 2, WRD: 0};[STR];;[];
 Vokun Lord;3;[STR];Sophont;[Vokun, Commander];U;{CHA: 3, INT: 1, STR: 3, WRD: 0};[STR];;[];Fat, sumptuously dressed
-Vokun Warlord;5;[STR, CHA];Sophont;[Vokun, Commander, VIP];R;{CHA: 5, INT: 1, STR: 3, WRD: 0};[CHA];Enemy Sophonts at this location with STR < 3 cannot act.;[];Obese warlord
-Vokun Grand Elder;6;[CHA, CHA];Sophont;[Vokun, Diplomat, VIP];R;{CHA: 7, INT: 1, STR: 1, WRD: 0};[CHA];_this_ cannot disembark. Enemy Sophonts at this location with STR < 3 cannot act.;[];Obscenely obese grand elder
+Vokun Warlord;5;[STR, CHA];Sophont;[Vokun, Commander, VIP, UNIQUE_icon];R;{CHA: 5, INT: 1, STR: 3, WRD: 0};[CHA];Enemy Sophonts at this location with STR < 3 cannot act.;[];Obese warlord
+Vokun Grand Elder;6;[CHA, CHA];Sophont;[Vokun, Diplomat, VIP, UNIQUE_icon];R;{CHA: 7, INT: 1, STR: 1, WRD: 0};[CHA];_this_ cannot disembark. Enemy Sophonts at this location with STR < 3 cannot act.;[];Obscenely obese grand elder
 Kuath Shock Trooper;2;[STR];Sophont;[Kuath, Soldier];C;{CHA: 0, INT: 0, STR: 5, WRD: 0};[STR];;[];
 Kuath Sergeant;3;[STR];Sophont;[Kuath, Commander];U;{CHA: 1, INT: 1, STR: 5, WRD: 0};[STR];;[];
 Mnaat Technician;2;[INT];Sophont;[Mnaat, Cybernetic, Engineer];C;{CHA: 0, INT: 3, STR: 1, WRD: 0};[INT];On death: recycle _this_.;[];this Technician is
