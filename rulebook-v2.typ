@@ -1,6 +1,9 @@
 #set page(paper: "a5", numbering: "1", margin: (1.5cm))
 #set heading(numbering: "I-A-1〉")
 #show heading: set text(font: "Exo 2")
+#import "templates/card.typ" : styling
+#show: styling
+
 #set text(10pt, font: "Exo 2")
 #set par(justify: true)
 #set quote(block: true)
@@ -123,7 +126,7 @@ Each Location card has:
 / Symbol: a hyperspace network icon, from a set of six. Ships may jump
   directly to any other location sharing the same symbol, regardless of
   physical distance on the space line. Home locations have no symbol.
-/ Subtypes: every location has either the surface [LAND] or void [VOID] subtype,
+/ Subtypes: every location has either the land LAND_icon or void VOID_icon subtype,
   indicated by an icon, which determines how missions are attempted there (see @missions).
   Additional subtypes such as _Planet_, _Habitat_, _Derelict_, or _Nebula_ are purely
   flavour and have no mechanical effect unless specifically referenced by a card.
@@ -297,7 +300,7 @@ See @movement for detailed rules.
 - *Disembark*: transfer any number of Sophonts from the crew to the surface
   (if you already control an away team there, they join it, otherwise they
   form a new one)
-- *Attempt mission*: if the Ship is at a void [VOID] location and meets the requirements
+- *Attempt mission*: if the Ship is at a void VOID_icon location and meets the requirements
   of the next incomplete mission step, resolve that step
 
 A Ship may move and act in the same turn. Crew aboard the Ship do not tap
@@ -308,7 +311,7 @@ was always aboard (except the *disembark* action, that would require some Sophon
 be aboard).
 A Ship with *Crew N* but fewer than N Sophonts aboard, on the other hand, cannot take any action.
 
-Sophonts on the surface of a land [LAND] location remain there if their Ship departs.
+Sophonts on the surface of a land LAND_icon location remain there if their Ship departs.
 
 === Act with Sophonts
 
@@ -431,8 +434,8 @@ away team at the same location. Resolve as follows:
 
 === Attempting a Mission Step
 
-To attempt a mission step, a Ship at a void [VOID] location, or an away team
-on the surface of a land [LAND] location, must meet the requirements listed for the next
+To attempt a mission step, a Ship at a void VOID_icon location, or an away team
+on the surface of a land LAND_icon location, must meet the requirements listed for the next
 incomplete step on the progress tracker.
 
 You may attempt any mission, not just the ones you own.
@@ -713,11 +716,11 @@ In general, card subtypes don't affect how that card is played.
 However, these subtypes are specifically called out in the rules,
 and have a special meaning.
 
-/ [LAND]: (Land); this location has a planet, habitat, station, or other environment
+/ LAND_icon: (Land); this location has a planet, habitat, station, or other environment
   on whose *surface* Sophonts can land and walk.
   Missions here require an away team.
-/ [VOID]: (Void); this location is a region of open space. Missions here must be
-  attempted from aboard a Ship. You may not send an away team to a void [VOID] location.
+/ VOID_icon: (Void); this location is a region of open space. Missions here must be
+  attempted from aboard a Ship. You may not send an away team to a void VOID_icon location.
 / Fleeting: this Event is scrapped immediately after its effect resolves.
 / Home: this location is played face-up, by its owner, during the setup phase.
 / Persistent: this Event remains in play after its effect resolves, placed
@@ -734,7 +737,7 @@ and have a special meaning.
 / Adjacent move: a movement step to the next location on the space line,
   costing 1 RNG.
 / Away team: any number of Sophonts you control on the surface of a land
-  [LAND] location.
+  LAND_icon location.
 / Course: the declared sequence of locations from origin to destination;
   declared before a move begins.
 / Crew: any number of Sophonts you control aboard a Ship.
@@ -757,7 +760,7 @@ and have a special meaning.
   stated, all effects target cards on the space line.
 / Scrapyard: a player's discard pile. Cards in the scrapyard are face-up and
   may be inspected by either player at any time.
-/ Surface: the region of a land [LAND] location where Sophonts operate on foot,
+/ Surface: the region of a land LAND_icon location where Sophonts operate on foot,
   as part of an away team, rather than from inside a Ship as crew members.
 / Symbol jump: a movement step directly to any location sharing the current
   location's hyperspace symbol, costing 1 RNG.

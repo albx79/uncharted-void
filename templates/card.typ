@@ -22,12 +22,18 @@
 #let frame-col = rgb("#111111")
 #let name-size = 8pt
 #let typeline-size = 6.5pt
+
+// ── Shared helpers ────────────────────────────────────────────────────────────
+#let styling(it) = {
+  show "LAND_icon" : box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, rest: 0.5pt), baseline: 2pt, radius: 1pt, text(font: "Noto Emoji")[🥾])
+  show "VOID_icon" : box(stroke: text-bg+0.5pt, inset: (bottom: 2pt, rest: 0.5pt), baseline: 2pt, radius: 1pt, text(font: "Noto Emoji")[🌌])
+  it
+}
+
 #let VP = pts => [
   #show regex("\\w+|[^\\s]"): box.with(fill: black, inset: 2pt, radius: 1pt, baseline: 2pt)
   #text(fill: black, stroke: white)[#pts]
 ]
-
-// ── Shared helpers ────────────────────────────────────────────────────────────
 
 #let affinity-pill(attr, color) = box(
   fill: color,
@@ -57,7 +63,7 @@
 
 // Render a horizontal attr strip from a dict
 #let attr-strip(attrs, highlight) = [
-  
+
   #grid(
     columns: attrs.keys().map(_ => 1fr),
     gutter: 0mm,
@@ -346,8 +352,8 @@
 
 // ── Dispatcher ────────────────────────────────────────────────────────────────
 #let draw-card(row) = {
+  show: styling
   set text(font: "Exo 2")
-
   let name = row.at("name")
   let card-type = row.at("type")
   let subtypes = yaml(bytes(row.at("subtypes")))
@@ -442,7 +448,7 @@
 #draw-card((
   name: "Mira's Nebula",
   type: "Location",
-  subtypes: "[Nebula, Void]",
+  subtypes: "[Nebula, VOID_icon, LAND_icon]",
   cost: "",
   affty: "[]",
   attrs: "{HTN: a}",
