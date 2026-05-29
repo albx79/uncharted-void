@@ -3,6 +3,9 @@
 
 // ── Colour palette ───────────────────────────────────────────────────────────
 #let attr-data = csv("../data/attrs.csv", delimiter: ";", row-type: dictionary)
+// #let attr-font = "Share Tech Mono"
+// #let attr-font = "Space Mono"
+#let attr-font = "Cascadia Code"
 #let attr-sat = {
   let res = (:)
   for r in attr-data { res.insert(r.at("NAM"), rgb(r.at("full-sat"))) }
@@ -20,8 +23,8 @@
 #let name-size = 8pt
 #let typeline-size = 6.5pt
 #let VP = pts => [
-     #show regex("\\w+|[^\\s]"): box.with(fill: black, inset: 2pt, radius: 1pt, baseline: 2pt)
-     #text(fill: black, stroke: white)[#pts]
+  #show regex("\\w+|[^\\s]"): box.with(fill: black, inset: 2pt, radius: 1pt, baseline: 2pt)
+  #text(fill: black, stroke: white)[#pts]
 ]
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
@@ -30,7 +33,7 @@
   fill: color,
   radius: 2pt,
   inset: (x: 2pt, y: 1pt),
-)[#text(fill: white, size: 4.5pt, weight: "bold")[#attr]]
+)[#text(fill: white, size: 4.5pt, weight: "bold", font: attr-font)[#attr]]
 
 #let affinity-stack(aff) = stack(
   dir: ttb,
@@ -48,28 +51,32 @@
     fill: if highlighted { white } else { bg.darken(60%) },
     size: 5.5pt,
     weight: "bold",
+    font: attr-font,
   )[#name #h(1pt) #value]
 ]]
 
 // Render a horizontal attr strip from a dict
-#let attr-strip(attrs, highlight) = grid(
-  columns: attrs.keys().map(_ => 1fr),
-  gutter: 0mm,
-  ..attrs
-    .keys()
-    .enumerate(start: 1)
-    .map(x => {
-      let attr = x.at(1)
-      let i = x.at(0)
-      attr-section(
-        attr,
-        attrs.at(attr),
-        attr-desat.at(attr, default: gray),
-        attr-sat.at(attr, default: gray),
-        attr in highlight,
-      )
-    }),
-)
+#let attr-strip(attrs, highlight) = [
+  
+  #grid(
+    columns: attrs.keys().map(_ => 1fr),
+    gutter: 0mm,
+    ..attrs
+      .keys()
+      .enumerate(start: 1)
+      .map(x => {
+        let attr = x.at(1)
+        let i = x.at(0)
+        attr-section(
+          attr,
+          attrs.at(attr),
+          attr-desat.at(attr, default: gray),
+          attr-sat.at(attr, default: gray),
+          attr in highlight,
+        )
+      }),
+  )
+]
 
 // Card frame polygon with cut corner
 #let card-frame(cs) = place(top + left, dx: 2mm, dy: 2mm)[
@@ -104,7 +111,6 @@
   } else {
     rotate(90deg, image(art, width: 88.9mm, height: 63.5mm, fit: "cover"))
   }
-
 } else {
   rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
 })
@@ -428,7 +434,7 @@
   highlight: "[]",
   text: "*Crew 2*\\ *Hold 1*",
   rarity: "R",
-  tracker: "[]"
+  tracker: "[]",
 ))
 
 #pagebreak()
