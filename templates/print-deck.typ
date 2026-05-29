@@ -34,13 +34,13 @@
     } else {
       // Card not found — push a placeholder so the missing card is visible
       cards.push((
-        name: name + " [MISSING]",
-        type: "Sophont",
+        name: "MISSING",
+        type: "Unknown",
         subtypes: "[]",
         attrs: "{}",
         highlight: "[]",
         affty: "[]",
-        text: "Card not found in cards.csv",
+        text: "ERROR: *" + name + "* not found in cards.csv",
         rarity: "?",
         cost: "?",
         tracker: "[]",
