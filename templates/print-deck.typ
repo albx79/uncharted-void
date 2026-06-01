@@ -11,8 +11,6 @@
 #let card-h  = 88.9mm
 #let margin-x = (210mm - 3 * card-w - 2 * gutter) / 2
 #let margin-y = (297mm - 3 * card-h - 2 * gutter) / 2
-// #let guide   = 0.3pt + rgb("#aaaaaa")  // light grey, visible but unobtrusive
-#let guide   = 0.5pt + gray
 
 // ── Load card database ────────────────────────────────────────────────────────
 #let card-db = {
@@ -73,33 +71,24 @@
   res
 }
 
-#let cutting-guides() = {
-  // Vertical guides (card left/right edges)
-  for col in range(4) {
-    let x = margin-x + col * (card-w + gutter) - gutter / 2
-    place(top + left, dx: x, dy: 0mm,
-      line(stroke: guide, start: (0mm, 0mm), end: (0mm, 297mm))
-    )
-  }
-  // Horizontal guides (card top/bottom edges)
-  for row in range(4) {
-    let y = margin-y + row * (card-h + gutter) - gutter / 2
-    place(top + left, dx: 0mm, dy: y,
-      line(stroke: guide, start: (0mm, 0mm), end: (210mm, 0mm))
-    )
-  }
-}
-
 // ── Render ────────────────────────────────────────────────────────────────────
 #for chunk in chunks [
   #block(width: 210mm, height: 297mm)[
-    #pad(left: margin-x, top: margin-y)[
       #grid(
-        columns: (card-w, card-w, card-w),
-        rows:    (card-h, card-h, card-h),
+        columns: (margin-x, card-w, card-w, card-w, 1fr),
+        rows:    (margin-y, card-h, card-h, card-h, 1fr),
         gutter:  gutter,
-        ..chunk.map(row => draw-card(row)),
+        stroke: gray + 0.5pt,
+        ..range(5).map(row =>
+            range(5).map(col => {
+              let idx = (row - 1) * 3 + col - 1
+              if row == 0 or row == 4 or col == 0 or col == 4 or idx >= chunk.len() {
+                [ ]
+              } else {
+                draw-card(chunk.at(idx))
+              }
+            })
+        ).flatten()
       )
-    ]
   ]
 ]
