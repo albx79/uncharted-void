@@ -6,11 +6,13 @@
 
 #set page(paper: "a4", margin: 0mm)
 
-#let gutter = 2mm
+#let gutter  = 0.5mm
 #let card-w  = 63.5mm
 #let card-h  = 88.9mm
-#let margin-x = (210mm - 3 * card-w  - 2 * gutter) / 2
-#let margin-y = (297mm - 3 * card-h  - 2 * gutter) / 2
+#let margin-x = (210mm - 3 * card-w - 2 * gutter) / 2
+#let margin-y = (297mm - 3 * card-h - 2 * gutter) / 2
+// #let guide   = 0.3pt + rgb("#aaaaaa")  // light grey, visible but unobtrusive
+#let guide   = 0.5pt + gray
 
 // ── Load card database ────────────────────────────────────────────────────────
 #let card-db = {
@@ -69,6 +71,23 @@
   }
   if chunk.len() > 0 { res.push(chunk) }
   res
+}
+
+#let cutting-guides() = {
+  // Vertical guides (card left/right edges)
+  for col in range(4) {
+    let x = margin-x + col * (card-w + gutter) - gutter / 2
+    place(top + left, dx: x, dy: 0mm,
+      line(stroke: guide, start: (0mm, 0mm), end: (0mm, 297mm))
+    )
+  }
+  // Horizontal guides (card top/bottom edges)
+  for row in range(4) {
+    let y = margin-y + row * (card-h + gutter) - gutter / 2
+    place(top + left, dx: 0mm, dy: y,
+      line(stroke: guide, start: (0mm, 0mm), end: (210mm, 0mm))
+    )
+  }
 }
 
 // ── Render ────────────────────────────────────────────────────────────────────

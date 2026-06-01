@@ -53,7 +53,7 @@ Vokun Restraint Collar;1;[];Manufact;[Equipment];C;{};[];When this away team att
 Mnaat Cybernetic Implants;2;[INT];Manufact;[Equipment];U;{};[];Sophonts in this team are Cybernetic (_in addition to their other subtypes_) and have: «On death: recycle this Sophont».;[];
 Emergency Repairs;2;[INT];Event;[Fleeting];C;{};[];If an Engineer is aboard: remove 2 damage counters from target Ship.;[];
 Ambush;1;[STR];Event;[Superluminal, Fleeting];C;{};[];When in combat: this away team gets STR +3 until end of combat.;[];
-Psionic Veil;2;[WRD];Event;[Persistent, Superluminal];U;{};[];If this crew has WRD > 2: target Ship cannot be attacked until _this_ leaves play.;[];A spaceship covered by a psychic aura that cloaks it.
+Psionic Veil;2;[WRD];Event;[Persistent, Superluminal];U;{};[];Target Ship cannot be attacked while crew has WRD > 2, until _this_ leaves play.;[];A spaceship covered by a psychic aura that cloaks it.
 Group Mind Consensus;3;[WRD];Event;[Persistent];U;{};[];All Smaragdine Sophonts at target Location get WRD +1.;[];
 Diplomatic Immunity;2;[CHA];Event;[Superluminal, Fleeting];U;{};[];Target Ship or away team with CHA > 2 cannot be attacked this turn.;[];
 Hyperspace Anomaly;2;[WRD];Event;[Persistent];R;{};[];Place _this_ between two locations: adjacent movement between them requires 2 more RNG.;[];

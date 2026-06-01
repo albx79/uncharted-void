@@ -6,6 +6,7 @@
 // #let attr-font = "Share Tech Mono"
 // #let attr-font = "Space Mono"
 #let attr-font = "Cascadia Code"
+#let rules-font = "Roboto"
 #let attr-sat = {
   let res = (:)
   for r in attr-data { res.insert(r.at("NAM"), rgb(r.at("full-sat"))) }
@@ -20,8 +21,8 @@
 #let black-bar = rgb("#111111")
 #let text-bg = rgb(255, 255, 255, 220)
 #let frame-col = rgb("#111111")
-#let name-size = 8pt
-#let typeline-size = 6.5pt
+#let name-size = 12pt
+#let typeline-size = 8.5pt
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
 #let styling(it) = {
@@ -48,6 +49,16 @@
   ..aff.map(a => affinity-pill(a, attr-sat.at(a, default: gray))),
 )
 
+#let cost-stack(cost, aff) = stack(
+  dir: ttb,
+  spacing: 1.5pt,
+  ..(box(fill: white, radius: 3pt, inset: (x: 3pt, y: 2pt))[
+    #text(fill: black-bar, size: 9pt, weight: "bold")[#cost]
+  ],
+  aff.map(a => affinity-pill(a, attr-sat.at(a, default: gray))),
+  ).flatten()
+)
+
 #let attr-section(name, value, bg, sat, highlighted, tl: 0pt, tr: 0pt, bl: 0pt, br: 0pt) = box(
   fill: if highlighted { sat } else { bg },
   inset: (x: 3pt, y: 3pt),
@@ -56,10 +67,13 @@
 )[#align(center)[
   #text(
     fill: if highlighted { white } else { bg.darken(60%) },
-    size: 5.5pt,
+    size: 10pt,
     weight: "bold",
     font: attr-font,
-  )[#name #h(1pt) #value]
+  )[
+    #set par(leading: 2pt)
+    #name #value
+  ]
 ]]
 
 // Render a horizontal attr strip from a dict
@@ -122,6 +136,19 @@
   rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
 })
 
+#let rules-block(rules: "", tracker: ()) = block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 2mm))[
+  #set par(leading: 2pt)
+  #text(fill: black-bar, size: 8pt, font: rules-font)[
+    #eval(rules, mode: "markup", scope: (VP: VP))
+    #if tracker.len() > 0 [
+      #line(length: 100%, stroke: 0.2pt)
+      #for step in tracker [
+        - #eval(step, mode: "markup", scope: (VP: VP))
+      ]
+    ]
+  ]
+]
+
 // ── Portrait card (Sophont, Manufact, Event) ──────────────────────────────────
 #let draw-portrait(
   name: "Unnamed",
@@ -147,24 +174,29 @@
 
         // Top bar
         #place(top + left)[
-          #rect(fill: black-bar, width: 59.5mm, inset: (x: 1.2mm, y: 1.2mm))[
+          #rect(fill: black-bar, width: 59.5mm, inset: (x: 0.2mm, y: 1.2mm))[
             #grid(
-              columns: (auto, auto, 1fr),
+              // columns: (auto, auto, 1fr),
+              columns: (auto, auto),
               column-gutter: 1.2mm,
-              align(horizon)[
-                #box(fill: white, radius: 3pt, inset: (x: 3pt, y: 2pt))[
-                  #text(fill: black-bar, size: 9pt, weight: "bold")[#cost]
-                ]
-              ],
-              align(horizon)[#affinity-stack(affinity)],
-              align(horizon)[
-                #stack(dir: ttb, spacing: 2.5pt, text(fill: white, size: name-size, weight: "bold")[#name], text(
+              cost-stack(cost, affinity)
+              ,
+                stack(dir: ttb, spacing: 2.5pt, text(fill: white, size: name-size, weight: "bold")[#name], text(
                   fill: rgb("#aaaaaa"),
                   size: typeline-size,
                 )[
-                  #subtypes.join(" ") · *#card-type*
+                  #context {
+                    let content = [#subtypes.join(" ") · *#card-type*]
+                    let len = measure(content)
+                    if len.width > 50mm {
+                      [#subtypes.join(" ") #strong(card-type.slice(0, count: 4)).]
+                    } else {
+                      content
+                    }
+                  }
+
                 ])
-              ],
+              ,
             )
           ]
         ]
@@ -179,9 +211,7 @@
             stroke: 0.75pt + frame-col,
             inset: 0mm,
           )[
-            #block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 2mm))[
-              #text(fill: black-bar, size: 6pt)[#eval(rules, mode: "markup", scope: (VP: VP))]
-            ]
+            #rules-block(rules: rules)
             #if attrs.len() > 0 {
               attr-strip(attrs, highlight)
             }
@@ -221,10 +251,10 @@
         #place(top + left)[
           #rotate(90deg, reflow: true, block(
             fill: black-bar,
-            inset: (x: 1.2mm, y: 1.2mm),
+            inset: (x: 1.2mm, y: 0mm),
           )[
             #grid(
-              columns: (auto, 1fr, 20%),
+              columns: (auto, 1fr, 25%),
               column-gutter: 1.2mm,
               // Cost + pills: counter-rotated to stay upright in hand
               rotate(-90deg, reflow: true, align(horizon)[
@@ -262,9 +292,7 @@
             stroke: 0.75pt + frame-col,
             inset: 0mm,
           )[
-            #block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 1.2mm))[
-              #text(fill: black-bar, size: 6pt)[#eval(rules, mode: "markup", scope: (VP: VP))]
-            ]
+            #rules-block(rules: rules)
           ])
         ]
       ]
@@ -300,7 +328,7 @@
         #place(top + left)[
           #rotate(90deg, reflow: true, block(
             fill: black-bar,
-            inset: (x: 1.2mm, y: 1.2mm),
+            inset: (x: 1.2mm, y: 0mm),
           )[
             #grid(
               columns: (10%, 1fr, 10%),
@@ -333,15 +361,7 @@
             stroke: 0.75pt + frame-col,
             inset: 0mm,
           )[
-            #block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 1.2mm))[
-              #text(fill: black-bar, size: 6pt)[
-                #eval(rules, mode: "markup", scope: (VP: VP))
-                #line(length: 100%, stroke: 0.2pt)
-                #for step in tracker [
-                  - #eval(step, mode: "markup", scope: (VP: VP))
-                ]
-              ]
-            ]
+            #rules-block(rules: rules, tracker: tracker)
           ])
         ]
       ]
