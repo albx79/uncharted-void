@@ -6,7 +6,7 @@
 
 #set page(paper: "a4", margin: 0mm)
 
-#let gutter  = 0.5mm
+#let gutter  = 0.25mm
 #let card-w  = 63.5mm
 #let card-h  = 88.9mm
 #let margin-x = (210mm - 3 * card-w - 2 * gutter) / 2
@@ -78,7 +78,7 @@
         columns: (margin-x, card-w, card-w, card-w, 1fr),
         rows:    (margin-y, card-h, card-h, card-h, 1fr),
         gutter:  gutter,
-        stroke: gray + 0.5pt,
+        stroke: gray + 0.25pt,
         ..range(5).map(row =>
             range(5).map(col => {
               let idx = (row - 1) * 3 + col - 1
