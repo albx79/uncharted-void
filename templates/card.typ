@@ -6,8 +6,6 @@
 // #let attr-font = "Share Tech Mono"
 // #let attr-font = "Space Mono"
 #let attr-font = "Cascadia Code"
-// #let rules-font = "Roboto Condensed"
-#let rules-text = body => text(font: "Roboto Condensed", fallback: false, stretch: 70%)[#body]
 #let attr-sat = {
   let res = (:)
   for r in attr-data { res.insert(r.at("NAM"), rgb(r.at("full-sat"))) }
@@ -137,9 +135,11 @@
   rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
 })
 
+#let rules-font = "Roboto"
+// #let rules-font = "AgencyFB"
 #let rules-block(rules: "", tracker: ()) = block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 2mm))[
   #set par(leading: 2pt)
-  #text(fill: black-bar, size: 8pt, font: rules-font)[
+  #text(fill: black-bar, size: 8pt, font: rules-font, fallback: true, stretch: 75%, weight: "regular")[
     #eval(rules, mode: "markup", scope: (VP: VP))
     #if tracker.len() > 0 [
       #line(length: 100%, stroke: 0.2pt)
