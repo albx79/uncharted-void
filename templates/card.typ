@@ -6,7 +6,8 @@
 // #let attr-font = "Share Tech Mono"
 // #let attr-font = "Space Mono"
 #let attr-font = "Cascadia Code"
-#let rules-font = "Roboto"
+// #let rules-font = "Roboto Condensed"
+#let rules-text = body => text(font: "Roboto Condensed", fallback: false, stretch: 70%)[#body]
 #let attr-sat = {
   let res = (:)
   for r in attr-data { res.insert(r.at("NAM"), rgb(r.at("full-sat"))) }
@@ -318,51 +319,52 @@
   let cs = 5mm
 
   block(width: 63.5mm, height: 88.9mm, clip: true, radius: 4pt)[
-    #card-art(art, orientation: "landscape")
+    #card-art(art)
     #card-frame(cs)
 
     #place(top + left, dx: 2mm, dy: 2mm)[
       #block(width: 59.5mm, height: 84.9mm, fill: none)[
 
-        // Left bar
+        // Top bar
         #place(top + left)[
-          #rotate(90deg, reflow: true, block(
-            fill: black-bar,
-            inset: (x: 1.2mm, y: 0mm),
-          )[
+          #rect(fill: black-bar, width: 59.5mm, inset: (x: 0.2mm, y: 1.2mm))[
             #grid(
-              columns: (10%, 1fr, 10%),
+              columns: (12%, auto),
               column-gutter: 1.2mm,
-              // Attrs upside-down (counter-rotated + 180°)
               rotate(180deg, attr-strip(attrs, highlight)),
-              // Name + subtypes: centered
-              align(center + horizon)[
-                #stack(
-                  spacing: 2.5pt,
-                  text(fill: white, size: name-size, weight: "bold")[#name],
-                  text(fill: rgb("#aaaaaa"), size: typeline-size)[
-                    #subtypes.join(" ") · *#card-type*
-                  ],
-                )
-              ],
-              // Attrs normal
-              attr-strip(attrs, highlight),
+              stack(dir: ttb, spacing: 2.5pt, text(fill: white, size: name-size, weight: "bold")[#name], text(
+                fill: rgb("#aaaaaa"),
+                size: typeline-size,
+              )[
+                #context {
+                  let content = [#subtypes.join(" ") · *#card-type*]
+                  let len = measure(content)
+                  if len.width > 50mm {
+                    [#subtypes.join(" ") #strong(card-type.slice(0, count: 4)).]
+                  } else {
+                    content
+                  }
+                }
+              ]),
             )
-          ])
+          ]
         ]
 
-        // Rules + tracker box
-        #place(bottom + left, dx: 9mm, dy: -2mm)[
-          #rotate(90deg, reflow: true, block(
+        // Bottom box
+        #place(bottom + left, dx: 2mm, dy: -2mm)[
+          #block(
             clip: true,
-            width: 80.9mm,
+            width: 55.5mm,
             fill: text-bg,
             radius: r,
             stroke: 0.75pt + frame-col,
             inset: 0mm,
           )[
             #rules-block(rules: rules, tracker: tracker)
-          ])
+            #if attrs.len() > 0 {
+              attr-strip(attrs, highlight)
+            }
+          ]
         ]
       ]
     ]
