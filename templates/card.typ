@@ -33,7 +33,7 @@
 
 #let VP = pts => [
   #show regex("\\w+|[^\\s]"): box.with(fill: black, inset: 2pt, radius: 1pt, baseline: 2pt)
-  #text(fill: black, stroke: white)[#pts]
+  #text(fill: white, weight: "bold")[#pts]
 ]
 
 #let affinity-pill(attr, color) = box(
@@ -135,11 +135,13 @@
   rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
 })
 
-#let rules-font = "Roboto"
+// #let rules-font = "Roboto"
 // #let rules-font = "AgencyFB"
+// #let rules-font = "Noto Sans"
+#let rules-font = "Open Sans"
 #let rules-block(rules: "", tracker: ()) = block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 2mm))[
   #set par(leading: 2pt)
-  #text(fill: black-bar, size: 8pt, font: rules-font, fallback: true, stretch: 75%, weight: "regular")[
+  #text(fill: black-bar, size: 8pt, font: rules-font, fallback: true, stretch: 50%, weight: "regular")[
     #eval(rules, mode: "markup", scope: (VP: VP))
     #if tracker.len() > 0 [
       #line(length: 100%, stroke: 0.2pt)
