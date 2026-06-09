@@ -177,28 +177,28 @@
 
         // Top bar
         #place(top + left)[
-          #rect(fill: black-bar, width: 59.5mm, inset: (x: 0.2mm, y: 1.2mm))[
+          #rect(fill: black-bar, width: 59.5mm, inset: (left: 0.2mm, rest: 0mm))[
             #grid(
-              // columns: (auto, auto, 1fr),
               columns: (auto, auto),
               column-gutter: 1.2mm,
-              cost-stack(cost, affinity)
-              ,
-                stack(dir: ttb, spacing: 2.5pt, text(fill: white, size: name-size, weight: "bold")[#name], text(
-                  fill: rgb("#aaaaaa"),
-                  size: typeline-size,
-                )[
-                  #context {
-                    let content = [#subtypes.join(" ") · *#card-type*]
-                    let len = measure(content)
-                    if len.width > 50mm {
-                      [#subtypes.join(" ") #strong(card-type.slice(0, count: 4)).]
-                    } else {
-                      content
-                    }
+              cost-stack(cost, affinity),
+              block(inset: (y: 1.2mm))[
+                #stack(dir: ttb, spacing: 2.5pt, text(fill: white, size: name-size, weight: "bold")[#name], text(
+                fill: rgb("#aaaaaa"),
+                size: typeline-size,
+              )[
+                #context {
+                  let content = [#subtypes.join(" ") · *#card-type*]
+                  let len = measure(content)
+                  if len.width > 55mm {
+                    [#subtypes.join(" ") #strong(card-type.slice(0, count: 4)).]
+                  } else {
+                    content
                   }
+                }
 
                 ])
+              ]
               ,
             )
           ]
@@ -404,19 +404,6 @@
       rarity: rarity,
       art: art,
     )
-  } else if card-type == "Ship" {
-    draw-landscape(
-      name: name,
-      card-type: card-type,
-      cost: cost,
-      affinity: affinity,
-      subtypes: subtypes,
-      attrs: attrs,
-      highlight: highlight,
-      rules: rules,
-      rarity: rarity,
-      art: art,
-    )
   } else {
     draw-portrait(
       name: name,
@@ -443,7 +430,7 @@
     type: "Sophont",
     cost: 4,
     affty: "[WRD, CHA]",
-    subtypes: "[Smaragdine, Commander, VIP]",
+    subtypes: "[Smaragdine, Commander, VIP, UNIQUE_icon]",
     attrs: "{CHA: 3, INT: 2, STR: 2, WRD: 4}",
     highlight: "[WRD]",
     tracker: "[]",
