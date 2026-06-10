@@ -17,7 +17,7 @@
   res
 }
 
-#let black-bar = rgb("#111111")
+#let black-bar = black //rgb("#111111")
 #let text-bg = rgb(255, 255, 255, 220)
 #let frame-col = rgb("#111111")
 #let name-size = 12pt
@@ -139,9 +139,9 @@
 // #let rules-font = "AgencyFB"
 // #let rules-font = "Noto Sans"
 #let rules-font = "Open Sans"
-#let rules-block(rules: "", tracker: ()) = block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 2mm))[
+#let rules-block(rules: "", tracker: ()) = block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 0mm))[
   #set par(leading: 2pt)
-  #text(fill: black-bar, size: 8pt, font: rules-font, fallback: true, stretch: 50%, weight: "regular")[
+  #text(fill: black-bar, size: 8.5pt, font: rules-font, fallback: true, weight: "regular")[
     #eval(rules, mode: "markup", scope: (VP: VP))
     #if tracker.len() > 0 [
       #line(length: 100%, stroke: 0.2pt)
@@ -190,16 +190,15 @@
                 #context {
                   let content = [#subtypes.join(" ") · *#card-type*]
                   let len = measure(content)
-                  if len.width > 55mm {
+                  let content = if len.width > 55mm {
                     [#subtypes.join(" ") #strong(card-type.slice(0, count: 4)).]
                   } else {
                     content
                   }
+                  content
                 }
-
-                ])
-              ]
-              ,
+              ])
+              ],
             )
           ]
         ]
@@ -219,84 +218,6 @@
               attr-strip(attrs, highlight)
             }
           ]
-        ]
-      ]
-    ]
-
-    #rarity-circle(cs, rarity)
-  ]
-}
-
-// ── Landscape card (Ship) ─────────────────────────────────────────────────────
-#let draw-landscape(
-  name: "Unnamed Ship",
-  card-type: "Ship",
-  cost: 0,
-  affinity: (),
-  subtypes: (),
-  attrs: (:),
-  highlight: (),
-  rules: "",
-  rarity: "C",
-  art: none,
-) = {
-  let r = 4pt
-  let cs = 5mm
-
-  block(width: 63.5mm, height: 88.9mm, clip: true, radius: 4pt)[
-    #card-art(art, orientation: "landscape")
-    #card-frame(cs)
-
-    #place(top + left, dx: 2mm, dy: 2mm)[
-      #block(width: 59.5mm, height: 84.9mm, fill: none)[
-
-        // Left bar (becomes bottom bar when rotated CCW on table)
-        #place(top + left)[
-          #rotate(90deg, reflow: true, block(
-            fill: black-bar,
-            inset: (x: 1.2mm, y: 0mm),
-          )[
-            #grid(
-              columns: (auto, 1fr, 25%),
-              column-gutter: 1.2mm,
-              // Cost + pills: counter-rotated to stay upright in hand
-              rotate(-90deg, reflow: true, align(horizon)[
-                #stack(
-                  dir: ttb,
-                  spacing: 2.5pt,
-                  box(fill: white, radius: 3pt, inset: (x: 3pt, y: 2pt))[
-                    #text(fill: black-bar, size: 9pt, weight: "bold")[#cost]
-                  ],
-                  affinity-stack(affinity),
-                )
-              ]),
-              // Name + subtypes
-              align(horizon)[
-                #stack(dir: ttb, spacing: 2.5pt, text(fill: white, size: name-size, weight: "bold")[#name], text(
-                  fill: rgb("#aaaaaa"),
-                  size: typeline-size,
-                )[
-                  #subtypes.join(" ") · *#card-type*
-                ])
-              ],
-              // Attr strip (right corner)
-              attr-strip(attrs, highlight),
-            )
-          ])
-        ]
-
-        // Rules box
-        #place(bottom + left, dx: 9mm, dy: -2mm)[
-          #rotate(90deg, reflow: true, block(
-            clip: true,
-            width: 80.9mm,
-            fill: text-bg,
-            radius: r,
-            stroke: 0.75pt + frame-col,
-            inset: 0mm,
-          )[
-            #rules-block(rules: rules)
-          ])
         ]
       ]
     ]
@@ -443,7 +364,7 @@
 #pagebreak()
 
 #draw-card((
-  name: "Eidolon",
+  name: "Test Ship Card",
   type: "Ship",
   cost: 4,
   affty: "[WRD, STR]",
@@ -458,7 +379,7 @@
 #pagebreak()
 
 #draw-card((
-  name: "Mira's Nebula",
+  name: "Test Location Card",
   type: "Location",
   subtypes: "[Nebula, VOID_icon, LAND_icon]",
   cost: "",
