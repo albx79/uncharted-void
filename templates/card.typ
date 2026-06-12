@@ -145,7 +145,7 @@
 #let rules-block(rules: "", tracker: ()) = block(width: 100%, inset: (x: 1.2mm, top: 1.2mm, bottom: 0mm))[
   #set par(leading: 2pt)
   #text(fill: black-bar, size: 8.5pt, font: rules-font, fallback: true, weight: "regular")[
-    #eval(rules, mode: "markup", scope: (VP: VP))
+    #eval(rules, mode: "markup", scope: (VP: VP, cost: x => x)) // TODO render cost properly in rules text
     #if tracker.len() > 0 [
       #line(length: 100%, stroke: 0.2pt)
       #for step in tracker [
