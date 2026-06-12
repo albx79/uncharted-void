@@ -1,8 +1,11 @@
 // ── Uncharted Void — unified card renderer ───────────────────────────────────
-// Card size: standard US playing card 63.5mm × 88.9mm
+// Card size: standard European playing card card-w × card-h
+#let card-w = 63mm
+#let card-h = 88mm
 
 // ── Colour palette ───────────────────────────────────────────────────────────
 #let attr-data = csv("../data/attrs.csv", delimiter: ";", row-type: dictionary)
+
 // #let attr-font = "Share Tech Mono"
 // #let attr-font = "Space Mono"
 #let attr-font = "Cascadia Code"
@@ -102,10 +105,10 @@
 #let card-frame(cs) = place(top + left, dx: 2mm, dy: 2mm)[
   #polygon(
     (0mm, 0mm),
-    (59.5mm, 0mm),
-    (59.5mm, 84.9mm - cs),
-    (59.5mm - cs, 84.9mm),
-    (0mm, 84.9mm),
+    (card-w - 4mm, 0mm),
+    (card-w - 4mm, card-h - 4mm - cs),
+    (card-w - 4mm - cs, card-h - 4mm),
+    (0mm, card-h - 4mm),
     stroke: 1pt + frame-col,
     fill: none,
   )
@@ -114,8 +117,8 @@
 // Rarity circle
 #let rarity-circle(cs, rarity) = place(
   top + left,
-  dx: 61.5mm - cs * 0.72,
-  dy: 86.9mm - cs * 0.72,
+  dx: card-w - 2mm - cs * 0.72,
+  dy: card-h - 2mm - cs * 0.72,
 )[
   #circle(radius: cs * 0.38, fill: black-bar)[
     #align(center + horizon)[
@@ -127,12 +130,12 @@
 // Full-bleed art or placeholder
 #let card-art(art, orientation: "portrait") = place(top + left, if art != none {
   if orientation == "portrait" {
-    image(art, width: 63.5mm, height: 88.9mm, fit: "cover")
+    image(art, width: card-w, height: card-h, fit: "cover")
   } else {
-    rotate(90deg, image(art, width: 88.9mm, height: 63.5mm, fit: "cover"))
+    rotate(90deg, image(art, width: card-h, height: card-w, fit: "cover"))
   }
 } else {
-  rect(width: 63.5mm, height: 88.9mm, fill: rgb("#2a3a4a"))
+  rect(width: card-w, height: card-h, fill: rgb("#2a3a4a"))
 })
 
 // #let rules-font = "Roboto"
@@ -168,16 +171,16 @@
   let r = 4pt
   let cs = 5mm
 
-  block(width: 63.5mm, height: 88.9mm, clip: true, radius: 4pt)[
+  block(width: card-w, height: card-h, clip: true, radius: 4pt)[
     #card-art(art)
     #card-frame(cs)
 
     #place(top + left, dx: 2mm, dy: 2mm)[
-      #block(width: 59.5mm, height: 84.9mm, fill: none)[
+      #block(width: card-w - 4mm, height: card-h - 4mm, fill: none)[
 
         // Top bar
         #place(top + left)[
-          #rect(fill: black-bar, width: 59.5mm, inset: (left: 0.2mm, rest: 0mm))[
+          #rect(fill: black-bar, width: card-w - 4mm, inset: (left: 0.2mm, rest: 0mm))[
             #grid(
               columns: (auto, auto),
               column-gutter: 1.2mm,
@@ -207,7 +210,7 @@
         #place(bottom + left, dx: 2mm, dy: -2mm)[
           #block(
             clip: true,
-            width: 55.5mm,
+            width: card-w - 8mm,
             fill: text-bg,
             radius: r,
             stroke: 0.75pt + frame-col,
@@ -241,7 +244,7 @@
   let r = 4pt
   let cs = 5mm
 
-  block(width: 63.5mm, height: 88.9mm, clip: true, radius: 4pt)[
+  block(width: card-w, height: card-h, clip: true, radius: 4pt)[
     #card-art(art)
     #card-frame(cs)
 
@@ -342,7 +345,7 @@
 }
 
 // ── Page setup ────────────────────────────────────────────────────────────────
-#set page(width: 63.5mm, height: 88.9mm, margin: 0mm)
+#set page(width: card-w, height: card-h, margin: 0mm)
 
 // ── Sample renders ────────────────────────────────────────────────────────────
 #draw-card(
