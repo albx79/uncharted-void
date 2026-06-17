@@ -2,13 +2,11 @@
 // Reads one or more deck CSVs, cross-references cards.csv, prints all copies
 // Usage: typst compile print-deck.typ print-deck.pdf
 
-#import "card.typ": draw-card
+#import "card.typ": draw-card, card-w, card-h
 
 #set page(paper: "a4", margin: 0mm)
 
 #let gutter  = 0.25mm
-#let card-w  = 63.5mm
-#let card-h  = 88.9mm
 #let margin-x = (210mm - 3 * card-w - 2 * gutter) / 2
 #let margin-y = (297mm - 3 * card-h - 2 * gutter) / 2
 
