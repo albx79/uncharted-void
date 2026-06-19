@@ -8,11 +8,11 @@ Hyehoon Negotiator;2;[CHA];Sophont;[Hyehoon, Diplomat];C;{CHA: 3, INT: 1, STR: 1
 Hyehoon Naturalist;2;[INT];Sophont;[Hyehoon, Scientist];C;{CHA: 1, INT: 3, STR: 0, WRD: 0};[INT];Tap ▶ target away team at this location gets INT +3 for the next mission attempt this turn.;[];
 Hyehoon Pathfinder;3;[INT];Sophont;[Hyehoon, Explorer];U;{CHA: 2, INT: 3, STR: 1, WRD: 0};[INT];When _this_ arrives at an uncharted Location, look at one seeded Manufacts there.;[];
 Neshekk Broker;3;[CHA];Sophont;[Neshekk, Diplomat, VIP, UNIQUE_icon];R;{CHA: 3, INT: 2, STR: 0, WRD: 0};[CHA];Tap ▶ target Ship or away team at this location cannot be attacked until your next turn.;[];
-Smaragdine Initiate;1;[WRD];Sophont;[Smaragdine];C;{CHA: 1, INT: 1, STR: 0, WRD: 1};[WRD];;[];
-Smaragdine Adept;2;[WRD];Sophont;[Smaragdine, Scientist];C;{CHA: 1, INT: 2, STR: 0, WRD: 2};[WRD];Tap, scrap a resource ▶ look at the top 3 cards of your deck. Put one in your hand, recycle the rest.;[];
-Smaragdine Warrior;2;[STR];Sophont;[Smaragdine, Soldier];C;{CHA: 1, INT: 1, STR: 2, WRD: 2};[STR];;[];
-Smaragdine Elder;3;[WRD];Sophont;[Smaragdine, Diplomat];U;{CHA: 2, INT: 2, STR: 0, WRD: 3};[WRD];Tap ▶ target allied Sophont at this location gets WRD +3 until end of turn.;[];
-Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP, UNIQUE_icon];R;{CHA: 3, INT: 2, STR: 2, WRD: 4};[WRD];Enemy Sophonts at this location with STR < 3 cannot act.\ Tap ▶ this crew gets WRD +2 for the next mission attempt this turn.;[];
+Smaragdine Initiate;1;[WRD];Sophont;[Smaragdine];C;{CHA: 1, INT: 1, STR: 0, WRD: 1};[WRD];The Smaragdine with highest WRD in each team at this Location has WRD equal to the highest WRD amongst all Smaragdine at this Location;[];
+Smaragdine Adept;2;[WRD];Sophont;[Smaragdine, Scientist];C;{CHA: 1, INT: 2, STR: 0, WRD: 2};[WRD];Smaragdine Sophonts at this Location have: Tap, scrap a resource ▶ look at the top 3 cards of your deck. Put one in your hand, recycle the rest.;[];
+Smaragdine Warrior;2;[STR];Sophont;[Smaragdine, Soldier];C;{CHA: 1, INT: 1, STR: 2, WRD: 2};[STR];The Smaragdine with highest STR in each team at this Location has STR equal to the highest STR amongst all Smaragdine at this Location;[];
+Smaragdine Elder;3;[WRD];Sophont;[Smaragdine, Diplomat];U;{CHA: 2, INT: 2, STR: 0, WRD: 3};[WRD];Smaragine Sophonts at this Location have: Tap, #cost(1) ▶ target allied Smaragdine at this Location gets WRD +3 until end of turn.;[];
+Smaragdine Archon;4;[WRD, CHA];Sophont;[Smaragdine, Commander, VIP, UNIQUE_icon];R;{CHA: 3, INT: 2, STR: 2, WRD: 4};[WRD];Smaragdine Sophonts at this Location have: Tap ▶ tap target Sophont at this Location;[];
 Deva Artificer;4;[INT];Sophont;[Deva, Engineer, VIP, UNIQUE_icon];R;{CHA: 2, INT: 4, STR: 0, WRD: 2};[INT];Tap ▶ remove 1 damage counter from target Ship at this location.;[];Artificer
 Vokun Soldier;1;[STR];Sophont;[Vokun, Soldier];C;{CHA: 0, INT: 0, STR: 3, WRD: 0};[STR];;[];young, fit
 Vokun Conscript;1;[];Sophont;[Vokun, Soldier];C;{CHA: 0, INT: 1, STR: 2, WRD: 0};[STR];;[];
@@ -26,7 +26,7 @@ Mnaat Mechanic;1;[INT];Sophont;[Mnaat, Cybernetic, Engineer];C;{CHA: 0, INT: 2, 
 Mnaat Technician;2;[INT];Sophont;[Mnaat, Cybernetic, Engineer];C;{CHA: 0, INT: 3, STR: 1, WRD: 0};[INT];On death: recycle _this_.\ Tap ▶ if aboard a Ship, remove 1 damage counter from it.;[];
 Mnaat Researcher;3;[INT];Sophont;[Mnaat, Cybernetic, Scientist];U;{CHA: 0, INT: 4, STR: 0, WRD: 1};[INT];On death: recycle _this_.\ Tap ▶ this crew gets INT +2 for the next mission attempt this turn.;[];
 Voidglider Navigator;2;[WRD];Sophont;[Voidglider, Pilot];C;{CHA: 0, INT: 2, STR: 1, WRD: 2};[WRD];Ships crewed by _this_ get RNG +1.;[];
-Voidglider Seer;3;[WRD];Sophont;[Voidglider, Scientist];U;{CHA: 0, INT: 3, STR: 0, WRD: 4};[WRD];Superluminally, when transiting a Location, tap ▶ look at all seeded Manufacts here.;[];Seer
+Voidglider Seer;3;[WRD, WRD];Sophont;[Voidglider, Scientist];R;{CHA: 1, INT: 2, STR: 0, WRD: 3};[WRD};Scrap a WRD resource, scrap _this_ ▶ move this ship to target location.\ #quote[I have seen into the void and know how to bend space-time. With the right resources I can show you, just for this once.];[];
 Ibglib Analyst;2;[INT];Sophont;[Ibglib, Scientist];C;{CHA: 1, INT: 4, STR: 0, WRD: 0};[INT];When an opponent's Superluminal effect targets this team, tap _this_. It doesn't untap during your next untap step.;[];
 Ibglib Envoy;3;[INT];Sophont;[Ibglib, Diplomat];U;{CHA: 2, INT: 3, STR: 0, WRD: 0};[INT];When an opponent's Superluminal effect targets this team, tap _this_. It doesn't untap during your next untap step.\ Tap ▶ target enemy Sophont at this location cannot act this turn.;[];
 Alliance Shuttle;1;[INT];Ship;[Shuttle];C;{SIZ: 1, RNG: 2, WPN: 0};[];*Crew 1*;[];
